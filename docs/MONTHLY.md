@@ -4,15 +4,14 @@ GitHub: https://github.com/dongyuuun-beep/gov-meal-map. 사용자 생성 저장�
 
 Site ID는 `.openai/hosting.json`을 읽고 그대로 사용합니다. 새로운 Site를 만들지 않습니다. 같은 Site의 소스 저장소에서 이 지침을 읽을 수 있습니다.
 
-1. GitHub 저장소 또는 Sites 소스 저장소 최신 소스를 정상 인증된 GitHub/Sites 접근으로 열기. 소스 접근 권한을 먼저 확인합니다.
-2. `python scripts/collect.py` 실행. 경기도 감사1과는 고정 HTML 예시만 재확인, 울산시장 최신 목록의 날짜별 상세를 탐색합니다. 다른 기관이 수집되었다고 주장하지 않습니다.
-3. `python -m unittest discover -s tests`, `node tests/core.test.cjs`, `node --check dist/app.js` 실행.
-4. 실패 시 기존 정상 배포를 유지합니다. 원인과 영향 기관을 사용자에게 보고합니다. 오류 페이지나 빈 응답으로 기존 파일을 덮어쓰지 않습니다.
-5. 새 `dist/data.json`의 집행 건수·금액·인원 단위·위치 확인 건수를 확인합니다. 위치는 `config/locations.json`에서 검증된 대응만 허용합니다. 이름 유사성만으로 임의 좌표를 추가하지 않습니다.
-6. GitHub 저장소가 실제로 연결되어 있는 경우 인증된 접근으로 변경 데이터를 커밋·푸시합니다. 미연결이면 이 단계를 건너뛰고 Sites 갱신을 계속합니다. 원격 HEAD가 바뀌면 먼저 최신 변경을 보존해 통합합니다.
-7. 같은 Site의 소스 저장소에 동기화하고, 현재 Sites 스킬의 검증·패키징·비공개 배포 절차로 정적 웹앱을 갱신합니다. `.openai/hosting.json`의 ID와 기존 접근 범위를 유지합니다.
-8. 배포 성공을 읽어 확인한 뒤 건수·수집범위·누락·정정 반영 사항을 짧게 보고합니다.
+## 운영 경로 (AI 불필요)
 
-GitHub cron: 매월 15일 09:20 Asia/Seoul. Sites 연결 작업: 매월 15일 10:00 Asia/Seoul. Actions는 데이터 이력을 독립 보관하며, Sites 작업도 같은 수집기를 재실행해 Actions 지연에 의존하지 않습니다. 두 저장소 데이터는 동일 행 ID로 갱신하므로 중복 합산하지 않습니다.
+1. GitHub Actions `monthly.yml`이 매월 15일 09:20 Asia/Seoul에 실행됩니다.
+2. 테스트 → `python scripts/collect.py` → 데이터 커밋 → 재사용 `deploy.yml` → GitHub Pages 배포.
+3. 실패한 개별 출처는 기존 데이터를 유지하고 `source_status`에 오류를 기록합니다. 모든 출처가 실패하면 원래 데이터와 배포를 유지하고 워크플로를 실패 처리합니다.
+4. GitHub Pages Settings의 Source는 GitHub Actions입니다. 개인 API 키·ChatGPT 구독·이 채팅 실행은 필요 없습니다.
+5. 수동 갱신: Actions → Monthly data refresh → Run workflow.
+6. 코드/화면 수정은 main에 push하면 Pages를 다시 배포합니다. 수집 워크플로 내부의 GITHUB_TOKEN 커밋은 push 이벤트를 새로 만들지 않으므로, 수집 완료 후 reusable deploy job을 명시적으로 호출합니다.
+7. Sites의 ChatGPT 월별 작업은 중지했습니다. Sites는 초기 비공개 미리보기이며 GitHub Pages가 운영본입니다. Sites 재배포가 필요하면 현재 Sites 스킬 절차로 별도 수행합니다.
 
-현재 알려진 제한: 경기도 신규 게시글 탐색 차단, 울산 목록 첫 페이지 범위, 첨부파일 기관 미연결, 식당 지점·좌표 다수 미확인. 최근 6개월 페이지 순회와 모든 중앙부처/광역 본청 연결은 추가 개발 과제입니다.
+현재 수집 범위: 경기도 감사1과 고정 HTML 예시 재확인 + 울산시장 최신 목록의 상세 HTML. 전국 자동 전수 수집이 아닙니다. 최근 6개월 페이지 순회·추가 기관·PDF/HWP·위치 검수는 후속 작업입니다. 공식 사이트가 양식이나 주소를 바꾸면 수집기 유지보수가 필요합니다.
