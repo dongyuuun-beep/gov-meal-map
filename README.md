@@ -2,6 +2,8 @@
 
 아파트 검색 앱처럼 전국에서는 지역별 공개 식비 합계, 확대하면 식당별 지출액을 탐색하는 웹앱입니다.
 
+운영 웹앱: https://dongyuuun-beep.github.io/gov-meal-map/
+
 ## 현재 범위
 
 - 정적 웹앱: 지도 확대/축소, 지역 → 식당 전환, 기간·기관·목적·상호 검색, 합계/인당 비용 전환, 상세 원문 링크, CSV 다운로드.
@@ -22,6 +24,8 @@ python -m http.server 8000 --directory dist
 python scripts/collect.py
 python -m unittest discover -s tests
 ```
+
+수집 환경에는 Python 3.12+, curl이 필요합니다. GitHub 호스팅 실행기에는 기본 제공됩니다.
 
 ## 해석 기준
 

@@ -1,4 +1,4 @@
-"""Initial HTML collectors. Standard-library only; do not silently replace data on failure."""
+"""Initial HTML collectors. Python standard library + curl; preserve source data on failure."""
 import concurrent.futures
 import hashlib
 import json
