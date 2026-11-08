@@ -1,5 +1,8 @@
 import importlib.util
 import unittest
+import tempfile
+import json
+from unittest.mock import patch
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('collect',Path(__file__).resolve().parents[1]/'scripts/collect.py')
 c=importlib.util.module_from_spec(spec);spec.loader.exec_module(c)
@@ -16,5 +19,26 @@ class ParserTests(unittest.TestCase):
         with self.assertRaises(ValueError):c.parse_ulsan('<html>접근 차단</html>','https://example.org','2026-08-04')
     def test_no_speculative_company_dinner(self):
         self.assertEqual(c.category('업무협의 간담회'),'간담회')
+    def test_total_outage_keeps_previous_snapshot(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);(root/'dist').mkdir()
+            path=root/'dist/data.json';path.write_text('{"records":[]}')
+            before=path.read_bytes()
+            with patch.object(c,'ROOT',root),patch.object(c,'fetch',side_effect=TimeoutError('offline')):
+                with self.assertRaises(ValueError):c.collect()
+            self.assertEqual(path.read_bytes(),before)
+    def test_partial_outage_preserves_failed_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);(root/'dist').mkdir();(root/'config').mkdir()
+            old=c.record(c.GG_SEED,1,'2025-09-26','간담회','기존상호','6명',121000,'경기도','감사1과')
+            (root/'dist/data.json').write_text(json.dumps({'records':[old]}));(root/'config/locations.json').write_text('{}')
+            new=c.record(c.ULSAN+'&useDe=2026-08-04',1,'2026-08-04','간담회','신규상호','9명',360000,'울산광역시','시장')
+            def fake_fetch(url):
+                if url==c.GG_SEED:raise TimeoutError('offline')
+                return '2026-08-04'
+            with patch.object(c,'ROOT',root),patch.object(c,'fetch',side_effect=fake_fetch),patch.object(c,'parse_ulsan',return_value=[new]):c.collect()
+            result=json.loads((root/'dist/data.json').read_text())
+            self.assertEqual(len(result['records']),2)
+            self.assertTrue(any(s['status']=='failed' for s in result['source_status']))
 
 if __name__=='__main__':unittest.main()
