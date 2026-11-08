@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T11:12:01.881402+00:00",
+  "updated_at": "2026-11-08T11:15:58.822801+00:00",
   "source_status": [
     {
       "source": "경기도 감사1과 고정 예시",
@@ -49,13 +49,13 @@
     {
       "source": "울산시장 상세",
       "url": "https://www.ulsan.go.kr/u/rep/transfer/ecnmy/list.ulsan?mId=001003002007000000&se=1&useDe=2026-09-22",
-      "status": "success"
+      "status": "failed",
+      "error": "curl: (35) TLS connect error: error:0A000126:SSL routines::unexpected eof while reading"
     },
     {
       "source": "울산시장 상세",
       "url": "https://www.ulsan.go.kr/u/rep/transfer/ecnmy/list.ulsan?mId=001003002007000000&se=1&useDe=2026-09-23",
-      "status": "failed",
-      "error": "curl: (35) TLS connect error: error:0A000126:SSL routines::unexpected eof while reading"
+      "status": "success"
     },
     {
       "source": "울산시장 상세",
@@ -65,8 +65,7 @@
     {
       "source": "울산시장 상세",
       "url": "https://www.ulsan.go.kr/u/rep/transfer/ecnmy/list.ulsan?mId=001003002007000000&se=1&useDe=2026-09-29",
-      "status": "failed",
-      "error": "curl: (35) TLS connect error: error:0A000126:SSL routines::unexpected eof while reading"
+      "status": "success"
     }
   ],
   "scope": "경기도 감사1과 고정 예시 재확인 + 울산시장 최신 목록·확인 예시. 전국 전수 아님.",
@@ -89,7 +88,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:00:24.267455+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -110,7 +109,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:00:24.267455+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -131,7 +130,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -194,7 +193,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -215,7 +214,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -236,7 +235,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -257,7 +256,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -278,7 +277,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -299,7 +298,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -320,7 +319,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -341,7 +340,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -362,7 +361,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -551,7 +550,7 @@
       "spending_region": null,
       "address": null,
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "source_license": "출처별 이용조건 확인 필요"
     },
     {
@@ -614,7 +613,7 @@
       "spending_region": "울산",
       "address": "울산광역시 남구 돋질로47번길 17 (지점 대응 추가 확인 필요)",
       "location": null,
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "address_evidence_url": "https://www.diningcode.com/profile.php?rid=IImE6gJ1YfGK",
       "source_license": "출처별 이용조건 확인 필요"
     },
@@ -641,7 +640,7 @@
         "precision": "building",
         "evidence_url": "https://www.openstreetmap.org/node/4162474789"
       },
-      "collected_at": "2026-11-08T11:12:01.881402+00:00",
+      "collected_at": "2026-11-08T11:15:58.822801+00:00",
       "address_evidence_url": "https://kumakitchen.co.kr/",
       "source_license": "공공누리 제3유형 표시 관측; 원문 전체 재배포 제외"
     }
