@@ -5,6 +5,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: monthly-data
   cancel-in-progress: false
@@ -36,3 +38,6 @@ jobs:
         with:
           name: monthly-spending-data
           path: dist/data.json
+  deploy:
+    needs: collect
+    uses: ./.github/workflows/deploy.yml

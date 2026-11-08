@@ -5,6 +5,7 @@ import json
 import re
 import urllib.parse
 import urllib.request
+import time
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -15,9 +16,15 @@ ULSAN = 'https://www.ulsan.go.kr/u/rep/transfer/ecnmy/list.ulsan?mId=00100300200
 
 def fetch(url, data=None):
     req = urllib.request.Request(url, data=data, headers={'User-Agent': 'GovMealMap/0.1 (+https://github.com/dongyuuun-beep/gov-meal-map)'})
-    with urllib.request.urlopen(req, timeout=35) as response:
-        body = response.read()
-        declared = response.headers.get_content_charset()
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as response:
+                body = response.read()
+                declared = response.headers.get_content_charset()
+            break
+        except (OSError, TimeoutError):
+            if attempt: raise
+            time.sleep(2)
     for encoding in dict.fromkeys([declared or 'utf-8', 'utf-8', 'cp949']):
         try:
             return body.decode(encoding)
@@ -93,21 +100,34 @@ def collect():
     # GG's list JSON endpoint returned a security-policy block during research.
     # Refresh only the confirmed HTML seed; do not claim new GG rows are discovered.
     gg_urls={GG_SEED}
-    records=[]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        for batch in pool.map(lambda url:parse_gg(fetch(url),url),sorted(gg_urls)): records.extend(batch)
-    ul_html=fetch(ULSAN)
-    dates=sorted(set(re.findall(r'20\d\d-\d\d-\d\d',ul_html)),reverse=True)[:20]
-    if not dates: raise ValueError('Ulsan list dates missing')
-    # Include verified seed and discover latest listing dates. Full six-month pagination is follow-up.
-    dates=sorted(set(dates+['2026-08-04']))
-    for date in dates:
+    records=[];refreshed=set();statuses=[]
+    for url in sorted(gg_urls):
+        try:
+            records.extend(parse_gg(fetch(url),url));refreshed.add(url)
+            statuses.append(dict(source='경기도 감사1과 고정 예시',status='success',url=url))
+        except Exception as error:
+            statuses.append(dict(source='경기도 감사1과 고정 예시',status='failed',url=url,error=str(error)))
+    try:
+        ul_html=fetch(ULSAN)
+        dates=sorted(set(re.findall(r'20\d\d-\d\d-\d\d',ul_html)),reverse=True)[:20]
+        if not dates: raise ValueError('Ulsan list dates missing')
+        dates=sorted(set(dates+['2026-08-04']))
+    except Exception as error:
+        statuses.append(dict(source='울산시장 목록',status='failed',url=ULSAN,error=str(error)));dates=[]
+    def one_date(date):
         url=ULSAN+'&useDe='+date
-        records.extend(parse_ulsan(fetch(url),url,date))
-    if not records: raise ValueError('No records; retaining previous dataset')
+        try:
+            return url,parse_ulsan(fetch(url),url,date),None
+        except Exception as error:
+            return url,[],str(error)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        for url,batch,error in pool.map(one_date,dates):
+            if error is None:
+                records.extend(batch);refreshed.add(url)
+            statuses.append(dict(source='울산시장 상세',url=url,status='failed' if error else 'success',**({'error':error} if error else {})))
+    if not refreshed: raise ValueError('All source fetches failed; retaining previous dataset: '+json.dumps(statuses,ensure_ascii=False))
     target=ROOT/'dist/data.json'
     previous=json.loads(target.read_text())['records'] if target.exists() else []
-    refreshed=set(gg_urls)|{ULSAN+'&useDe='+date for date in dates}
     old_by_id={r['id']:r for r in previous}
     combined={r['id']:r for r in previous if r['source_url'] not in refreshed}
     now=datetime.now(timezone.utc).isoformat()
@@ -123,8 +143,11 @@ def collect():
     for r in combined.values():
         r.update(locations.get(r['merchant'],{}))
         r['source_license']='공공누리 제3유형 표시 관측; 원문 전체 재배포 제외' if r['institution']=='경기도' else '출처별 이용조건 확인 필요'
-    output={'updated_at':now,'scope':'경기도 감사1과 고정 예시 재확인 + 울산시장 최신 목록·확인 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r['date'],r['id']),reverse=True)}
+    output={'updated_at':now,'source_status':statuses,'scope':'경기도 감사1과 고정 예시 재확인 + 울산시장 최신 목록·확인 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r['date'],r['id']),reverse=True)}
     temporary=target.with_suffix('.tmp');temporary.write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n');temporary.replace(target)
     print('Collected',len(records),'rows; total',len(combined),'records')
+    failures=[s for s in statuses if s['status']=='failed']
+    if failures:
+        print('Partial refresh; preserved failed sources:',json.dumps(failures,ensure_ascii=False))
 
 if __name__=='__main__': collect()
