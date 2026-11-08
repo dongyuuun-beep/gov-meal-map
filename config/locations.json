@@ -1,0 +1,19 @@
+{
+  "쿠마키친 롯데몰 광교점": {
+    "address": "경기도 수원시 영통구 도청로 10 롯데몰 광교점 3층",
+    "spending_region": "경기",
+    "address_evidence_url": "https://kumakitchen.co.kr/",
+    "location": {
+      "lat": 37.2863218,
+      "lng": 127.0552213,
+      "precision": "building",
+      "evidence_url": "https://www.openstreetmap.org/node/4162474789"
+    }
+  },
+  "부부스시": {
+    "address": "울산광역시 남구 돋질로47번길 17 (지점 대응 추가 확인 필요)",
+    "spending_region": "울산",
+    "address_evidence_url": "https://www.diningcode.com/profile.php?rid=IImE6gJ1YfGK",
+    "location": null
+  }
+}

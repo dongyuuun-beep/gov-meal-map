@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict');
+const C=require('../dist/core.js');
+const r=[{amount_krw:10000,participants:1},{amount_krw:90000,participants:9},{amount_krw:50000,participants:null}];
+assert.equal(C.stats(r).total,150000);
+assert.equal(C.stats(r).perPerson,10000);
+assert.equal(C.stats(r).knownCount,2);
+assert.equal(C.stats([{amount_krw:1000,participants:0}]).perPerson,null);
+assert.equal(C.filter([{date:'2026-10-01',merchant:'가나다',institution:'기관',category:'간담회'}],{period:'2026-09'}).length,0);
+assert.equal(C.demoRows().every(r=>r.demo===true),true);
+console.log('Aggregation, missing participants, filtering and demo isolation passed.');
