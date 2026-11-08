@@ -29,6 +29,7 @@ jobs:
           git add dist/data.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh disclosed spending $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
             git push
           fi
       - uses: actions/upload-artifact@v4
