@@ -3,9 +3,7 @@ import concurrent.futures
 import hashlib
 import json
 import re
-import urllib.parse
-import urllib.request
-import time
+import subprocess
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -15,21 +13,20 @@ GG_SEED = 'https://www.gg.go.kr/bbs/boardView.do?bIdx=196578000&bsIdx=530&menuId
 ULSAN = 'https://www.ulsan.go.kr/u/rep/transfer/ecnmy/list.ulsan?mId=001003002007000000&se=1'
 
 def fetch(url, data=None):
-    req = urllib.request.Request(url, data=data, headers={'User-Agent': 'GovMealMap/0.1 (+https://github.com/dongyuuun-beep/gov-meal-map)'})
-    for attempt in range(2):
-        try:
-            with urllib.request.urlopen(req, timeout=20) as response:
-                body = response.read()
-                declared = response.headers.get_content_charset()
-            break
-        except (OSError, TimeoutError):
-            if attempt: raise
-            time.sleep(2)
-    for encoding in dict.fromkeys([declared or 'utf-8', 'utf-8', 'cp949']):
-        try:
-            return body.decode(encoding)
-        except UnicodeDecodeError:
-            pass
+    # IPv4 succeeds from GitHub-hosted runners; default urllib connections timed out.
+    # curl keeps TLS verification and inherited proxy settings enabled.
+    command=['curl','--ipv4','--fail','--location','--retry','1',
+             '--connect-timeout','10','--max-time','25','--compressed',
+             '--silent','--show-error','--user-agent',
+             'GovMealMap/0.1 (+https://github.com/dongyuuun-beep/gov-meal-map)']
+    if data is not None: command+=['--data-binary',data.decode()]
+    response=subprocess.run(command+[url],capture_output=True,timeout=65)
+    if response.returncode:
+        raise OSError(response.stderr.decode(errors='replace').strip())
+    body=response.stdout
+    for encoding in ('utf-8','cp949'):
+        try: return body.decode(encoding)
+        except UnicodeDecodeError: pass
     raise ValueError('Unknown source encoding: '+url)
 
 class Tables(HTMLParser):
