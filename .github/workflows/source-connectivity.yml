@@ -1,0 +1,20 @@
+name: Diagnose official source connectivity
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test source network access
+        shell: bash
+        run: |
+          for url in 'https://www.gg.go.kr/bbs/boardView.do?bIdx=196578000&bsIdx=530&menuId=1775' 'https://www.ulsan.go.kr/u/rep/transfer/ecnmy/list.ulsan?mId=001003002007000000&se=1'; do
+            curl -4 --retry 1 --connect-timeout 10 --max-time 20 -L -o /tmp/gov-source.html -w '%{url_effective} HTTP=%{http_code} bytes=%{size_download}\n' "$url" || true
+          done
