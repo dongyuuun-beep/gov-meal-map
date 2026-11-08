@@ -1,6 +1,6 @@
 # 월별 갱신 운영 지침
 
-GitHub 희망 경로: https://github.com/dongyuuun-beep/gov-meal-map. 최초 생성은 GitHub 앱의 createRepository 권한 부족으로 거절되었습니다. 실제 저장소가 연결되기 전에는 Sites 소스 저장소를 기준으로 갱신합니다.
+GitHub: https://github.com/dongyuuun-beep/gov-meal-map. 사용자 생성 저장소에 소스와 워크플로를 푸시했습니다. Sites와 GitHub의 두 원격을 최신 상태로 유지합니다.
 
 Site ID는 `.openai/hosting.json`을 읽고 그대로 사용합니다. 새로운 Site를 만들지 않습니다. 같은 Site의 소스 저장소에서 이 지침을 읽을 수 있습니다.
 
