@@ -13,7 +13,7 @@ def loose_json(text):
     for i in range(0,len(parts),2):
         parts[i]=re.sub(r'([{,]\s*)([A-Za-z_]\w*)\s*:',r'\1"\2":',parts[i])
         parts[i]=re.sub(r',\s*([}\]])',r'\1',parts[i])
-    return json.loads(''.join(parts))
+    return json.loads(''.join(parts),strict=False)
 def region(address):
     if re.search(r'제주|제주시|서귀포',address):return '제주'
     if re.search(r'세종특별|세종시|(?:^|\s)세종(?:\s|$)|보람동|소담동|호려울로|한누리대로|시청대로|나성로|조치원읍|연서면',address):return '세종'
@@ -41,11 +41,17 @@ def seoul(fetch,record):
         x=loose_json(fetch(u))
         if x.get('result')!='ok' or not isinstance(x.get('list'),list):raise ValueError('Seoul sheet schema changed')
         return x['list']
-    out=[];seen={}
     with ThreadPoolExecutor(max_workers=2) as pool:
-        batches=list(pool.map(page,range(1,7)))
+        batches=list(pool.map(page,range(1,52,10)))
+    return normalize_seoul(batches,record)
+
+def normalize_seoul(batches,record):
+    out=[];seen={};seen_source_rows=set()
     for batch in batches:
         for row in batch:
+            source_row=tuple(row.get(k) for k in ('RONUM','NID','EXEC_DT','EXEC_LOC','EXEC_AMOUNT','EXEC_PURPOSE'))
+            if source_row and source_row in seen_source_rows:continue
+            if source_row:seen_source_rows.add(source_row)
             purpose=row.get('EXEC_PURPOSE','');loc=row.get('EXEC_LOC','')
             if not food(purpose) or not loc:continue
             amount=int(row['EXEC_AMOUNT'])
@@ -57,7 +63,7 @@ def seoul(fetch,record):
             identity='|'.join(str(row.get(k,'')) for k in ['EXEC_DT','EXEC_LOC','EXEC_PURPOSE','BIMOK'])
             key=(row['NID'],identity);seen[key]=seen.get(key,0)+1
             r=record(row['URL'],identity+'|'+str(seen[key]),row['EXEC_DT'][:10],purpose,merchant,row.get('TARGET_NM',''),amount,'서울특별시',row.get('DEPT_NM_FULL') or row.get('DEPT_NM'),row.get('PAYMENT_METHOD'))
-            r.update(participants=participants(row.get('TARGET_NM','')),address=addr or None,spending_region=region(addr),budget_category=row.get('BIMOK'),source_license='공공누리 제1유형 · 서울 열린데이터광장 OA-22156',source_dataset='서울시 본청 최신 6,000행 중 식음료 후보')
+            r.update(participants=participants(row.get('TARGET_NM','')),address=addr or None,spending_region=region(addr),budget_category=row.get('BIMOK'),source_license='공공누리 제1유형 · 서울 열린데이터광장 OA-22156',source_dataset='서울시 본청 공개 지출 중 식음료 후보')
             out.append(r)
     if not out:raise ValueError('Seoul returned no food candidates')
     return out

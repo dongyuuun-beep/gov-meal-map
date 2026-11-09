@@ -4,7 +4,7 @@
     "name": "서울",
     "url": "https://data.seoul.go.kr/dataList/OA-22156/S/1/datasetView.do",
     "status": "공식 시트 수집 구현",
-    "notes": "본청 최신 정렬 6,000행 중 식음료 후보. 집행일시·상호·주소·목적·기재 인원·금액. API 키 없이 공개 시트 조회.",
+    "notes": "2023~2026년 공개 지출 원문 이력을 검증·보존하고 매월 최신 6,000행을 갱신. 페이지 중복을 복합 키로 제거.",
     "checked_on": "2026-11-08",
     "automated": "public_sheet"
   },
@@ -232,5 +232,13 @@
     "notes": "현행 기관명과 본청 게시판 및 공개 범위를 차례로 검증. 합계만 공개되면 정보공개청구 필요.",
     "checked_on": "2026-11-08",
     "automated": false
+  },
+  {
+    "id": "source-restaurant-coordinates",
+    "name": "서울시 일반음식점 인허가 좌표",
+    "url": "https://data.seoul.go.kr/dataList/OA-16094/S/1/datasetView.do",
+    "status": "공식 좌표 대조 구현",
+    "notes": "EPSG:5174 → WGS84. 도로명·번지·자치구/지번 일치, 공간상 충돌 후보 제외. 현재 영업 여부를 보증하지 않음.",
+    "automated": "monthly_latest_license_index"
   }
 ]

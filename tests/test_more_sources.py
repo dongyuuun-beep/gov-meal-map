@@ -20,3 +20,12 @@ class AdditionalSourceTests(unittest.TestCase):
   with zipfile.ZipFile(b,'w') as z:z.writestr('xl/worksheets/sheet1.xml',xml)
   rows=parse_sejong(b.getvalue(),'https://example.org',record)
   self.assertEqual(rows[0]['amount_krw'],159900);self.assertEqual(rows[0]['date'],'2026-09-01');self.assertIsNone(rows[0]['participants'])
+
+class PaginationTests(unittest.TestCase):
+ def test_overlap_removed_without_dropping_distinct_source_documents(self):
+  from more_sources import normalize_seoul
+  row=dict(RONUM='7',NID='doc-a',URL='https://example.org/a',EXEC_DT='2026-10-01 12:00',EXEC_LOC='예시식당(중구 무교로 21)',EXEC_AMOUNT='10000',EXEC_PURPOSE='정책 간담회',TARGET_NM='과장 외 2명',DEPT_NM='정책과')
+  other={**row,'NID':'doc-b','URL':'https://example.org/b'}
+  records=normalize_seoul([[row],[row,other]],record)
+  self.assertEqual(len(records),2);self.assertEqual(sum(r['amount_krw'] for r in records),20000)
+  self.assertEqual(records[0]['participants'],3)

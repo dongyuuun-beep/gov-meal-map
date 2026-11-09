@@ -8,3 +8,5 @@ assert.equal(C.stats([{amount_krw:1000,participants:0}]).perPerson,null);
 assert.equal(C.filter([{date:'2026-10-01',merchant:'가나다',institution:'기관',category:'간담회'}],{period:'2026-09'}).length,0);
 assert.equal(C.demoRows().every(r=>r.demo===true),true);
 console.log('Aggregation, missing participants, filtering and demo isolation passed.');
+const packed={format:'meal-map-v1',updated_at:'2026-11-09',scope:'test',sources:[{institution:'기관',source_url:'https://example.org'}],places:[{merchant:'식당',location:{lat:37.5,lng:127}}],strings:['간담회','기재 4명'],rows:[['record',0,0,'2026-11-01',0,1,4,80000,'간담회',null,'카드']]};
+const decoded=C.unpackSnapshot(packed);assert.equal(decoded.records[0].merchant,'식당');assert.equal(C.stats(decoded.records).perPerson,20000);

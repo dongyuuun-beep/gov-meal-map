@@ -23,12 +23,16 @@ jobs:
           node-version: '22'
       - run: python -m unittest discover -s tests
       - run: node tests/core.test.cjs
+      - run: pip install -r requirements-geodata.txt
+      - name: Refresh official license coordinate index
+        continue-on-error: true
+        run: python scripts/refresh_license_index.py
       - run: python scripts/collect.py
       - name: Commit validated monthly snapshot
         run: |
           git config user.name 'gov-meal-map-bot'
           git config user.email 'gov-meal-map-bot@users.noreply.github.com'
-          git add dist/data.json
+          git add dist/data.json dist/data.full.json.gz dist/data.map.json.gz config/restaurant-index.json.gz
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh disclosed spending $(date -u +%Y-%m-%d)"
             git pull --rebase origin main
@@ -37,7 +41,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: monthly-spending-data
-          path: dist/data.json
+          path: |
+            dist/data.json
+            dist/data.full.json.gz
+            dist/data.map.json.gz
   deploy:
     needs: collect
     uses: ./.github/workflows/deploy.yml
