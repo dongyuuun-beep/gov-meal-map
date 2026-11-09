@@ -11,10 +11,27 @@ SOURCES={
  '수원':('https://www.suwon.go.kr','https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1179'),
  '평택':('https://www.pyeongtaek.go.kr','https://www.pyeongtaek.go.kr/pyeongtaek/contents.do?mid=0110000000'),
 }
+CITY_DISTRICTS={'화성':('동탄구','병점구','만세구','효행구'),'용인':('처인구','기흥구','수지구'),'수원':('장안구','권선구','팔달구','영통구')}
 def spending_city(address):
  for city in SOURCES:
   if re.search(city+r'(?:특례)?시',address or ''):return city
+ for city,districts in CITY_DISTRICTS.items():
+  if any(re.search(r'(?:^|\s)'+d+r'(?:\s|$)',address or '') for d in districts):return city
  return None
+
+def split_place(value,address=None):
+ # Both "상호(주소)" and "주소(상호)" occur in the official attachments.
+ before=re.fullmatch(r'(.+?(?:대로|로|길)\s*\d+(?:-\d+)?[^()]*)\(([^()]+)\)\s*',value)
+ if before and spending_city(before[1]):
+  address=address or before[1].strip();value=before[2].strip()
+ else:
+  after=re.search(r'\(([^()]*(?:시|구|로|길|동)[^()]*)\)\s*$',value)
+  if after and (re.search(r'(?:시|구)\s|(?:로|길)\s*\d|(?:동|읍|면)\s*\d',after[1]) or any(after[1].strip() in ds for ds in CITY_DISTRICTS.values())):
+   address=address or after[1].strip();value=value[:after.start()].strip()
+ city=spending_city(address)
+ if city and not re.search(city+r'(?:특례)?시',address or ''):address=city+'시 '+address
+ return value,address
+
 
 def posts(city,text):
  host=SOURCES[city][0]
@@ -48,6 +65,16 @@ def date_value(value,year):
  m=re.search(r'(\d{1,2})[월./\-\s]+(\d{1,2})',value)
  if m and year:return datetime(year,int(m[1]),int(m[2])).date().isoformat()
  return None
+
+def amount_value(value,unit=1):
+ raw=str(value)
+ formatted=re.findall(r'(?<![\d,])\d{1,3}(?:,\d{3})+(?![\d,])',raw)
+ if len(formatted)>1 and not re.sub(r'\d|,|\s|원','',raw):raw='\n'.join(formatted)
+ lines=[re.sub(r'[,\s원]','',line) for line in raw.splitlines() if line.strip()]
+ if not lines or not all(re.fullmatch(r'\d+(?:\.0+)?',line) for line in lines):return None,[]
+ values=[int(float(v))*unit for v in lines]
+ if len(values)>1 and any(v<1000 for v in values):raise ValueError('Ambiguous multiline amount: '+repr(value))
+ return sum(values),values
 
 def tabular(body):
  if body.startswith(b'PK'):
@@ -115,10 +142,8 @@ def parse_tables(tables,url,city,source_title,record,default_unit=1):
    if mapping is None:continue
    get=lambda k:d.get(mapping.get(k,''),'')
    if not food(get('purpose')) or not get('merchant'):continue
-   amount=re.sub(r'[,\s원]','',get('amount'))
-   if not re.fullmatch(r'\d+(?:\.0+)?',amount):continue
-   amount=int(float(amount))*unit
-   if amount<=0:continue
+   amount,components=amount_value(get('amount'),unit)
+   if amount is None or amount<=0:continue
    date_text=get('date')
    if re.fullmatch(r'20\d{2}',date_text):
     # Some workbooks split one merged date header into year, month and day columns.
@@ -126,13 +151,14 @@ def parse_tables(tables,url,city,source_title,record,default_unit=1):
     if len(parts)==3 and all(re.fullmatch(r'\d{1,4}',v) for v in parts):date_text='-'.join(parts)
    date=date_value(date_text,year)
    if not date:raise ValueError('Unknown transaction date '+get('date'))
-   loc=get('merchant');address=get('address') or None
-   # Only infer a spending city from an explicit address, never from the paying institution.
-   m=re.search(r'\(([^()]*(?:시|구|로|길|동)[^()]*)\)\s*$',loc)
-   if m and (re.search(r'(?:시|구)\s|(?:로|길)\s*\d|(?:동|읍|면)\s*\d',m[1]) or m[1] in ['처인구','기흥구','수지구']):address=address or m[1];loc=loc[:m.start()].strip()
+   raw_merchant=get('merchant');loc,address=split_place(raw_merchant,get('address') or None)
+   if len(components)>1:
+    loc=' / '.join(loc.splitlines())
+    dates=[date_value(line,year) for line in get('date').splitlines() if line.strip()]
+    if len(dates)>1 and (None in dates or len(set(dates))>1):date=None
    people=get('people');num=re.fullmatch(r'\d+(?:\.0+)?',people)
    r=record(url,sheet+'!'+rn,date,get('purpose'),loc,people,amount,city+'시',source_title,get('payment') or None)
-   r.update(executor=get('user') or None,participants=int(float(people)) if num and float(people)>0 else participants(people),budget_category=get('budget') or None,address=address,spending_region=region(address or ''),spending_city=spending_city(address),source_city=city,source_dataset=city+'시 공식 공개 첨부파일')
+   r.update(source_date=get('date'),amount_components=components if len(components)>1 else None,source_amount=get('amount'),source_merchant=raw_merchant,executor=get('user') or None,participants=int(float(people)) if num and float(people)>0 else participants(people),budget_category=get('budget') or None,address=address,spending_region='경기' if spending_city(address) else region(address or ''),spending_city=spending_city(address),source_city=city,source_dataset=city+'시 공식 공개 첨부파일')
    out.append(r)
  return out,found
 

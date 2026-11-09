@@ -19,3 +19,8 @@ const beforePan=adds;handlers.moveend();flush();assert.equal(adds,beforePan);
 vm.runInContext("setMetric('person')",ctx);flush();assert.equal(groups,initialGroups);
 assert.equal(vm.runInContext('rows().length',ctx),5000,'culling must not truncate totals or exports');
 console.log('Map zoom/pan: cached aggregation, viewport culling, marker reuse and bounded labels passed.');
+const hwaseong={id:'hs',date:'2026-10-01',merchant:'주소 미확인 식당',institution:'화성시',department:'정책과',amount_krw:80000,participants:4,spending_region:null,location:null};
+ctx.hwaseong=hwaseong;vm.runInContext("allRows=[...records,hwaseong];$('search').value='다른 검색';$('period').value='2025-01';$('city').value='수원';chooseInstitution('화성시')",ctx);flush();
+assert.equal(vm.runInContext('rows().length',ctx),1,'city hall shortcut must show unlocated expenses and clear conflicting filters');
+assert.equal(element('city').value,'all');assert.equal(element('region').value,'all');assert.equal(element('search').value,'');
+assert.equal(element('count').textContent,'1건');assert.match(element('results-title').textContent,/화성시/);

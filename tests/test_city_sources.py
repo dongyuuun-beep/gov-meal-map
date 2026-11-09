@@ -94,3 +94,29 @@ class CityAddressTests(unittest.TestCase):
   with patch('city_sources.subprocess.check_output',return_value=body):
    rs,errors,complete=collect_city('수원',lambda url:listing if 'list.do' in url else detail,record)
   self.assertEqual(rs,[]);self.assertEqual(errors,[]);self.assertEqual(len(complete),2)
+
+class ReversedPlaceTests(unittest.TestCase):
+ def test_address_before_merchant_in_hwaseong_attachment(self):
+  from city_sources import split_place
+  self.assertEqual(split_place('동탄구 동탄대로 181(양산도)'),('양산도','화성시 동탄구 동탄대로 181'))
+  self.assertEqual(split_place('동탄구 왕배산1길 5(쪼꼬미)'),('쪼꼬미','화성시 동탄구 왕배산1길 5'))
+ def test_branch_names_never_become_addresses(self):
+  from city_sources import split_place
+  self.assertEqual(split_place('예시식당(동탄호수공원점)'),('예시식당(동탄호수공원점)',None))
+  self.assertIsNone(spending_city('동탄구이식당'))
+ def test_recognized_district_is_geography_without_payer_assumptions(self):
+  self.assertEqual(spending_city('동탄구 동탄대로 181'),'화성')
+  self.assertEqual(spending_city('용인시 처인구 금령로 1'),'용인')
+  self.assertEqual(spending_city('수원시 영통구 예시로 1'),'수원')
+
+class CombinedPaymentTests(unittest.TestCase):
+ def test_separate_payment_lines_are_summed_instead_of_concatenated(self):
+  from city_sources import amount_value
+  self.assertEqual(amount_value('60,000\n121,470'),(181470,[60000,121470]))
+  self.assertEqual(amount_value('4 5,000'),(45000,[45000]))
+  self.assertEqual(amount_value('60,000 121,470'),(181470,[60000,121470]))
+  with self.assertRaises(ValueError):amount_value('1\n44,000')
+ def test_multi_merchant_cell_keeps_original_and_total(self):
+  body=workbook([{'A':'일시','B':'장소','C':'사용목적','D':'금액(원)','E':'대상인원'},{'A':'2026-10-12 14:08\n2026/10/12 10:05','B':'빵이당 발안향남점\n쿠팡','C':'의료진 간식비 지급','D':'60,000\n121,470','E':'50'}])
+  r=parse_attachment(body,'https://example.org/file','화성','2026년 10월 보건정책과',record)[0]
+  self.assertEqual(r['amount_krw'],181470);self.assertEqual(r['amount_components'],[60000,121470]);self.assertEqual(r['merchant'],'빵이당 발안향남점 / 쿠팡');self.assertIsNone(r['location'])

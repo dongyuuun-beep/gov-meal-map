@@ -1,4 +1,4 @@
-"""Resolve explicit four-city addresses via exact OSM address matches (at most 40/month)."""
+"""Resolve explicit four-city addresses via exact OSM address matches (at most 40/run)."""
 import json,re,subprocess,time
 from pathlib import Path
 from urllib.parse import urlencode

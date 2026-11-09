@@ -131,7 +131,7 @@ def collect():
             statuses.append(dict(source=name,status='success',rows=len(batch)))
         except Exception as error:
             statuses.append(dict(source=name,status='failed',error=str(error)))
-    from city_sources import SOURCES,collect_city,spending_city
+    from city_sources import SOURCES,collect_city,spending_city,split_place
     def city_batch(city):
         try:return city,collect_city(city,fetch,record),None
         except Exception as error:return city,None,str(error)
@@ -165,6 +165,10 @@ def collect():
     license_file=ROOT/'config/restaurant-index.json.gz'
     license_index=build_index(json.loads(gzip.decompress(license_file.read_bytes()))['rows'],None) if license_file.exists() else None
     for r in combined.values():
+        if r.get('source_city'):
+            raw=r.get('source_merchant',r['merchant']);r['merchant'],r['address']=split_place(raw,r.get('address'))
+            if len(r.get('amount_components') or [])>1:r['merchant']=' / '.join(r['merchant'].splitlines())
+            r['source_merchant']=raw
         r.update(locations.get(r['merchant']+'|'+(r.get('address') or ''),locations.get(r['merchant'],{})))
         if spending_city(r.get('address') or ''):
             r['spending_city']=spending_city(r['address']);r['spending_region']='경기'

@@ -312,5 +312,15 @@
     "spending_city": "수원",
     "matched_address": "경기도 수원시 센트럴타운로 85",
     "evidence_url": "https://www.openstreetmap.org/node/10968574637"
+  },
+  "경기|화성|동탄대로|181": {
+    "lat": 37.1715854,
+    "lng": 127.1061222,
+    "precision": "address",
+    "spending_city": "화성",
+    "matched_address": "경기도 화성시 동탄대로 181",
+    "evidence_url": "https://www.openstreetmap.org/way/1240776225",
+    "address_evidence_url": "https://www.lakecomo.co.kr/location",
+    "verification_method": "원문 도로명 주소와 레이크꼬모 공식 주소 대조, OSM 동명 건물 기준 좌표"
   }
 }

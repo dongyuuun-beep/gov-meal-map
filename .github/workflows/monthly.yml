@@ -1,14 +1,14 @@
-name: Monthly data refresh
+name: Daily data refresh
 on:
   schedule:
-    - cron: '20 0 15 * *'
+    - cron: '0 1 * * *' # 10:00 Asia/Seoul (01:00 UTC)
   workflow_dispatch:
 permissions:
   contents: write
   pages: write
   id-token: write
 concurrency:
-  group: monthly-data
+  group: daily-data
   cancel-in-progress: false
 jobs:
   collect:
