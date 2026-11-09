@@ -1,0 +1,163 @@
+{
+  "서울|무교로|19": {
+    "lat": 37.567633,
+    "lng": 126.978987,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/13947201565",
+    "matched_address": "서울특별시 무교로 19"
+  },
+  "서울|무교로|21": {
+    "lat": 37.5681016,
+    "lng": 126.97948,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/13851761722",
+    "matched_address": "서울특별시 무교로 21"
+  },
+  "서울|덕수궁길|7": {
+    "lat": 37.5646895,
+    "lng": 126.9762985,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/381941871",
+    "matched_address": "서울특별시 덕수궁길 7"
+  },
+  "서울|남대문로9길|40": {
+    "lat": 37.5670589,
+    "lng": 126.9802713,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/233593634",
+    "matched_address": "서울특별시 남대문로9길 40"
+  },
+  "서울|서소문로|124": {
+    "lat": 37.5631038,
+    "lng": 126.9752025,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/13872630869",
+    "matched_address": "서울특별시 서소문로 124"
+  },
+  "서울|소공로|116": {
+    "lat": 37.564859,
+    "lng": 126.9789524,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/13872630963",
+    "matched_address": "서울특별시 소공로 116"
+  },
+  "서울|다동길|16": {
+    "lat": 37.5676394,
+    "lng": 126.9801034,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1002205254",
+    "matched_address": "서울특별시 다동길 16"
+  },
+  "서울|무교로|24": {
+    "lat": 37.567993,
+    "lng": 126.9795362,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/12062511878",
+    "matched_address": "서울특별시 무교로 24"
+  },
+  "서울|종로3길|17": {
+    "lat": 37.5709961,
+    "lng": 126.9789392,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/506252766",
+    "matched_address": "서울특별시 종로3길 17"
+  },
+  "서울|남대문로5길|15": {
+    "lat": 37.5619717,
+    "lng": 126.9788346,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1007482029",
+    "matched_address": "서울특별시 남대문로5길 15"
+  },
+  "서울|청계천로|11": {
+    "lat": 37.5694729,
+    "lng": 126.978785,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/332565589",
+    "matched_address": "서울특별시 청계천로 11"
+  },
+  "세종|시청대로|209": {
+    "lat": 36.4832551,
+    "lng": 127.2932379,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544669183",
+    "matched_address": "세종특별자치시 시청대로 209"
+  },
+  "세종|한누리대로|291": {
+    "lat": 36.4902137,
+    "lng": 127.2560188,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/489212383",
+    "matched_address": "세종특별자치시 한누리대로 291"
+  },
+  "세종|시청대로|167": {
+    "lat": 36.4813693,
+    "lng": 127.2899645,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544669177",
+    "matched_address": "세종특별자치시 시청대로 167"
+  },
+  "세종|시청대로|163": {
+    "lat": 36.4811167,
+    "lng": 127.2893739,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544669176",
+    "matched_address": "세종특별자치시 시청대로 163"
+  },
+  "세종|호려울로|19": {
+    "lat": 36.4772742,
+    "lng": 127.2888109,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544450649",
+    "matched_address": "세종특별자치시 호려울로 19"
+  },
+  "세종|호려울로|29": {
+    "lat": 36.4779522,
+    "lng": 127.2902162,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544450651",
+    "matched_address": "세종특별자치시 호려울로 29"
+  },
+  "세종|한누리대로|2143": {
+    "lat": 36.4779292,
+    "lng": 127.2882863,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544450645",
+    "matched_address": "세종특별자치시 한누리대로 2143"
+  },
+  "세종|한누리대로|165": {
+    "lat": 36.4799611,
+    "lng": 127.2620421,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/469952772",
+    "matched_address": "세종특별자치시 한누리대로 165"
+  },
+  "세종|남세종로|450": {
+    "lat": 36.4774172,
+    "lng": 127.2901019,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/544450657",
+    "matched_address": "세종특별자치시 남세종로 450"
+  },
+  "세종|나성동로|6": {
+    "lat": 36.4865812,
+    "lng": 127.2696139,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1552221617",
+    "matched_address": "세종특별자치시 나성동로 6"
+  },
+  "세종|한누리대로|350": {
+    "lat": 36.4953968,
+    "lng": 127.2571929,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1106596396",
+    "matched_address": "세종특별자치시 한누리대로 350"
+  },
+  "세종|용포로|115": {
+    "lat": 36.4684749,
+    "lng": 127.2807633,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1240441088",
+    "matched_address": "세종특별자치시 용포로 115"
+  }
+}

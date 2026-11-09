@@ -2,11 +2,11 @@
   {
     "id": "source-01",
     "name": "서울",
-    "url": "https://www.data.go.kr/data/15124812/fileData.do",
-    "status": "목록 메타데이터 확인",
-    "notes": "서울시 업무추진비 목록. 거래 상세 API로 확인되지 않음. 정보소통광장 /expense 직접 접속은 503.",
+    "url": "https://data.seoul.go.kr/dataList/OA-22156/S/1/datasetView.do",
+    "status": "공식 시트 수집 구현",
+    "notes": "본청 최신 정렬 6,000행 중 식음료 후보. 집행일시·상호·주소·목적·기재 인원·금액. API 키 없이 공개 시트 조회.",
     "checked_on": "2026-11-08",
-    "automated": false
+    "automated": "public_sheet"
   },
   {
     "id": "source-02",
@@ -65,11 +65,11 @@
   {
     "id": "source-08",
     "name": "세종",
-    "url": "https://www.sejong.go.kr/",
-    "status": "본청 경로 미확정",
-    "notes": "검색에 의회·산하기관이 주로 노출. 세종시청 집행부 경로 추가 확인.",
+    "url": "https://council.sejong.go.kr/mnu/cap/businessExpenseList.do",
+    "status": "세종시의회 XLSX 수집 구현",
+    "notes": "시의회 최근 게시글 6개 중 업무추진비 XLSX 모든 시트. 집행부·중앙부처 전체 자료와 구별.",
     "checked_on": "2026-11-08",
-    "automated": false
+    "automated": "council_xlsx"
   },
   {
     "id": "source-09",
@@ -234,4 +234,3 @@
     "automated": false
   }
 ]
-

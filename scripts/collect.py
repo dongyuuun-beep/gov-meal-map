@@ -58,7 +58,8 @@ def integer(text):
 def category(purpose):
     if '회식' in purpose: return '회식'
     if '간담회' in purpose: return '간담회'
-    if any(w in purpose for w in ('식사','오찬','만찬','급식')): return '식사'
+    if any(w in purpose for w in ('식사','오찬','만찬','급식','중식','석식')): return '식사'
+    if any(w in purpose for w in ('다과','간식','음료')): return '다과'
     if '회의' in purpose: return '회의'
     return '기타'
 
@@ -122,6 +123,14 @@ def collect():
             if error is None:
                 records.extend(batch);refreshed.add(url)
             statuses.append(dict(source='울산시장 상세',url=url,status='failed' if error else 'success',**({'error':error} if error else {})))
+    from more_sources import seoul,sejong
+    for name,updater in [('서울특별시 본청',seoul),('세종특별자치시의회',sejong)]:
+        try:
+            batch=updater(fetch,record);records.extend(batch)
+            refreshed.add('dataset:'+name)
+            statuses.append(dict(source=name,status='success',rows=len(batch)))
+        except Exception as error:
+            statuses.append(dict(source=name,status='failed',error=str(error)))
     if not refreshed: raise ValueError('All source fetches failed; retaining previous dataset: '+json.dumps(statuses,ensure_ascii=False))
     target=ROOT/'dist/data.json'
     previous=json.loads(target.read_text())['records'] if target.exists() else []
@@ -137,10 +146,15 @@ def collect():
         else: r['collected_at']=now
         combined[r['id']]=r
     locations=json.loads((ROOT/'config/locations.json').read_text())
+    address_cache=json.loads((ROOT/'config/address-locations.json').read_text()) if (ROOT/'config/address-locations.json').exists() else {}
     for r in combined.values():
-        r.update(locations.get(r['merchant'],{}))
-        r['source_license']='공공누리 제3유형 표시 관측; 원문 전체 재배포 제외' if r['institution']=='경기도' else '출처별 이용조건 확인 필요'
-    output={'updated_at':now,'source_status':statuses,'scope':'경기도 감사1과 고정 예시 재확인 + 울산시장 최신 목록·확인 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r['date'],r['id']),reverse=True)}
+        r.update(locations.get(r['merchant']+'|'+(r.get('address') or ''),locations.get(r['merchant'],{})))
+        match=re.search(r'([가-힣0-9·]+(?:대로|로|길))\s*(\d+(?:-\d+)?)',r.get('address') or '')
+        if match:
+            candidate=address_cache.get(str(r.get('spending_region'))+'|'+match[1]+'|'+match[2])
+            if candidate and not re.search(r',| 및 ',r['merchant']):r['location']=candidate
+        r['source_license']=r.get('source_license') or ('공공누리 제3유형 표시 관측; 원문 전체 재배포 제외' if r['institution']=='경기도' else '출처별 이용조건 확인 필요')
+    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 최신 6,000행 · 세종시의회 최신 공개 XLSX · 울산시장 최신 목록 · 경기도 고정 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r['date'],r['id']),reverse=True)}
     temporary=target.with_suffix('.tmp');temporary.write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n');temporary.replace(target)
     print('Collected',len(records),'rows; total',len(combined),'records')
     failures=[s for s in statuses if s['status']=='failed']
