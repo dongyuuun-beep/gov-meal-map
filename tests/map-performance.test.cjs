@@ -24,3 +24,6 @@ ctx.hwaseong=hwaseong;vm.runInContext("allRows=[...records,hwaseong];$('search')
 assert.equal(vm.runInContext('rows().length',ctx),1,'city hall shortcut must show unlocated expenses and clear conflicting filters');
 assert.equal(element('city').value,'all');assert.equal(element('region').value,'all');assert.equal(element('search').value,'');
 assert.equal(element('count').textContent,'1건');assert.match(element('results-title').textContent,/화성시/);
+ctx.provenance={...hwaseong,address_match:'name_city',location:{lat:37.5,lng:126.95,precision:'address'}};
+assert.equal(vm.runInContext('mapView([provenance]).points[0].inferred',ctx),true,'refreshing coordinate evidence must preserve inferred payment-place provenance');
+vm.runInContext('show([provenance])',ctx);assert.match(element('detail').innerHTML,/원문에 주소가 없어/);
