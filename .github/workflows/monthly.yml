@@ -23,6 +23,7 @@ jobs:
           node-version: '22'
       - run: python -m unittest discover -s tests
       - run: node tests/core.test.cjs
+      - run: node tests/map-performance.test.cjs
       - run: pip install -r requirements-geodata.txt
       - name: Refresh official license coordinate index
         continue-on-error: true
