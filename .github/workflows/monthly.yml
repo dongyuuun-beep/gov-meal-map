@@ -13,41 +13,24 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    outputs:
+      retry_cities: ${{ steps.refresh.outputs.retry_cities }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - run: python -m unittest discover -s tests
-      - run: node tests/core.test.cjs
-      - run: node tests/map-performance.test.cjs
-      - run: pip install -r requirements-geodata.txt
-      - name: Refresh official license coordinate index
-        continue-on-error: true
-        run: python scripts/refresh_license_index.py
-      - run: python scripts/collect.py
-      - name: Match explicit city addresses
-        run: python scripts/resolve_city_addresses.py
-      - name: Commit validated monthly snapshot
-        run: |
-          git config user.name 'gov-meal-map-bot'
-          git config user.email 'gov-meal-map-bot@users.noreply.github.com'
-          git add dist/data.json dist/data.full.json.gz dist/data.map.json.gz config/restaurant-index.json.gz config/address-locations.json
-          if ! git diff --cached --quiet; then
-            git commit -m "data: refresh disclosed spending $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main
-            git push
-          fi
-      - uses: actions/upload-artifact@v4
-        with:
-          name: monthly-spending-data
-          path: |
-            dist/data.json
-            dist/data.full.json.gz
-            dist/data.map.json.gz
-  deploy:
+          ref: main
+      - id: refresh
+        uses: ./.github/actions/refresh
+  recover:
     needs: collect
+    if: always() && (needs.collect.result == 'failure' || needs.collect.outputs.retry_cities == 'true')
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: ./.github/actions/refresh
+  deploy:
+    needs: [collect, recover]
+    if: always() && ((needs.collect.result == 'success' && needs.recover.result == 'skipped') || needs.recover.result == 'success')
     uses: ./.github/workflows/deploy.yml

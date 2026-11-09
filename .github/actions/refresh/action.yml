@@ -1,0 +1,63 @@
+name: Refresh and preserve disclosed spending
+description: Validate, collect public records, resolve exact addresses and commit the snapshot.
+outputs:
+  retry_cities:
+    description: Whether another runner should retry city source failures.
+    value: ${{ steps.status.outputs.retry_cities }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+    - run: python -m unittest discover -s tests
+      shell: bash
+    - run: node tests/core.test.cjs
+      shell: bash
+    - run: node tests/map-performance.test.cjs
+      shell: bash
+    - run: pip install -r requirements-geodata.txt
+      shell: bash
+    - name: Refresh official license coordinate index
+      continue-on-error: true
+      run: python scripts/refresh_license_index.py
+      shell: bash
+    - run: python scripts/collect.py
+      shell: bash
+    - name: Match explicit city addresses
+      run: python scripts/resolve_city_addresses.py
+      shell: bash
+    - name: Check city source availability
+      id: status
+      shell: bash
+      run: |
+        python - <<'PY'
+        import json,os
+        data=json.load(open('dist/data.json'))
+        cities=['화성시','용인시','수원시','평택시']
+        sources=[s for s in data.get('source_status',[]) if any(s['source'].startswith(c) for c in cities)]
+        retry=len(sources)<4 or any(s['status']=='failed' or any('curl:' in e.get('error','') for e in s.get('failed_files',[])) for s in sources)
+        with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('retry_cities='+str(retry).lower()+'\n')
+        print('City source retry needed:',retry)
+        PY
+    - name: Commit validated monthly snapshot
+      shell: bash
+      run: |
+        git config user.name 'gov-meal-map-bot'
+        git config user.email 'gov-meal-map-bot@users.noreply.github.com'
+        git add dist/data.json dist/data.full.json.gz dist/data.map.json.gz config/restaurant-index.json.gz config/address-locations.json
+        if ! git diff --cached --quiet; then
+          git commit -m "data: refresh disclosed spending $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push
+        fi
+    - uses: actions/upload-artifact@v4
+      with:
+        name: monthly-spending-data-${{ github.job }}
+        path: |
+          dist/data.json
+          dist/data.full.json.gz
+          dist/data.map.json.gz
