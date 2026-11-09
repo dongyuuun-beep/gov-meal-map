@@ -322,5 +322,13 @@
     "evidence_url": "https://www.openstreetmap.org/way/1240776225",
     "address_evidence_url": "https://www.lakecomo.co.kr/location",
     "verification_method": "원문 도로명 주소와 레이크꼬모 공식 주소 대조, OSM 동명 건물 기준 좌표"
+  },
+  "경기|용인|수지로342번길|7": {
+    "lat": 37.3272376,
+    "lng": 127.0964019,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 수지로342번길 7",
+    "evidence_url": "https://www.openstreetmap.org/way/1280789268"
   }
 }
