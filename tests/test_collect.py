@@ -32,7 +32,7 @@ class ParserTests(unittest.TestCase):
     def test_partial_outage_preserves_failed_source(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);(root/'dist').mkdir();(root/'config').mkdir()
-            old=c.record(c.GG_SEED,1,'2025-09-26','간담회','기존상호','6명',121000,'경기도','감사1과')
+            old=c.record(c.GG_SEED,1,None,'간담회','기존상호','6명',121000,'경기도','감사1과')
             (root/'dist/data.json').write_text(json.dumps({'records':[old]}));(root/'config/locations.json').write_text('{}')
             new=c.record(c.ULSAN+'&useDe=2026-08-04',1,'2026-08-04','간담회','신규상호','9명',360000,'울산광역시','시장')
             def fake_fetch(url):

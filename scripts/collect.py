@@ -162,7 +162,7 @@ def collect():
             candidate=address_cache.get(str(r.get('spending_region'))+'|'+match[1]+'|'+match[2])
             if candidate and not official and not re.search(r',| 및 ',r['merchant']):r['location']=candidate
         r['source_license']=r.get('source_license') or ('공공누리 제3유형 표시 관측; 원문 전체 재배포 제외' if r['institution']=='경기도' else '출처별 이용조건 확인 필요')
-    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 2023~2026년 공개 지출 이력과 최신 6,000행 갱신 · 세종시의회 · 울산시장 · 경기도 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r['date'],r['id']),reverse=True)}
+    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 2023~2026년 공개 지출 이력과 최신 6,000행 갱신 · 세종시의회 · 울산시장 · 경기도 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r.get('date') or '',r['id']),reverse=True)}
     write_snapshot(ROOT/'dist',output)
     print('Collected',len(records),'rows; total',len(combined),'records')
     failures=[s for s in statuses if s['status']=='failed']
