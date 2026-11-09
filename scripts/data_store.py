@@ -14,8 +14,8 @@ def pack_snapshot(data):
         if s not in string_ids:string_ids[s]=len(strings);strings.append(s)
         return string_ids[s]
     for r in data['records']:
-        source={k:r.get(k) for k in ('source_url','institution','department','source_license')}
-        place={k:r.get(k) for k in ('merchant','address','spending_region','location')}
+        source={k:r.get(k) for k in ('source_url','institution','department','source_license','source_city')}
+        place={k:r.get(k) for k in ('merchant','address','spending_region','spending_city','location')}
         sk=json.dumps(source,ensure_ascii=False,sort_keys=True);pk=json.dumps(place,ensure_ascii=False,sort_keys=True)
         if sk not in source_ids:source_ids[sk]=len(sources);sources.append(source)
         if pk not in place_ids:place_ids[pk]=len(places);places.append(place)

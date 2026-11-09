@@ -131,12 +131,23 @@ def collect():
             statuses.append(dict(source=name,status='success',rows=len(batch)))
         except Exception as error:
             statuses.append(dict(source=name,status='failed',error=str(error)))
+    from city_sources import SOURCES,collect_city,spending_city
+    def city_batch(city):
+        try:return city,collect_city(city,fetch,record),None
+        except Exception as error:return city,None,str(error)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        for city,result,error in pool.map(city_batch,SOURCES):
+            if error:statuses.append(dict(source=city+'시 공개 첨부',status='failed',error=error))
+            else:
+                batch,issues,complete=result;records.extend(batch);refreshed.update(complete)
+                statuses.append(dict(source=city+'시 최신 10게시글',status='partial' if issues else 'success',rows=len(batch),failed_files=issues))
+                refreshed.add('dataset:'+city)
     if not refreshed: raise ValueError('All source fetches failed; retaining previous dataset: '+json.dumps(statuses,ensure_ascii=False))
     target=ROOT/'dist/data.json'
     from data_store import read_snapshot,write_snapshot
     previous=read_snapshot(ROOT/'dist')['records'] if target.exists() else []
     old_by_id={r['id']:r for r in previous}
-    combined={r['id']:r for r in previous if r['source_url'] not in refreshed}
+    combined={r['id']:r for r in previous if r['source_url'] not in refreshed and r.get('source_post_url') not in refreshed and r.get('source_file_key') not in refreshed}
     now=datetime.now(timezone.utc).isoformat()
     for r in records:
         old=old_by_id.get(r['id'])
@@ -155,14 +166,16 @@ def collect():
     license_index=build_index(json.loads(gzip.decompress(license_file.read_bytes()))['rows'],None) if license_file.exists() else None
     for r in combined.values():
         r.update(locations.get(r['merchant']+'|'+(r.get('address') or ''),locations.get(r['merchant'],{})))
+        if spending_city(r.get('address') or ''):
+            r['spending_city']=spending_city(r['address']);r['spending_region']='경기'
         official=match_location(r,license_index) if license_index else license_matches.get(r['merchant']+'|'+(r.get('address') or ''))
         if official:r['location']=official
         match=re.search(r'([가-힣0-9·]+(?:대로|로|길))\s*(\d+(?:-\d+)?)',r.get('address') or '')
         if match:
-            candidate=address_cache.get(str(r.get('spending_region'))+'|'+match[1]+'|'+match[2])
-            if candidate and not official and not re.search(r',| 및 ',r['merchant']):r['location']=candidate
+            candidate=address_cache.get(str(r.get('spending_region'))+'|'+str(r.get('spending_city'))+'|'+match[1]+'|'+match[2]) or address_cache.get(str(r.get('spending_region'))+'|'+match[1]+'|'+match[2])
+            if candidate and candidate.get('spending_city',r.get('spending_city'))==r.get('spending_city') and not official and not re.search(r',| 및 ',r['merchant']):r['location']=candidate
         r['source_license']=r.get('source_license') or ('공공누리 제3유형 표시 관측; 원문 전체 재배포 제외' if r['institution']=='경기도' else '출처별 이용조건 확인 필요')
-    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 2023~2026년 공개 지출 이력과 최신 6,000행 갱신 · 세종시의회 · 울산시장 · 경기도 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r.get('date') or '',r['id']),reverse=True)}
+    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 2023~2026년 공개 지출 이력과 최신 6,000행 갱신 · 세종시의회 · 화성·용인·수원·평택 최신 공개 첨부 · 울산시장·경기도 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r.get('date') or '',r['id']),reverse=True)}
     write_snapshot(ROOT/'dist',output)
     print('Collected',len(records),'rows; total',len(combined),'records')
     failures=[s for s in statuses if s['status']=='failed']

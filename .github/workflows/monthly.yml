@@ -29,11 +29,13 @@ jobs:
         continue-on-error: true
         run: python scripts/refresh_license_index.py
       - run: python scripts/collect.py
+      - name: Match explicit city addresses
+        run: python scripts/resolve_city_addresses.py
       - name: Commit validated monthly snapshot
         run: |
           git config user.name 'gov-meal-map-bot'
           git config user.email 'gov-meal-map-bot@users.noreply.github.com'
-          git add dist/data.json dist/data.full.json.gz dist/data.map.json.gz config/restaurant-index.json.gz
+          git add dist/data.json dist/data.full.json.gz dist/data.map.json.gz config/restaurant-index.json.gz config/address-locations.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh disclosed spending $(date -u +%Y-%m-%d)"
             git pull --rebase origin main

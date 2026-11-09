@@ -159,5 +159,158 @@
     "precision": "address",
     "evidence_url": "https://www.openstreetmap.org/way/1240441088",
     "matched_address": "세종특별자치시 용포로 115"
+  },
+  "경기|오목천로|127-2": {
+    "lat": 37.244765,
+    "lng": 126.9741933,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/9092980881",
+    "matched_address": "경기도 수원시 오목천로 127-2",
+    "spending_city": "수원"
+  },
+  "경기|풍덕천로139번길|14": {
+    "lat": 37.3249162,
+    "lng": 127.0960601,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1318029887",
+    "matched_address": "경기도 용인시 풍덕천로139번길 14",
+    "spending_city": "용인"
+  },
+  "경기|문인로|30": {
+    "lat": 37.3338728,
+    "lng": 127.1002486,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/386613132",
+    "matched_address": "경기도 용인시 문인로 30",
+    "spending_city": "용인"
+  },
+  "경기|광교중앙로266번길|30": {
+    "lat": 37.2922905,
+    "lng": 127.0687256,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/705494852",
+    "matched_address": "경기도 수원시 광교중앙로266번길 30",
+    "spending_city": "수원"
+  },
+  "경기|안청로1길|75": {
+    "lat": 37.0184805,
+    "lng": 126.9096491,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/469123931",
+    "matched_address": "경기도 평택시 안청로1길 75",
+    "spending_city": "평택"
+  },
+  "경기|방혜동길|76-7": {
+    "lat": 37.0475572,
+    "lng": 127.0890502,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/9093021343",
+    "matched_address": "경기도 평택시 방혜동길 76-7",
+    "spending_city": "평택"
+  },
+  "경기|아주로|38": {
+    "lat": 37.2782006,
+    "lng": 127.0440841,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/468669598",
+    "matched_address": "경기도 수원시 아주로 38",
+    "spending_city": "수원"
+  },
+  "경기|경수대로|1150": {
+    "lat": 37.3128753,
+    "lng": 126.9894428,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/10690476150",
+    "matched_address": "경기도 수원시 경수대로 1150",
+    "spending_city": "수원"
+  },
+  "경기|정조로800번길|16": {
+    "lat": 37.2794373,
+    "lng": 127.0176407,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/9093021283",
+    "matched_address": "경기도 수원시 정조로800번길 16",
+    "spending_city": "수원"
+  },
+  "경기|월드컵로|438": {
+    "lat": 37.2943647,
+    "lng": 127.0247385,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/way/1240916237",
+    "matched_address": "경기도 수원시 월드컵로 438",
+    "spending_city": "수원"
+  },
+  "경기|동백죽전대로|455-10": {
+    "lat": 37.2803333,
+    "lng": 127.1508955,
+    "precision": "address",
+    "evidence_url": "https://www.openstreetmap.org/node/6298727607",
+    "matched_address": "경기도 용인시 동백죽전대로 455-10",
+    "spending_city": "용인"
+  },
+  "경기|세자로|469": {
+    "lat": 37.2060017459,
+    "lng": 126.9857915889,
+    "precision": "address",
+    "evidence_url": "https://www.ktourmap.com/spotDetails.jsp?contentId=134499",
+    "address_evidence_url": "https://www.hscity.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1187",
+    "matched_address": "경기도 화성시 세자로 469",
+    "spending_city": "화성"
+  },
+  "경기|용인|성산로|159": {
+    "lat": 37.2503245,
+    "lng": 127.1909352,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 성산로 159",
+    "evidence_url": "https://www.openstreetmap.org/node/9092997899"
+  },
+  "경기|용인|용인대학로|74": {
+    "lat": 37.2322489,
+    "lng": 127.1747224,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 용인대학로 74",
+    "evidence_url": "https://www.openstreetmap.org/way/1550149274"
+  },
+  "경기|수원|광교중앙로248번길|95-5": {
+    "lat": 37.2919462,
+    "lng": 127.0681492,
+    "precision": "address",
+    "spending_city": "수원",
+    "matched_address": "경기도 수원시 광교중앙로248번길 95-5",
+    "evidence_url": "https://www.openstreetmap.org/way/765558012"
+  },
+  "경기|수원|도청로|10": {
+    "lat": 37.2867219,
+    "lng": 127.0561084,
+    "precision": "address",
+    "spending_city": "수원",
+    "matched_address": "경기도 수원시 도청로 10",
+    "evidence_url": "https://www.openstreetmap.org/node/9092992815"
+  },
+  "경기|수원|광교호수공원로|320": {
+    "lat": 37.2845105,
+    "lng": 127.057562,
+    "precision": "address",
+    "spending_city": "수원",
+    "matched_address": "경기도 수원시 광교호수공원로 320",
+    "evidence_url": "https://www.openstreetmap.org/way/931993865"
+  },
+  "경기|수원|반달로|31": {
+    "lat": 37.2511552,
+    "lng": 127.0758108,
+    "precision": "address",
+    "spending_city": "수원",
+    "matched_address": "경기도 수원시 반달로 31",
+    "evidence_url": "https://www.openstreetmap.org/way/170474842"
+  },
+  "경기|수원|센트럴타운로|85": {
+    "lat": 37.2903031,
+    "lng": 127.0506142,
+    "precision": "address",
+    "spending_city": "수원",
+    "matched_address": "경기도 수원시 센트럴타운로 85",
+    "evidence_url": "https://www.openstreetmap.org/node/10968574637"
   }
 }

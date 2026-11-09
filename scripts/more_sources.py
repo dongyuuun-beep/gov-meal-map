@@ -19,7 +19,7 @@ def region(address):
     if re.search(r'세종특별|세종시|(?:^|\s)세종(?:\s|$)|보람동|소담동|호려울로|한누리대로|시청대로|나성로|조치원읍|연서면',address):return '세종'
     if '서울' in address:return '서울'
     if address=='중구' or address.startswith('중구 '):return '서울' # Seoul source calls this only for an unprefixed local district.
-    for pattern,name in [('부산','부산'),('대전','대전'),('울산','울산'),('수원|성남|고양|경기도','경기'),('인천','인천')]:
+    for pattern,name in [('부산','부산'),('대전','대전'),('울산','울산'),('수원|화성|용인|평택|성남|고양|경기도','경기'),('인천','인천')]:
         if re.search(pattern,address):return name
     if any(address.startswith(b) for b in SEOUL_BORO):return '서울'
     return None

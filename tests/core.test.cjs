@@ -10,3 +10,8 @@ assert.equal(C.demoRows().every(r=>r.demo===true),true);
 console.log('Aggregation, missing participants, filtering and demo isolation passed.');
 const packed={format:'meal-map-v1',updated_at:'2026-11-09',scope:'test',sources:[{institution:'기관',source_url:'https://example.org'}],places:[{merchant:'식당',location:{lat:37.5,lng:127}}],strings:['간담회','기재 4명'],rows:[['record',0,0,'2026-11-01',0,1,4,80000,'간담회',null,'카드']]};
 const decoded=C.unpackSnapshot(packed);assert.equal(decoded.records[0].merchant,'식당');assert.equal(C.stats(decoded.records).perPerson,20000);
+const cities=[{institution:'서울특별시',spending_city:'수원',amount_krw:80000},{institution:'수원시',spending_city:null,amount_krw:120000}];
+assert.equal(C.filter(cities,{city:'수원'}).length,1);
+assert.equal(C.filter(cities,{city:'수원'})[0].institution,'서울특별시');
+assert.equal(C.filter(cities,{institution:'수원시'})[0].spending_city,null);
+assert.deepEqual(Object.keys(C.cities).sort(),['수원','용인','평택','화성'].sort());
