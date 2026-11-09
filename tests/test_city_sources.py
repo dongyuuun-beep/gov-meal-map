@@ -120,3 +120,13 @@ class CombinedPaymentTests(unittest.TestCase):
   body=workbook([{'A':'일시','B':'장소','C':'사용목적','D':'금액(원)','E':'대상인원'},{'A':'2026-10-12 14:08\n2026/10/12 10:05','B':'빵이당 발안향남점\n쿠팡','C':'의료진 간식비 지급','D':'60,000\n121,470','E':'50'}])
   r=parse_attachment(body,'https://example.org/file','화성','2026년 10월 보건정책과',record)[0]
   self.assertEqual(r['amount_krw'],181470);self.assertEqual(r['amount_components'],[60000,121470]);self.assertEqual(r['merchant'],'빵이당 발안향남점 / 쿠팡');self.assertIsNone(r['location'])
+
+class ExpandedHwaseongTests(unittest.TestCase):
+ def test_higher_post_limit_keeps_default_for_other_cities(self):
+  html=''.join("opDetail('%s')"%i for i in range(35))
+  self.assertEqual(len(posts('화성',html)),10)
+  self.assertEqual(len(posts('화성',html,30)),30)
+ def test_council_approval_date_header(self):
+  body=workbook([{'A':'사용자','B':'승인 일시','C':'사용장소(가맹점용)','D':'사용목적(내역)','E':'사용금액(원)','F':'대상 인원(명)'},{'A':'의장','B':'2026-10-01 12:00','C':'예시식당','D':'간담회 식비','E':'66000','F':'6'}])
+  rs=parse_attachment(body,'https://example.org','화성','2026년 10월 의회',record)
+  self.assertEqual(len(rs),1);self.assertEqual(rs[0]['amount_krw'],66000)

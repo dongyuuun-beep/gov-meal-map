@@ -33,7 +33,7 @@ def split_place(value,address=None):
  return value,address
 
 
-def posts(city,text):
+def posts(city,text,limit=10):
  host=SOURCES[city][0]
  if city=='화성':
   ids=re.findall(r"opDetail\('([0-9]+)'",text);make=lambda n:host+'/www/beffatPublict/BD_selectBeffatPublictBbsType8Viewer.do?q_beffatPublictTy=1008&q_beffatPublictSj=657&bbscttSn='+n
@@ -43,7 +43,7 @@ def posts(city,text):
   ids=re.findall(r"jsView\('1179',\s*'([0-9]+)'",text);make=lambda n:host+'/web/board/BD_board.view.do?bbsCd=1179&seq='+n
  else:
   ids=re.findall(r"boardViewRenewal\('listForm',\s*'[^']*',\s*'Y',\s*'264',\s*'([0-9]+)'",text);make=lambda n:host+'/pyeongtaek/board/post/view.do?bcIdx=264&mid=0110000000&idx='+n
- return [make(n) for n in list(dict.fromkeys(ids))[:10]]
+ return [make(n) for n in list(dict.fromkeys(ids))[:limit]]
 def attachments(city,text):
  host=SOURCES[city][0]
  links=[urljoin(host,html.unescape(u)) for u in re.findall(r'href="([^"\s]*ND_fileDownload[^"\s]+)"',text)]
@@ -128,7 +128,7 @@ def parse_tables(tables,url,city,source_title,record,default_unit=1):
    d={k:str(v).strip() for k,v in cells};h={k:re.sub(r'\s','',v) for k,v in d.items()}
    cols={}
    for k,v in h.items():
-    if re.search('사용일|사용일자|집행일|사용일시|^일시$|^일자$',v):cols['date']=k
+    if re.search('사용일|사용일자|집행일|사용일시|승인일시|^일시$|^일자$',v):cols['date']=k
     if re.search('사용처|사용장소|집행장소|가맹점명|^장소',v):cols['merchant']=k
     if re.search('집행목적|사용목적|집행내역|사용내역|^목적$',v):cols['purpose']=k
     if '금액' in v or v=='사용액':cols['amount']=k
@@ -191,7 +191,15 @@ def parse_pdf(body,url,city,source_title,record):
  return out
 
 def collect_city(city,fetch,record):
- listing=fetch(SOURCES[city][1]);urls=posts(city,listing)
+ if city=='화성':
+  urls=[]
+  for page in range(1,4):
+   page_urls=posts(city,fetch(SOURCES[city][1]+'&q_rowPerPage=30&q_currPage='+str(page)),30)
+   if page>1 and page_urls and set(page_urls)==set(urls[:30]):raise ValueError('Hwaseong pagination repeated first page')
+   urls.extend(page_urls)
+  urls=list(dict.fromkeys(urls))
+ else:
+  listing=fetch(SOURCES[city][1]);urls=posts(city,listing)
  if not urls:raise ValueError('City post list missing')
  def one(url):
   records=[];errors=[];completed=[]
