@@ -2333,5 +2333,558 @@
   "name|화성|하오츠": null,
   "name|화성|커피빈": null,
   "name|화성|그린마트 송산점": null,
-  "name|화성|마카레베이킹": null
+  "name|화성|마카레베이킹": null,
+  "address|화성|동탄오산로|86-11": {
+    "address": "경기 화성시 동탄오산로 86-11, 103호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1974900418408,
+      "lng": 127.097792042898,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EC%98%A4%EC%82%B0%EB%A1%9C+86-11"
+    }
+  },
+  "name|용인|농협파머스마켓": null,
+  "name|수원|오정설렁탕": {
+    "address": "경기 수원시 권선구 호매실로 15",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "오정설렁탕",
+    "location": {
+      "lat": 37.25605121,
+      "lng": 126.97192836,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/300695487"
+    }
+  },
+  "address|화성|동탄역로|150": {
+    "address": "경기 화성시 동탄구 동탄역로 150, 1층 A104호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1994994520556,
+      "lng": 127.096725458554,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EC%97%AD%EB%A1%9C+150"
+    }
+  },
+  "name|용인|우리설렁탕": null,
+  "name|수원|HOY카페": null,
+  "address|화성|동탄오산로|86-3": {
+    "address": "경기 화성시 동탄오산로 86-3, 1동 101호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1981736863942,
+      "lng": 127.097772086755,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EC%98%A4%EC%82%B0%EB%A1%9C+86-3"
+    }
+  },
+  "name|용인|남도주먹고기": null,
+  "name|수원|파리바게트수원신매탄": null,
+  "address|화성|동탄역로|122": {
+    "address": "경기 화성시 동탄역로 122, 201, 202호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1972635665337,
+      "lng": 127.096854728421,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EC%97%AD%EB%A1%9C+122"
+    }
+  },
+  "name|용인|스타벅스 김량장점": null,
+  "name|수원|새빛건강카페샘": null,
+  "name|화성|화성시니어클럽노노카페": null,
+  "name|용인|해초락": {
+    "address": "경기 용인시 기흥구 평촌2로1번길 16-5",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "해초락",
+    "location": {
+      "lat": 37.28053547,
+      "lng": 127.15416601,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/12893803"
+    }
+  },
+  "name|수원|아이갓에브리띵": null,
+  "name|화성|한우골": null,
+  "name|용인|본수원갈비": null,
+  "name|화성|주식회사 와마켓": null,
+  "name|용인|용인돌솥설렁탕": {
+    "address": "경기 용인시 처인구 중부대로 1201-4",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "용인돌솥설렁탕",
+    "location": {
+      "lat": 37.23864887,
+      "lng": 127.1790455,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/10699511"
+    }
+  },
+  "name|화성|투썸플레이스": null,
+  "name|용인|미스타정": {
+    "address": "경기 용인시 처인구 금령로 31",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "미스타정",
+    "location": {
+      "lat": 37.2350638,
+      "lng": 127.19977019,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1912656403"
+    }
+  },
+  "name|화성|쏠리에보": {
+    "address": "경기 화성시 만세구 남양읍 역골중앙로100번길 23-1",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "쏠리에보",
+    "location": {
+      "lat": 37.20852831,
+      "lng": 126.83051107,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1035648774"
+    }
+  },
+  "name|용인|용마식당": null,
+  "name|화성|들밥차반 신동탄반월": null,
+  "name|용인|차가네손두부": {
+    "address": "경기 용인시 처인구 명지로 39",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "차가네손두부",
+    "location": {
+      "lat": 37.23219596,
+      "lng": 127.18923529,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/27110725"
+    }
+  },
+  "name|화성|(주)농협하나로유통": null,
+  "name|용인|마구산 옻닭": null,
+  "name|화성|슈우슈팽": {
+    "address": "경기 화성시 병점구 병점2로 3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "슈우슈팽",
+    "location": {
+      "lat": 37.20529895,
+      "lng": 127.03739927,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2134185827"
+    }
+  },
+  "name|용인|본구이캠프": {
+    "address": "경기 용인시 처인구 양지읍 중부대로 1947",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "본구이캠프",
+    "location": {
+      "lat": 37.22588463,
+      "lng": 127.25896994,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/325871502"
+    }
+  },
+  "name|화성|봉담재": null,
+  "name|용인|몽실빵집 양지로159": null,
+  "name|화성|이가남원추어탕": null,
+  "name|용인|슬로용인": null,
+  "name|화성|희망회센타": null,
+  "name|용인|춘향골남원 추어탕": null,
+  "name|화성|정동각": null,
+  "name|용인|송전커피": null,
+  "name|화성|한식교 신영통점": {
+    "address": "경기 화성시 병점구 영통로50번길 4",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "한식교 신영통점",
+    "location": {
+      "lat": 37.23497032,
+      "lng": 127.06325206,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1579218322"
+    }
+  },
+  "name|용인|토평한우소곱창": null,
+  "name|화성|최씨네 대박고깃집": {
+    "address": "경기 화성시 병점구 효행로1040번길 21-3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "최씨네대박고깃집",
+    "location": {
+      "lat": 37.21239118,
+      "lng": 127.04257381,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1647254031"
+    }
+  },
+  "name|용인|하노이별김량장점": {
+    "address": "경기 용인시 처인구 금령로12번길 27",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "하노이별 김량장점",
+    "location": {
+      "lat": 37.23395204,
+      "lng": 127.20022929,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1323925439"
+    }
+  },
+  "name|화성|산골(남양)": null,
+  "name|용인|우수미회센타": null,
+  "name|화성|국회후생복지위원회": null,
+  "name|용인|마시떡": {
+    "address": "경기 용인시 처인구 명지로16번길 9-24",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "마시떡",
+    "location": {
+      "lat": 37.23313282,
+      "lng": 127.18767913,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1653680703"
+    }
+  },
+  "name|화성|감자꽃": null,
+  "name|용인|아이로키친": {
+    "address": "경기 용인시 처인구 명지로60번길 33-11",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "아이로키친",
+    "location": {
+      "lat": 37.22949706,
+      "lng": 127.18656018,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/445398575"
+    }
+  },
+  "name|화성|달빛에구운고등어화성향남점": {
+    "address": "경기 화성시 만세구 향남읍 푸른들판로 161",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "달빛에구운고등어 화성향남점",
+    "location": {
+      "lat": 37.13445463,
+      "lng": 126.91839487,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/138551991"
+    }
+  },
+  "name|용인|은고개 황금옻닭": {
+    "address": "경기 용인시 처인구 학산로 36",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "은고개황금옻닭",
+    "location": {
+      "lat": 37.23885798,
+      "lng": 127.20249285,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1386387791"
+    }
+  },
+  "name|화성|디저트39 화성시청남": null,
+  "name|용인|라핀카페": null,
+  "name|화성|꾸메뜨락직화쭈꾸미": null,
+  "name|용인|뻘짓거리낙지": {
+    "address": "경기 용인시 처인구 성산로 101",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "뻘짓거리낙지",
+    "location": {
+      "lat": 37.24523548,
+      "lng": 127.18948429,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/280563890"
+    }
+  },
+  "name|화성|까페꼰띠고화성남양점": null,
+  "name|용인|시골집": null,
+  "name|화성|카페오브": null,
+  "name|용인|데니스커피": null,
+  "name|화성|프룻한날": null,
+  "name|용인|자연시루": {
+    "address": "경기 용인시 기흥구 동백중앙로 358-19",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "자연시루",
+    "location": {
+      "lat": 37.28167806,
+      "lng": 127.16087768,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/12583647"
+    }
+  },
+  "name|화성|태안농협 하나로마트": null,
+  "name|용인|상하생고기": null,
+  "name|화성|춘천닭갈비": null,
+  "name|용인|본투비커피": {
+    "address": "경기 용인시 처인구 이동읍 백자로156번길 8-7",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "본투비커피",
+    "location": {
+      "lat": 37.20956721,
+      "lng": 127.16886038,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1356404049"
+    }
+  },
+  "name|화성|교동면옥 동탄레이크꼬모점": {
+    "address": "경기 화성시 동탄구 동탄대로 181",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "교동면옥 동탄레이크꼬모점",
+    "location": {
+      "lat": 37.17058023,
+      "lng": 127.1051767,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1415977585"
+    }
+  },
+  "name|용인|대성부대고기식당": {
+    "address": "경기 용인시 처인구 금령로90번길 3-6",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "대성부대고기식당",
+    "location": {
+      "lat": 37.23506836,
+      "lng": 127.20656556,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/10249394"
+    }
+  },
+  "name|화성|닭이봉 춘천닭갈비 동탄역점": {
+    "address": "경기 화성시 동탄구 동탄역로 102",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "닭이봉 춘천닭갈비 동탄역점",
+    "location": {
+      "lat": 37.19586172,
+      "lng": 127.09815409,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1368830795"
+    }
+  },
+  "name|화성|베베토": null,
+  "name|화성|남양정육식당": null,
+  "name|화성|화담가": {
+    "address": "경기 화성시 효행구 봉담읍 낭내기길 58",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "화담가",
+    "location": {
+      "lat": 37.22134843,
+      "lng": 126.96550539,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1128202520"
+    }
+  },
+  "name|화성|케이크인러브": {
+    "address": "경기 화성시 동탄구 동탄공원로3길 20",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "케이크인러브",
+    "location": {
+      "lat": 37.20792454,
+      "lng": 127.06135607,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/834968203"
+    }
+  },
+  "name|화성|고우시": {
+    "address": "경기 화성시 동탄구 동탄대로 537",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "고우시",
+    "location": {
+      "lat": 37.20262609,
+      "lng": 127.09794207,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1987189823"
+    }
+  },
+  "name|화성|카페루멘": null,
+  "name|화성|고매골": null,
+  "name|화성|보드람치킨": null,
+  "name|화성|동천홍": null,
+  "name|화성|카페인병점": {
+    "address": "경기 화성시 병점구 경기대로 1025-4",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "카페인 병점",
+    "location": {
+      "lat": 37.20714316,
+      "lng": 127.03526544,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/279943486"
+    }
+  },
+  "name|화성|이디야": null,
+  "name|화성|정조효소머리국밥또바": null,
+  "name|화성|더필커피": null,
+  "name|화성|한일마트": null,
+  "name|화성|동탄백합칼국수": null,
+  "name|화성|나주곰탕집": null,
+  "name|화성|쪼꼬미": null,
+  "name|화성|조선화로": null,
+  "name|화성|한정식남원골": null,
+  "name|화성|소랑버섯": {
+    "address": "경기 화성시 효행구 봉담읍 세자로 422",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "소랑버섯",
+    "location": {
+      "lat": 37.20307543,
+      "lng": 126.98361915,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1665811838"
+    }
+  },
+  "name|화성|블루마인드": null,
+  "name|화성|개성집": null,
+  "name|화성|블루컵오브커피": null,
+  "name|화성|미카도스시 화성시청점": {
+    "address": "경기 화성시 만세구 남양읍 역골중앙로 14",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "미카도스시 화성시청점",
+    "location": {
+      "lat": 37.20228809,
+      "lng": 126.82646985,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/839430561"
+    }
+  },
+  "name|화성|정든맛닭개장": null,
+  "name|화성|페이브베이커리": null,
+  "name|화성|명장시대": null,
+  "name|화성|라메르커피": {
+    "address": "경기 화성시 만세구 남양읍 남양중앙로 419",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "라메르커피",
+    "location": {
+      "lat": 37.20361665,
+      "lng": 126.84155571,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1507219353"
+    }
+  },
+  "name|화성|훈장골 봉담점": null,
+  "name|화성|스무시간": {
+    "address": "경기 화성시 병점구 효행로 495",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "스무시간",
+    "location": {
+      "lat": 37.20775874,
+      "lng": 126.98823913,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/123936514"
+    }
+  },
+  "name|화성|설화유수": {
+    "address": "경기 화성시 동탄구 동탄대로23길 121",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "설화유수",
+    "location": {
+      "lat": 37.21117054,
+      "lng": 127.09711043,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1841699036"
+    }
+  },
+  "name|화성|냠냠꼬마김밥": null,
+  "name|화성|한촌설렁탕": null,
+  "name|화성|지리산흑염소": {
+    "address": "경기 화성시 만세구 남양읍 신남동길 106",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "지리산흑염소",
+    "location": {
+      "lat": 37.18895177,
+      "lng": 126.82230738,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/353982704"
+    }
+  },
+  "name|화성|어반리st 동탄점": null,
+  "name|화성|원진방앗간까페": null
 }

@@ -330,5 +330,13 @@
     "spending_city": "용인",
     "matched_address": "경기도 용인시 수지로342번길 7",
     "evidence_url": "https://www.openstreetmap.org/way/1280789268"
+  },
+  "경기|용인|보개원삼로|2033": {
+    "lat": 37.1689703,
+    "lng": 127.3273463,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 보개원삼로 2033",
+    "evidence_url": "https://www.openstreetmap.org/node/13891563576"
   }
 }
