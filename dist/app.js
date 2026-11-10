@@ -21,13 +21,16 @@ function draw(){
   if(lastMapMode!==modeKey){layer.clearLayers();pointLayers.clear();lastMapMode=modeKey;}
   $('zoom-label').textContent=close?'식당별 지출 · 실제 좌표':'지역별 지출';
   if(close){
-    const bounds=map.getBounds().pad(.15);
+    const viewport=map.getBounds(),bounds=viewport.pad(.15);
     const visible=C.visiblePoints(view.points,{south:bounds.getSouth(),north:bounds.getNorth(),west:bounds.getWest(),east:bounds.getEast()});
     const wanted=new Set(visible.map(g=>g.key));
     for(const [key,entry] of pointLayers){if(!wanted.has(key)){layer.removeLayer(entry.marker);pointLayers.delete(key);}}
-    const permanent=map.getZoom()>=16&&visible.length<=40;
+    const onScreen=C.visiblePoints(visible,{south:viewport.getSouth(),north:viewport.getNorth(),west:viewport.getWest(),east:viewport.getEast()});
+    const ranked=onScreen.slice().sort((a,b)=>(metric==='total'?b.total-a.total:(b.perPerson??-1)-(a.perPerson??-1))||a.key.localeCompare(b.key));
+    const labeled=new Set(ranked.slice(0,30).map(g=>g.key));
     const radius=map.getZoom()>=14?6:4;
     for(const g of visible){
+      const permanent=labeled.has(g.key);
       let entry=pointLayers.get(g.key);
       if(!entry){
         const marker=L.circleMarker([g.lat,g.lng],{radius,color:'#ffffff',weight:1,fillColor:g.inferred?'#b77924':'#205b46',fillOpacity:.85}).addTo(layer).on('click',()=>show(g.rows));
@@ -36,11 +39,11 @@ function draw(){
       if(entry.radius!==radius){entry.marker.setRadius(radius);entry.radius=radius;}
       if(entry.metric!==metric||entry.permanent!==permanent){
         entry.marker.unbindTooltip();
-        entry.marker.bindTooltip(()=>safe(g.label)+(g.inferred?' · 상호 대조':'')+' · '+money(metric==='total'?g.total:g.perPerson),{direction:'top',permanent});
+        entry.marker.bindTooltip(()=>permanent?money(metric==='total'?g.total:g.perPerson):safe(g.label)+(g.inferred?' · 상호 대조':'')+' · '+money(metric==='total'?g.total:g.perPerson),{direction:'top',permanent,className:g.inferred?'price-label inferred':'price-label'});
         entry.metric=metric;entry.permanent=permanent;
       }
     }
-    $('map-help').textContent=view.points.length?`화면 주변 ${visible.length.toLocaleString()}곳 · 점을 선택하면 금액·인원·인당 비용을 볼 수 있어요.`:'이 범위의 식당 좌표는 확인 대기 중입니다. 왼쪽 목록에서 원문 지출을 볼 수 있어요.';
+    $('map-help').textContent=view.points.length?`화면 내 ${onScreen.length.toLocaleString()}곳 · 금액 표시 ${labeled.size}곳${onScreen.length>30?' (금액 큰 순)':''} · 점을 선택하면 상세를 볼 수 있어요.`:'이 범위의 식당 좌표는 확인 대기 중입니다. 왼쪽 목록에서 원문 지출을 볼 수 있어요.';
     return;
   }
   layer.clearLayers();pointLayers.clear();
