@@ -20,6 +20,11 @@ def spending_city(address):
  return None
 
 def split_place(value,address=None):
+ lines=[line.strip() for line in value.splitlines() if line.strip()]
+ if len(lines)==2:
+  for i,line in enumerate(lines):
+   if spending_city(line) and re.search(r'(?:대로|로|길)\s*\d',line):
+    address=address or line;value=lines[1-i];break
  # Both "상호(주소)" and "주소(상호)" occur in the official attachments.
  before=re.fullmatch(r'(.+?(?:대로|로|길)\s*\d+(?:-\d+)?[^()]*)\(([^()]+)\)\s*',value)
  if before and spending_city(before[1]):
@@ -49,6 +54,31 @@ def attachments(city,text):
  links=[urljoin(host,html.unescape(u)) for u in re.findall(r'href="([^"\s]*ND_fileDownload[^"\s]+)"',text)]
  for a,b in re.findall(r"yhLib\.file\.download\('([^']+)'\s*,\s*'([^']+)'",text):links.append(host+'/common/file/download.do?atchFileId='+a+'&fileSn='+b)
  return list(dict.fromkeys(links))
+def attachment_names(city,text):
+ names={}
+ for link,body in re.findall(r'<a\b[^>]*href="([^"]*ND_fileDownload[^"]*)"[^>]*>([\s\S]*?)</a>',text,re.I):
+  name=' '.join(html.unescape(re.sub('<[^>]+>',' ',body)).split())
+  name=re.sub(r'^(?:pdf|xlsx?|hwpx?)\s+','',name,flags=re.I)
+  if re.search(r'\.(?:pdf|xlsx?|hwpx?)$',name,re.I):names[urljoin(SOURCES[city][0],html.unescape(link))]=name
+ return names
+
+def dedupe_attachment_versions(rows):
+ from collections import defaultdict,Counter
+ groups=defaultdict(lambda:defaultdict(list));keep=[]
+ for r in rows:
+  if not r.get('source_file_name'):keep.append(r);continue
+  groups[(r['institution'],r.get('source_post_url'),r['source_file_name'])][r['source_url']].append(r)
+ fields=['date','source_date','source_merchant','merchant','purpose','amount_krw','participants','executor','budget_category','payment_method']
+ def signature(r):return tuple(re.sub(r'\s+','',str(r.get(k))) for k in fields)
+ for files in groups.values():
+  winner=max(files,key=lambda u:len(files[u]));counts={u:Counter(signature(r) for r in rs) for u,rs in files.items()}
+  if len(files)>1 and all(all(n<=counts[winner][k] for k,n in c.items()) for c in counts.values()):
+   for r in files[winner]:r['overlapping_attachment_urls']=sorted(u for u in files if u!=winner)
+   keep.extend(files[winner])
+  else:
+   for rs in files.values():keep.extend(rs)
+ return keep
+
 def title(text):
  plain=html.unescape(re.sub('<[^>]+>',' ',text));plain=' '.join(plain.split())
  matches=re.findall(r'20\d\d년\s*\d{1,2}월[^<>]{0,70}?업무추진비[^<>]{0,80}?\([^()]{1,35}\)',plain)
@@ -162,6 +192,15 @@ def parse_tables(tables,url,city,source_title,record,default_unit=1):
    out.append(r)
  return out,found
 
+def validate_pdf_totals(rows,text):
+ # A contradictory publisher unit must not turn a 758,000-won meal into 758 million.
+ summary=text.split('세부')[0]
+ if not re.search(r'단위[^\n]{0,15}천원',summary):return
+ for m in re.finditer(r'(?:업무추진비|합계|(?:\d{1,2})월)\s+(\d+)\s*/\s*([\d,]+(?:\.\d+)?)',summary):
+  count=int(m[1]);declared=float(m[2].replace(',',''))*1000;actual=sum(r['amount_krw'] for r in rows)
+  if count==len(rows) and declared>0 and (actual==declared*1000 or actual*1000==declared):
+   raise ValueError('Conflicting source units: detail amounts and summary total differ by 1000; excluded pending confirmation')
+
 def parse_pdf(body,url,city,source_title,record):
  import pdfplumber
  out=[];found=False
@@ -177,6 +216,7 @@ def parse_pdf(body,url,city,source_title,record):
     batch,recognized=parse_tables([(str(pi)+'!table'+str(ti),cells)],url,city,source_title,record,default_unit)
     table_found=table_found or recognized;page_rows.extend(batch)
    if table_found:
+    validate_pdf_totals(page_rows,text)
     found=True;out.extend(page_rows);continue
    unit=1000 if re.search(r'(?:단위|금액)[\s:：(]*천원',text) else 1
    for ri,line in enumerate(text.splitlines()):
@@ -190,29 +230,34 @@ def parse_pdf(body,url,city,source_title,record):
  if not found:raise ValueError('PDF expense rows not recognized')
  return out
 
-def collect_city(city,fetch,record):
- if city=='화성':
-  urls=[]
-  for page in range(1,4):
-   page_urls=posts(city,fetch(SOURCES[city][1]+'&q_rowPerPage=30&q_currPage='+str(page)),30)
-   if page>1 and page_urls and set(page_urls)==set(urls[:30]):raise ValueError('Hwaseong pagination repeated first page')
-   urls.extend(page_urls)
-  urls=list(dict.fromkeys(urls))
+CITY_PAGES={'화성':(30,3),'용인':(50,2),'수원':(50,2)}
+CITY_HISTORY_PAGES={'화성':(30,10),'용인':(50,4),'수원':(50,4)}
+def collect_city(city,fetch,record,history=False):
+ if city in CITY_PAGES:
+  size,pages=(CITY_HISTORY_PAGES if history else CITY_PAGES)[city];urls=[];seen=set()
+  for page in range(1,pages+1):
+   page_urls=posts(city,fetch(SOURCES[city][1]+'&q_rowPerPage='+str(size)+'&q_currPage='+str(page)),size)
+   if page_urls and set(page_urls).issubset(seen):raise ValueError(city+' pagination repeated page; retaining previous source')
+   urls.extend(url for url in page_urls if url not in seen);seen.update(page_urls)
+   if len(page_urls)<size:break
  else:
   listing=fetch(SOURCES[city][1]);urls=posts(city,listing)
  if not urls:raise ValueError('City post list missing')
  def one(url):
   records=[];errors=[];completed=[]
   try:
-   text=fetch(url);links=attachments(city,text)
+   text=fetch(url);links=attachments(city,text);names=attachment_names(city,text)
    if not links:raise ValueError('No public attachments found')
    for fi,link in enumerate(links):
     try:
      body=subprocess.check_output(['curl','-4','-fsSL','--retry','1','--max-time','30',link])
      batch=parse_attachment(body,link,city,title(text),record)
-     assign_post(batch,url,fi);records.extend(batch);completed.append(file_key(url,fi))
+     assign_post(batch,url,fi)
+     for r in batch:r['source_file_name']=names.get(link)
+     records.extend(batch);completed.append(file_key(url,fi))
     except Exception as e:errors.append({'url':link,'error':str(e)})
   except Exception as e:errors.append({'url':url,'error':str(e)})
+  records=dedupe_attachment_versions(records)
   if not errors:completed.append(url)
   return records,errors,completed
  rows=[];errors=[];complete=[]

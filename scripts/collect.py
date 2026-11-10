@@ -131,7 +131,7 @@ def collect():
             statuses.append(dict(source=name,status='success',rows=len(batch)))
         except Exception as error:
             statuses.append(dict(source=name,status='failed',error=str(error)))
-    from city_sources import SOURCES,collect_city,spending_city,split_place
+    from city_sources import SOURCES,CITY_PAGES,collect_city,spending_city,split_place
     def city_batch(city):
         try:return city,collect_city(city,fetch,record),None
         except Exception as error:return city,None,str(error)
@@ -140,7 +140,7 @@ def collect():
             if error:statuses.append(dict(source=city+'시 공개 첨부',status='failed',error=error))
             else:
                 batch,issues,complete=result;records.extend(batch);refreshed.update(complete)
-                statuses.append(dict(source=city+('시 최신 90게시글' if city=='화성' else '시 최신 10게시글'),status='partial' if issues else 'success',rows=len(batch),failed_files=issues))
+                statuses.append(dict(source=city+'시 최신 '+str(CITY_PAGES[city][0]*CITY_PAGES[city][1] if city in CITY_PAGES else 10)+'게시글',status='partial' if issues else 'success',rows=len(batch),failed_files=issues))
                 refreshed.add('dataset:'+city)
     from hwaseong_council import collect_council
     try:
@@ -185,7 +185,7 @@ def collect():
             candidate=address_cache.get(str(r.get('spending_region'))+'|'+str(r.get('spending_city'))+'|'+match[1]+'|'+match[2]) or address_cache.get(str(r.get('spending_region'))+'|'+match[1]+'|'+match[2])
             if candidate and candidate.get('spending_city',r.get('spending_city'))==r.get('spending_city') and not official and not re.search(r',| 및 ',r['merchant']):r['location']=candidate
         r['source_license']=r.get('source_license') or ('공공누리 제3유형 표시 관측; 원문 전체 재배포 제외' if r['institution']=='경기도' else '출처별 이용조건 확인 필요')
-    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 2023~2026년 공개 지출 이력과 최신 6,000행 갱신 · 세종시의회 · 화성시 최신 90게시글·화성시의회 최신 10개월·용인·수원·평택 최신 공개 첨부 · 울산시장·경기도 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r.get('date') or '',r['id']),reverse=True)}
+    output={'updated_at':now,'source_status':statuses,'scope':'서울시 본청 2023~2026년 공개 지출 이력과 최신 6,000행 갱신 · 세종시의회 · 화성·용인·수원 과거 공개 이력과 최신 90·100·100게시글 갱신 · 화성시의회 10개월 · 평택 공개 첨부 · 울산시장·경기도 예시. 전국 전수 아님.','records':sorted(combined.values(),key=lambda r:(r.get('date') or '',r['id']),reverse=True)}
     write_snapshot(ROOT/'dist',output)
     print('Collected',len(records),'rows; total',len(combined),'records')
     failures=[s for s in statuses if s['status']=='failed']

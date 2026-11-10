@@ -130,3 +130,47 @@ class ExpandedHwaseongTests(unittest.TestCase):
   body=workbook([{'A':'사용자','B':'승인 일시','C':'사용장소(가맹점용)','D':'사용목적(내역)','E':'사용금액(원)','F':'대상 인원(명)'},{'A':'의장','B':'2026-10-01 12:00','C':'예시식당','D':'간담회 식비','E':'66000','F':'6'}])
   rs=parse_attachment(body,'https://example.org','화성','2026년 10월 의회',record)
   self.assertEqual(len(rs),1);self.assertEqual(rs[0]['amount_krw'],66000)
+
+class CityPagingTests(unittest.TestCase):
+ def test_paging_and_repeated_notice_are_not_double_counted(self):
+  from city_sources import collect_city
+  body=workbook([{'A':'일시','B':'장소','C':'사용목적','D':'금액(원)'},{'A':'2026-10-01','B':'예시식당','C':'간담회 식사','D':'50000'}])
+  def fetch(url):
+   if 'list.do' in url:return "jsView('1179', '1');jsView('1179', '"+('3' if 'q_currPage=2' in url else '2')+"')"
+   return '<a href="/component/file/ND_fileDownload.do?file=1">첨부</a>'
+  with patch.dict('city_sources.CITY_PAGES',{'수원':(2,2)}),patch('city_sources.subprocess.check_output',return_value=body):
+   rows,errors,_=collect_city('수원',fetch,record)
+  self.assertEqual(len(rows),3);self.assertEqual(len({r['id'] for r in rows}),3);self.assertEqual(errors,[])
+ def test_ignored_page_parameter_fails_instead_of_claiming_history(self):
+  from city_sources import collect_city
+  with patch.dict('city_sources.CITY_PAGES',{'수원':(2,2)}):
+   with self.assertRaisesRegex(ValueError,'repeated page'):collect_city('수원',lambda u:"jsView('1179', '1');jsView('1179', '2')",record)
+
+class WrappedPlaceAddressTests(unittest.TestCase):
+ def test_separate_address_line_is_used_in_either_order(self):
+  from city_sources import split_place
+  self.assertEqual(split_place('예시식당\n용인시 처인구 용인대학로 74'),('예시식당','용인시 처인구 용인대학로 74'))
+  self.assertEqual(split_place('수원시 팔달구 예시로 12\n예시식당'),('예시식당','수원시 팔달구 예시로 12'))
+  self.assertEqual(split_place('한스케익\n인계점'),('한스케익\n인계점',None))
+
+class SourceUnitConflictTests(unittest.TestCase):
+ def test_contradictory_detail_and_summary_units_are_quarantined(self):
+  from city_sources import validate_pdf_totals
+  text='집행내역 총괄\n(단위 : 건/천원)\n업무추진비 6/1,579\n세부집행내역\n(단위 : 천원)'
+  with self.assertRaisesRegex(ValueError,'Conflicting source units'):
+   validate_pdf_totals([{'amount_krw':n*1000} for n in [90000,758000,45000,210000,153000,323000]],text)
+  validate_pdf_totals([{'amount_krw':n} for n in [90000,758000,45000,210000,153000,323000]],text)
+  validate_pdf_totals([{'amount_krw':90000000}],text) # A food subset cannot validate a whole-document total.
+
+class AttachmentVersionTests(unittest.TestCase):
+ def row(self,i,url,name='same.pdf',amount=50000):
+  r=record(url,str(i),'2026-10-01','직원 식사','예시식당','5명',amount,'수원시','정책과');r.update(source_post_url='https://example.org/post',source_file_name=name,source_date='2026-10-01 12:00',executor='과장');return r
+ def test_same_named_attachment_superset_is_counted_once(self):
+  from city_sources import dedupe_attachment_versions
+  a=self.row(1,'https://example.org/a');b=self.row(1,'https://example.org/b');c=self.row(2,'https://example.org/b',amount=70000)
+  out=dedupe_attachment_versions([a,b,c]);self.assertEqual(len(out),2);self.assertEqual(sum(r['amount_krw'] for r in out),120000)
+  self.assertEqual(out[0]['overlapping_attachment_urls'],['https://example.org/a'])
+ def test_distinct_budgets_and_repeated_rows_within_one_file_are_preserved(self):
+  from city_sources import dedupe_attachment_versions
+  a=self.row(1,'https://example.org/a','기관운영.pdf');b=self.row(1,'https://example.org/b','시책추진.pdf');self.assertEqual(len(dedupe_attachment_versions([a,b])),2)
+  a=self.row(1,'https://example.org/a');b=self.row(2,'https://example.org/a');self.assertEqual(len(dedupe_attachment_versions([a,b])),2)

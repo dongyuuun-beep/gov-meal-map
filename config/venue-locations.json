@@ -773,7 +773,6 @@
   "name|화성|카페로그": null,
   "name|화성|본수원갈비": null,
   "name|화성|배대감갈비촌": null,
-  "name|화성|이디야 동탄체육공원점": null,
   "name|화성|예담들깨삼계탕": null,
   "name|화성|히마레": null,
   "name|화성|형수님 보리밥": {
@@ -1637,7 +1636,6 @@
   "name|용인|영문리 커피": null,
   "name|화성|셀렉토커피 화성시청": null,
   "name|용인|커피빈": null,
-  "name|화성|할리스": null,
   "name|용인|사담손만두용인점": {
     "address": "경기 용인시 처인구 지삼로586번길 3",
     "spending_city": "용인",
@@ -1652,7 +1650,6 @@
       "evidence_url": "https://place.map.kakao.com/825488119"
     }
   },
-  "name|화성|메가커피": null,
   "name|용인|대덕골보쌈칼국수": null,
   "name|화성|자연그리고어반 화성": null,
   "name|용인|다리원": {
@@ -2164,7 +2161,6 @@
       "evidence_url": "https://place.map.kakao.com/2099180703"
     }
   },
-  "name|화성|이디야 화성봉담동화점": null,
   "name|화성|백암진순대국감자탕": {
     "address": "경기 화성시 동탄구 동탄대로14길 5-57",
     "spending_city": "화성",
@@ -2783,7 +2779,6 @@
       "evidence_url": "https://place.map.kakao.com/279943486"
     }
   },
-  "name|화성|이디야": null,
   "name|화성|정조효소머리국밥또바": null,
   "name|화성|더필커피": null,
   "name|화성|한일마트": null,
@@ -2886,5 +2881,2875 @@
     }
   },
   "name|화성|어반리st 동탄점": null,
-  "name|화성|원진방앗간까페": null
+  "name|화성|원진방앗간까페": null,
+  "address|화성|남양로|675": {
+    "address": "경기도 화성시 남양읍 남양로 675, 102호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1986847595508,
+      "lng": 126.826327050595,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EB%82%A8%EC%96%91%EB%A1%9C+675"
+    }
+  },
+  "address|용인|고림로|140": {
+    "address": "용인시 처인구 고림로 140",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2439547425263,
+      "lng": 127.219482666383,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EA%B3%A0%EB%A6%BC%EB%A1%9C+140"
+    }
+  },
+  "name|수원|이화정": {
+    "address": "경기 수원시 팔달구 효원로235번길 46-14",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "이화정",
+    "location": {
+      "lat": 37.26457936,
+      "lng": 127.02901841,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/13271622"
+    }
+  },
+  "address|화성|시청로202번길|8-52": {
+    "address": "경기도 화성시 남양읍 시청로202번길 8-52, 1층",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1971198148773,
+      "lng": 126.82892870004,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C202%EB%B2%88%EA%B8%B8+8-52"
+    }
+  },
+  "address|용인|중부대로|1538": {
+    "address": "용인시 처인구 중부대로 1538",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2328344403708,
+      "lng": 127.215097696754,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1538"
+    }
+  },
+  "name|수원|샘프레베네": null,
+  "address|화성|시청로202번길|86": {
+    "address": "경기도 화성시 남양읍 시청로202번길 86, 102호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1971166090876,
+      "lng": 126.826722841808,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C202%EB%B2%88%EA%B8%B8+86"
+    }
+  },
+  "address|용인|중부대로|1175": {
+    "address": "용인시 처인구 중부대로 1175",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2390643063736,
+      "lng": 127.176305319799,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1175"
+    }
+  },
+  "name|수원|피피케이키친": null,
+  "address|화성|꽃내음2길|16-2": {
+    "address": "화성시 만세구 꽃내음2길 16-2",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2857895983607,
+      "lng": 126.814034946879,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EA%BD%83%EB%82%B4%EC%9D%8C2%EA%B8%B8+16-2"
+    }
+  },
+  "address|용인|동부로|1190": {
+    "address": "용인시 처인구 원삼면 동부로 1190",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.18036554212,
+      "lng": 127.304549954818,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9B%90%EC%82%BC%EB%A9%B4+%EB%8F%99%EB%B6%80%EB%A1%9C+1190"
+    }
+  },
+  "name|수원|동해한정식": null,
+  "address|화성|시청로|57": {
+    "address": "화성시 만세구 남양읍 시청로 57",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2047874135691,
+      "lng": 126.822029421665,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C+57"
+    }
+  },
+  "address|용인|중부대로1676번길|12": {
+    "address": "용인시 처인구 중부대로1676번길 12",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2314635510191,
+      "lng": 127.23026170926,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C1676%EB%B2%88%EA%B8%B8+12"
+    }
+  },
+  "name|수원|구운정": {
+    "address": "경기 수원시 팔달구 효원로291번길 21",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "구운정",
+    "location": {
+      "lat": 37.26240476,
+      "lng": 127.03385947,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/962781935"
+    }
+  },
+  "address|화성|수노을중앙로|162": {
+    "address": "화성시 만세구 수노을중앙로 162",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2826915255569,
+      "lng": 126.819012057171,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EC%88%98%EB%85%B8%EC%9D%84%EC%A4%91%EC%95%99%EB%A1%9C+162"
+    }
+  },
+  "address|용인|금령로|99": null,
+  "name|수원|우계골 본점": {
+    "address": "경기 수원시 팔달구 권광로175번길 100",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "우계골 본점",
+    "location": {
+      "lat": 37.26483304,
+      "lng": 127.02693851,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1301409424"
+    }
+  },
+  "address|화성|수노을중앙로|146": {
+    "address": "화성시 만세구 수노을중앙로 146",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2840091438211,
+      "lng": 126.81885520248,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EC%88%98%EB%85%B8%EC%9D%84%EC%A4%91%EC%95%99%EB%A1%9C+146"
+    }
+  },
+  "address|용인|금학로|155": {
+    "address": "용인시 처인구 금학로 155",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2403662155482,
+      "lng": 127.181089103792,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EA%B8%88%ED%95%99%EB%A1%9C+155"
+    }
+  },
+  "name|수원|정은상회": null,
+  "address|화성|역골로49번길|14": {
+    "address": "화성시 만세구 남양읍 역골로49번길 14",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2028777721756,
+      "lng": 126.825879143525,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%A1%9C49%EB%B2%88%EA%B8%B8+14"
+    }
+  },
+  "address|용인|백암로201번길|11": {
+    "address": "용인시 처인구 백암면 백암로201번길 11",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1646153312847,
+      "lng": 127.373636049791,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EB%B0%B1%EC%95%94%EB%A9%B4+%EB%B0%B1%EC%95%94%EB%A1%9C201%EB%B2%88%EA%B8%B8+11"
+    }
+  },
+  "name|수원|송도갈비": null,
+  "address|화성|와우로15번길|29-11": {
+    "address": "경기 화성시 봉담읍 와우로15번길 29-11",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2170366077818,
+      "lng": 126.971461289455,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%ED%9A%A8%ED%96%89%EA%B5%AC+%EB%B4%89%EB%8B%B4%EC%9D%8D+%EC%99%80%EC%9A%B0%EB%A1%9C15%EB%B2%88%EA%B8%B8+29-11"
+    }
+  },
+  "address|용인|지삼로586번길|3": {
+    "address": "용인시 처인구 지삼로586번길 3",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.240268529616,
+      "lng": 127.165327172264,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A7%80%EC%82%BC%EB%A1%9C586%EB%B2%88%EA%B8%B8+3"
+    }
+  },
+  "name|수원|일식미요이": {
+    "address": "경기 수원시 권선구 권선로 700",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "일식미요이",
+    "location": {
+      "lat": 37.25865895,
+      "lng": 127.02759351,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1957406821"
+    }
+  },
+  "address|화성|꽃내음2길|21": {
+    "address": "화성시 만세구 꽃내음2길 21",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2862197122073,
+      "lng": 126.813435988516,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EA%BD%83%EB%82%B4%EC%9D%8C2%EA%B8%B8+21"
+    }
+  },
+  "address|용인|포은대로|1270": {
+    "address": "용인시 처인구 모현읍 포은대로 1270",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.3390309454171,
+      "lng": 127.182494822034,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EB%AA%A8%ED%98%84%EC%9D%8D+%ED%8F%AC%EC%9D%80%EB%8C%80%EB%A1%9C+1270"
+    }
+  },
+  "name|수원|충남떡집": null,
+  "address|화성|동탄오산로|86-8": {
+    "address": "경기 화성시 동탄오산로 86-8, 1층 110, 111호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1978761639534,
+      "lng": 127.097108832387,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EC%98%A4%EC%82%B0%EB%A1%9C+86-8"
+    }
+  },
+  "address|용인|성산로|96": {
+    "address": "용인시 처인구 성산로 96",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2443983711488,
+      "lng": 127.190349918529,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%84%B1%EC%82%B0%EB%A1%9C+96"
+    }
+  },
+  "name|수원|등촌샤브칼국수": null,
+  "address|화성|노들길|6-16": {
+    "address": "화성시 만세구 노들길 6-16",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2805228135562,
+      "lng": 126.819305014432,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%85%B8%EB%93%A4%EA%B8%B8+6-16"
+    }
+  },
+  "address|용인|한터로|18": {
+    "address": "용인시 처인구 한터로 18",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2542555216651,
+      "lng": 127.213986171272,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%ED%95%9C%ED%84%B0%EB%A1%9C+18"
+    }
+  },
+  "name|수원|행화촌": null,
+  "address|화성|발안로|193": {
+    "address": "화성시 만세구 발안로 193",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1308255943852,
+      "lng": 126.931633107092,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%ED%96%A5%EB%82%A8%EC%9D%8D+%EB%B0%9C%EC%95%88%EB%A1%9C+193"
+    }
+  },
+  "address|용인|중부대로|1396": {
+    "address": "용인시 처인구 중부대로 1396",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2327376751742,
+      "lng": 127.19912127539,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1396"
+    }
+  },
+  "name|수원|화홍농산물": null,
+  "address|화성|동탄대로|537": {
+    "address": "경기 화성시 동탄대로 537, 426~439호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2022219858229,
+      "lng": 127.097923632495,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EB%8C%80%EB%A1%9C+537"
+    }
+  },
+  "address|용인|백령로|56": {
+    "address": "용인시 처인구 백령로 56",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2636658795506,
+      "lng": 127.19058689332,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EB%B0%B1%EB%A0%B9%EB%A1%9C+56"
+    }
+  },
+  "name|수원|한길순대": {
+    "address": "경기 수원시 권선구 세권로 185",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "한길순대",
+    "location": {
+      "lat": 37.2563087,
+      "lng": 127.02500676,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/11314317"
+    }
+  },
+  "address|화성|남이로|385": {
+    "address": "화성시 효행구 남이로 385",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2600948846064,
+      "lng": 126.844500128175,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%ED%9A%A8%ED%96%89%EA%B5%AC+%EB%B9%84%EB%B4%89%EB%A9%B4+%EB%82%A8%EC%9D%B4%EB%A1%9C+385"
+    }
+  },
+  "address|용인|동백중앙로|221": {
+    "address": "용인시 기흥구 동백중앙로 221",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2731199071375,
+      "lng": 127.150530173018,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EA%B8%B0%ED%9D%A5%EA%B5%AC+%EB%8F%99%EB%B0%B1%EC%A4%91%EC%95%99%EB%A1%9C+221"
+    }
+  },
+  "name|수원|만수전복": {
+    "address": "경기 수원시 팔달구 경수대로480번길 13",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "만수전복",
+    "location": {
+      "lat": 37.26882878,
+      "lng": 127.02855779,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1023462794"
+    }
+  },
+  "address|화성|역골로|22": {
+    "address": "화성시 만세구 남양읍 역골로 22",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2020169215179,
+      "lng": 126.827860941092,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%A1%9C+22"
+    }
+  },
+  "address|용인|동천로|339": {
+    "address": "용인시 수지구 동천로 339",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.3415340835717,
+      "lng": 127.068058858307,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%88%98%EC%A7%80%EA%B5%AC+%EB%8F%99%EC%B2%9C%EB%A1%9C+339"
+    }
+  },
+  "name|수원|개화경양식": {
+    "address": "경기 수원시 팔달구 권광로180번길 18-11",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "개화경양식",
+    "location": {
+      "lat": 37.26280664,
+      "lng": 127.03378638,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/477750068"
+    }
+  },
+  "address|화성|동탄대로|489": {
+    "address": "경기 화성시 동탄대로 489, 103호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1974062084016,
+      "lng": 127.098270640431,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EB%8C%80%EB%A1%9C+489"
+    }
+  },
+  "address|용인|백자로|127-1": {
+    "address": "용인시 처인구 이동읍 백자로 127-1",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2121476048137,
+      "lng": 127.169766050854,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9D%B4%EB%8F%99%EC%9D%8D+%EB%B0%B1%EC%9E%90%EB%A1%9C+127-1"
+    }
+  },
+  "name|수원|이은영모듬김치\n찌개": null,
+  "address|화성|장지남길3번길|3": {
+    "address": "화성시 동탄구 장지남길3번길 3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1539333408748,
+      "lng": 127.118034470771,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EC%9E%A5%EC%A7%80%EB%82%A8%EA%B8%B83%EB%B2%88%EA%B8%B8+3"
+    }
+  },
+  "address|용인|중부대로|1183": {
+    "address": "용인시 처인구 중부대로 1183",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2387582233712,
+      "lng": 127.176908217565,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1183"
+    }
+  },
+  "name|수원|투썸플레이스 수원시청점": {
+    "address": "경기 수원시 팔달구 권광로175번길 52",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "투썸플레이스 수원시청점",
+    "location": {
+      "lat": 37.26415215,
+      "lng": 127.02946919,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/797516911"
+    }
+  },
+  "address|화성|현대기아로|314": {
+    "address": "경기도 화성시 현대기아로 314",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1780806202563,
+      "lng": 126.844253764374,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%ED%98%84%EB%8C%80%EA%B8%B0%EC%95%84%EB%A1%9C+314"
+    }
+  },
+  "address|용인|중부대로|1113-1": {
+    "address": "용인시 처인구 중부대로 1113-1",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2416054869128,
+      "lng": 127.16954222745,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1113-1"
+    }
+  },
+  "name|수원|상무초밥\n수원인계점": {
+    "address": "경기 수원시 팔달구 권광로 195",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "상무초밥 수원인계점",
+    "location": {
+      "lat": 37.26487211,
+      "lng": 127.03278394,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/264565917"
+    }
+  },
+  "address|화성|동탄대로|495": {
+    "address": "경기 화성시 동탄대로 495, 103호",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1979569308405,
+      "lng": 127.098271241651,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EB%8C%80%EB%A1%9C+495"
+    }
+  },
+  "address|용인|고기로|188": {
+    "address": "용인시 수지구 고기로 188",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.3512907604863,
+      "lng": 127.085337765258,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%88%98%EC%A7%80%EA%B5%AC+%EA%B3%A0%EA%B8%B0%EB%A1%9C+188"
+    }
+  },
+  "name|수원|남도예찬": {
+    "address": "경기 수원시 영통구 센트럴타운로 85",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "남도예찬",
+    "location": {
+      "lat": 37.29090107,
+      "lng": 127.05134574,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1998349174"
+    }
+  },
+  "address|화성|신남안길|3022": null,
+  "address|용인|한터로|58": {
+    "address": "용인시 처인구 한터로 58",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2526678724373,
+      "lng": 127.217406299688,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%ED%95%9C%ED%84%B0%EB%A1%9C+58"
+    }
+  },
+  "name|수원|고향옥\n얼큰순대국": null,
+  "address|화성|역골로|76": {
+    "address": "경기도 화성시 남양읍 역골로 76 1층",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2057664627244,
+      "lng": 126.823937761555,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%A1%9C+76"
+    }
+  },
+  "name|용인|큰맛설렁탕": null,
+  "name|수원|박은자맛사랑": null,
+  "address|화성|화성로|1242-6": {
+    "address": "화성시 만세구 남양읍 화성로 1242-6",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2149246718039,
+      "lng": 126.819767345367,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%ED%99%94%EC%84%B1%EB%A1%9C+1242-6"
+    }
+  },
+  "name|용인|스타벅스": null,
+  "name|수원|본수원 인계점": null,
+  "address|화성|꽃내음1길|19-18": {
+    "address": "화성시 만세구 꽃내음1길 19-18",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.283806346492,
+      "lng": 126.818401921551,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EA%BD%83%EB%82%B4%EC%9D%8C1%EA%B8%B8+19-18"
+    }
+  },
+  "name|용인|장수마을": null,
+  "name|수원|행복한밥상": null,
+  "address|화성|동화역말길|67": {
+    "address": "화성시 효행구 봉담읍 동화역말길 67",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2166534222816,
+      "lng": 126.967391513319,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%ED%9A%A8%ED%96%89%EA%B5%AC+%EB%B4%89%EB%8B%B4%EC%9D%8D+%EB%8F%99%ED%99%94%EC%97%AD%EB%A7%90%EA%B8%B8+67"
+    }
+  },
+  "name|용인|다정식당": null,
+  "name|수원|영천식당": null,
+  "address|화성|궁평항로|106": null,
+  "name|용인|소담골": {
+    "address": "경기 용인시 처인구 이동읍 상덕로 2-1",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "소담골",
+    "location": {
+      "lat": 37.21236303,
+      "lng": 127.16895787,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/244514986"
+    }
+  },
+  "name|수원|황소곱창막창": null,
+  "address|화성|향남로|470": {
+    "address": "화성시 만세구 향남읍 향남로 470",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1374711167278,
+      "lng": 126.924665037515,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%ED%96%A5%EB%82%A8%EC%9D%8D+%ED%96%A5%EB%82%A8%EB%A1%9C+470"
+    }
+  },
+  "name|용인|춘향골남원추어탕": null,
+  "name|수원|남수원장어": null,
+  "address|화성|꽃내음1길|19-30": {
+    "address": "화성시 만세구 꽃내음1길 19-30",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2826348932853,
+      "lng": 126.818510508365,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EA%BD%83%EB%82%B4%EC%9D%8C1%EA%B8%B8+19-30"
+    }
+  },
+  "name|용인|연탄순대": {
+    "address": "경기 용인시 처인구 중부대로 1183",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "연탄순대",
+    "location": {
+      "lat": 37.2387584,
+      "lng": 127.17690788,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2009580181"
+    }
+  },
+  "name|수원|아구집": null,
+  "address|화성|신남안길|305": {
+    "address": "화성시 만세구 남양읍 신남안길 305",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1914092517042,
+      "lng": 126.821021384132,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%A0%EB%82%A8%EC%95%88%EA%B8%B8+305"
+    }
+  },
+  "name|용인|경복궁개성손만두": null,
+  "name|수원|진미촌": {
+    "address": "경기 수원시 권선구 장다리로 101-1",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "진미촌",
+    "location": {
+      "lat": 37.25938554,
+      "lng": 127.02152446,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1247275957"
+    }
+  },
+  "address|화성|화성로|1166": {
+    "address": "화성시 만세구 남양읍 화성로 1166",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2110311163736,
+      "lng": 126.813288252778,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%ED%99%94%EC%84%B1%EB%A1%9C+1166"
+    }
+  },
+  "name|용인|용인우렁각시": null,
+  "name|수원|수원시청역 파리바게뜨": null,
+  "name|화성|단순히": {
+    "address": "경기 화성시 만세구 남양읍 시청로202번길 8-67",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "단순히",
+    "location": {
+      "lat": 37.19630967,
+      "lng": 126.82898403,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/58187929"
+    }
+  },
+  "name|용인|오가네생선구이": {
+    "address": "경기 용인시 처인구 중부대로 1113-1",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "오가네생선구이",
+    "location": {
+      "lat": 37.24157864,
+      "lng": 127.16954036,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1403502452"
+    }
+  },
+  "name|수원|부찌식당": null,
+  "name|화성|초옹장": null,
+  "name|용인|여수미가": null,
+  "name|수원|동해수산": null,
+  "name|화성|신이천밥상": {
+    "address": "경기 화성시 만세구 남양읍 남양로 549-11",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "신 이천밥상",
+    "location": {
+      "lat": 37.18894506,
+      "lng": 126.82025201,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1899614432"
+    }
+  },
+  "name|용인|서울감자탕": null,
+  "name|수원|달구운바람스타": null,
+  "name|화성|장수본가해장국": null,
+  "name|용인|처인옥": null,
+  "name|수원|밀알왕순대": {
+    "address": "경기 수원시 팔달구 팔달문로 20",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "밀알왕순대",
+    "location": {
+      "lat": 37.27757967,
+      "lng": 127.01979996,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/27206418"
+    }
+  },
+  "name|화성|부차트가든": null,
+  "name|용인|석성산": null,
+  "name|수원|명성가": null,
+  "name|화성|쪼꼬미화성시청점": {
+    "address": "경기 화성시 만세구 남양읍 시청로202번길 8-63",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "쪼꼬미 화성시청점",
+    "location": {
+      "lat": 37.19650998,
+      "lng": 126.82917956,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1918096868"
+    }
+  },
+  "name|용인|신비로운 동태탕이요": {
+    "address": "경기 용인시 수지구 포은대로 441",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "신비로운동태탕이요",
+    "location": {
+      "lat": 37.32217489,
+      "lng": 127.09861598,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/141442689"
+    }
+  },
+  "name|수원|백리향": {
+    "address": "경기 수원시 팔달구 경수대로 593",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "백리향",
+    "location": {
+      "lat": 37.27868927,
+      "lng": 127.03057537,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1848146744"
+    }
+  },
+  "name|화성|고고베이크샵(GOGO BA": null,
+  "name|용인|홍복씨푸드": {
+    "address": "경기 용인시 처인구 중부대로1313번길 20-10",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "홍복씨푸드",
+    "location": {
+      "lat": 37.23666958,
+      "lng": 127.19095943,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1256864433"
+    }
+  },
+  "name|수원|고기랑": null,
+  "name|화성|만년명가 교동짬뽕": {
+    "address": "경기 화성시 만세구 남양읍 신남안길 304",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "만년명가 교동짬뽕",
+    "location": {
+      "lat": 37.19115646,
+      "lng": 126.82159041,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2031286122"
+    }
+  },
+  "name|용인|기분좋은식탁": {
+    "address": "경기 용인시 처인구 성산로 159",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "기분좋은식탁",
+    "location": {
+      "lat": 37.25033308,
+      "lng": 127.19091726,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1002287060"
+    }
+  },
+  "name|수원|하남미소 명품한우": null,
+  "name|화성|경복궁 개성손만두": null,
+  "name|용인|윤씨네": null,
+  "name|수원|백청우칼국수": null,
+  "name|화성|부차트가든 남양뉴타": null,
+  "name|용인|미야자키": {
+    "address": "경기 용인시 처인구 명지로 269",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "미야자키",
+    "location": {
+      "lat": 37.22735418,
+      "lng": 127.20467852,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1327789288"
+    }
+  },
+  "name|수원|순대지존": {
+    "address": "경기 수원시 팔달구 팔달문로 20",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "순대지존",
+    "location": {
+      "lat": 37.27755267,
+      "lng": 127.01961954,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/900576710"
+    }
+  },
+  "name|화성|곤드레밥집": null,
+  "name|용인|고향보리밥": null,
+  "name|수원|연포갈비": null,
+  "name|화성|삼성낙지칼국수": {
+    "address": "경기 화성시 만세구 서신면 바다뜰길 100",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "삼성낙지칼국수",
+    "location": {
+      "lat": 37.16722758,
+      "lng": 126.70569083,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/728169414"
+    }
+  },
+  "name|용인|병용골": {
+    "address": "경기 용인시 기흥구 용인향교로 12-3",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "병용골",
+    "location": {
+      "lat": 37.29566211,
+      "lng": 127.11990185,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/23641493"
+    }
+  },
+  "name|수원|㈜뉴코아동수원\n아울렛": null,
+  "name|화성|궁평항횟집": null,
+  "name|용인|짬뽕지존": null,
+  "name|수원|등촌샤브\n칼국수": null,
+  "name|화성|스타벅스 화성향남DT점": {
+    "address": "경기 화성시 만세구 향남읍 삼천병마로 213",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "스타벅스 화성향남DT점",
+    "location": {
+      "lat": 37.13196973,
+      "lng": 126.90999871,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/894438057"
+    }
+  },
+  "name|용인|순천회관": null,
+  "name|수원|양마담": null,
+  "name|화성|소장농": {
+    "address": "경기 화성시 효행구 봉담읍 상리중심상가길 6-17",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "소장농",
+    "location": {
+      "lat": 37.22512844,
+      "lng": 126.9464104,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/925783826"
+    }
+  },
+  "name|용인|돗가비불쭈꾸미 처인2호점": null,
+  "name|수원|파리바게뜨 수원시청역점": null,
+  "name|화성|스테이": null,
+  "name|용인|소박사": null,
+  "name|수원|닭나무집": null,
+  "name|화성|부뚜막": null,
+  "name|용인|전주식당": null,
+  "name|수원|이교수한정식": {
+    "address": "경기 수원시 팔달구 권광로285번길 9",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "이교수한정식",
+    "location": {
+      "lat": 37.27237069,
+      "lng": 127.03550668,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/331242061"
+    }
+  },
+  "name|화성|참솥 동탄점": null,
+  "name|용인|사랑채": null,
+  "name|수원|태백산": null,
+  "name|화성|하명보리밥": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 10-11",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "하명보리밥",
+    "location": {
+      "lat": 37.2014945,
+      "lng": 126.8297338,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/955985568"
+    }
+  },
+  "name|용인|가마솥토종순대국": {
+    "address": "경기 용인시 수지구 풍덕천로160번길 5-2",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "가마솥토종순대국",
+    "location": {
+      "lat": 37.32446028,
+      "lng": 127.09925079,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/22045758"
+    }
+  },
+  "name|수원|아삼모사": {
+    "address": "경기 수원시 팔달구 인계로108번길 27-10",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "아삼모사",
+    "location": {
+      "lat": 37.26635068,
+      "lng": 127.02951514,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/15625671"
+    }
+  },
+  "name|화성|인천생갈비": null,
+  "name|용인|오늘은 김치찌개 수지구청역점": null,
+  "name|수원|우루루인계점": {
+    "address": "경기 수원시 팔달구 경수대로466번길 3",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "우루루 인계점",
+    "location": {
+      "lat": 37.26772978,
+      "lng": 127.02741869,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1565524739"
+    }
+  },
+  "name|화성|지리산흑돈가": {
+    "address": "경기 화성시 만세구 남양읍 역골로 16",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "지리산흑돈가",
+    "location": {
+      "lat": 37.20163737,
+      "lng": 126.82821055,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/173563947"
+    }
+  },
+  "name|용인|팔당냉면": null,
+  "name|수원|수원인계점\n맛찬들": null,
+  "name|화성|카페카롱": null,
+  "name|용인|대성부대고기": null,
+  "name|수원|뜰25(권선1호점)": {
+    "address": "경기 수원시 권선구 권중로 66",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "뜰25 권선1호점",
+    "location": {
+      "lat": 37.25205075,
+      "lng": 127.03100646,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1068938680"
+    }
+  },
+  "name|화성|정떡집": null,
+  "name|용인|춘천닭갈비": null,
+  "name|수원|풍천상회": null,
+  "name|화성|핏제리아오 동탄점": {
+    "address": "경기 화성시 동탄구 노작로1가길 10",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "핏제리아오 동탄점",
+    "location": {
+      "lat": 37.19488283,
+      "lng": 127.08203055,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1459004621"
+    }
+  },
+  "name|용인|소나무매운탕": null,
+  "name|수원|부라보\n쪽갈비": null,
+  "name|화성|버드나무크래프트": null,
+  "name|용인|청담추어정": null,
+  "name|수원|샘카페": null,
+  "name|화성|명밥상": {
+    "address": "경기 화성시 만세구 남양읍 남양시장로25번길 10",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "명밥상",
+    "location": {
+      "lat": 37.20916098,
+      "lng": 126.81265625,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/10336052"
+    }
+  },
+  "name|용인|슬로우제이": null,
+  "name|수원|샐러디": null,
+  "name|화성|금가방": {
+    "address": "경기 화성시 동탄구 왕배산3길 13",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "금가방",
+    "location": {
+      "lat": 37.181757,
+      "lng": 127.12546034,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/295734702"
+    }
+  },
+  "name|용인|코다리 감동이 되다": null,
+  "name|수원|이프레시청과\n새빛건강카페샘": null,
+  "name|화성|베이크샾": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 5-1",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "베이크샾",
+    "location": {
+      "lat": 37.20168458,
+      "lng": 126.82845825,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1465228822"
+    }
+  },
+  "name|용인|노랑태 담다": {
+    "address": "경기 용인시 처인구 성산로 128",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "노랑태담다",
+    "location": {
+      "lat": 37.24707389,
+      "lng": 127.19099132,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/554883127"
+    }
+  },
+  "name|수원|마라도해물탕": null,
+  "name|화성|샘물매운탕": {
+    "address": "경기 화성시 동탄구 장지남길3번길 9",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "샘물매운탕",
+    "location": {
+      "lat": 37.15370528,
+      "lng": 127.11849307,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/13613884"
+    }
+  },
+  "name|용인|뜰안애": null,
+  "name|수원|꽉찬순대국족발\n수원권선시장본점": null,
+  "name|화성|향남읍(훈장골)": null,
+  "name|용인|등촌샤브칼국수": null,
+  "name|수원|곤드레향기\n동수원점": {
+    "address": "경기 수원시 팔달구 경수대로604번길 12",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "곤드레향기 동수원점",
+    "location": {
+      "lat": 37.27965132,
+      "lng": 127.03154098,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2081790933"
+    }
+  },
+  "name|화성|노노카페 화성시청점": null,
+  "name|용인|사담손만두": null,
+  "name|수원|오노레": {
+    "address": "경기 수원시 팔달구 창룡대로7번길 22",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "오노레",
+    "location": {
+      "lat": 37.28285378,
+      "lng": 127.01779189,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/382136746"
+    }
+  },
+  "name|화성|궁평낙조회집": {
+    "address": "경기 화성시 만세구 서신면 수문개길 81-29",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "궁평낙조회집",
+    "location": {
+      "lat": 37.12269562,
+      "lng": 126.68503149,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/8217134"
+    }
+  },
+  "name|용인|진지방순대국": null,
+  "name|수원|서동진의커피랩\n수원시청점": {
+    "address": "경기 수원시 팔달구 효원로249번길 18-1",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "서동진의커피랩 수원시청점",
+    "location": {
+      "lat": 37.26346551,
+      "lng": 127.02966057,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/38124095"
+    }
+  },
+  "name|화성|어도어커피": {
+    "address": "경기 화성시 만세구 남양읍 남양천로 95-19",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "어도어커피",
+    "location": {
+      "lat": 37.21223667,
+      "lng": 126.82591419,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/65589514"
+    }
+  },
+  "name|용인|무지막회": {
+    "address": "경기 용인시 수지구 풍덕천로140번길 21",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "무지막회",
+    "location": {
+      "lat": 37.32230476,
+      "lng": 127.09846948,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/131535294"
+    }
+  },
+  "name|수원|소무실": {
+    "address": "경기 수원시 영통구 대학로 14",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "소무실",
+    "location": {
+      "lat": 37.29783632,
+      "lng": 127.04231515,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1592979883"
+    }
+  },
+  "name|화성|별난버섯집": null,
+  "name|용인|명태인생": null,
+  "name|수원|한스케익\n인계점": null,
+  "name|화성|폴 바셋 북수원IC DT": null,
+  "name|용인|내가널낙지": {
+    "address": "경기 용인시 처인구 이동읍 화산로 20",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "내가널낙지",
+    "location": {
+      "lat": 37.14505786,
+      "lng": 127.20392302,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/27127671"
+    }
+  },
+  "name|수원|삼척횟집": {
+    "address": "경기 수원시 장안구 경수대로927번길 45",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "삼척횟집",
+    "location": {
+      "lat": 37.29993497,
+      "lng": 127.00730311,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/644001521"
+    }
+  },
+  "name|화성|정가순대": {
+    "address": "경기 화성시 효행구 봉담읍 최루백로 198",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "정가순대",
+    "location": {
+      "lat": 37.20666273,
+      "lng": 126.96132148,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1667788465"
+    }
+  },
+  "name|용인|대지식당": null,
+  "name|수원|등촌\n샤브칼국수": null,
+  "name|화성|구름산 추어탕(남양점": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 75",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "구름산추어탕 남양점",
+    "location": {
+      "lat": 37.20677696,
+      "lng": 126.83134635,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1618935202"
+    }
+  },
+  "name|용인|제주방목흑돼지": null,
+  "name|수원|송도갈비\n인계점": {
+    "address": "경기 수원시 팔달구 경수대로 502",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "송도갈비 인계점",
+    "location": {
+      "lat": 37.27067411,
+      "lng": 127.02857315,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2028746812"
+    }
+  },
+  "name|화성|버거킹": null,
+  "name|용인|스시온초밥": {
+    "address": "경기 용인시 처인구 금령로 64",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "스시온초밥",
+    "location": {
+      "lat": 37.2345075,
+      "lng": 127.20368476,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/126169247"
+    }
+  },
+  "name|수원|흥숙이김치찜": {
+    "address": "경기 수원시 팔달구 권광로180번길 42-6",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "흥숙이김치찜",
+    "location": {
+      "lat": 37.26276943,
+      "lng": 127.03472769,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/23641369"
+    }
+  },
+  "name|화성|태안농협하나로마트": null,
+  "name|용인|다이닝원": null,
+  "name|수원|인계블루커피": null,
+  "name|화성|김정근소문난토종순대국": null,
+  "name|용인|으뜸순두부": null,
+  "name|수원|우루루\n인계점": {
+    "address": "경기 수원시 팔달구 경수대로466번길 3",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "우루루 인계점",
+    "location": {
+      "lat": 37.26772978,
+      "lng": 127.02741869,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1565524739"
+    }
+  },
+  "name|화성|빽다방 빵연구소 화성": null,
+  "name|용인|오리촌": null,
+  "name|수원|비비큐광교호수\n힐스테이트점": null,
+  "name|화성|마시따 초밥&이자카야": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 9-7",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "마시따초밥&이자카야",
+    "location": {
+      "lat": 37.2020057,
+      "lng": 126.82869633,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1074051190"
+    }
+  },
+  "name|용인|역북370": {
+    "address": "경기 용인시 처인구 중부대로 1216",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "역북370",
+    "location": {
+      "lat": 37.23743295,
+      "lng": 127.17991264,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/827151850"
+    }
+  },
+  "name|수원|광교호수힐스테이점": null,
+  "name|화성|노노카페 효행구청점": {
+    "address": "경기 화성시 효행구 봉담읍 최루백로 165",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "노노카페 효행구청점",
+    "location": {
+      "lat": 37.20914896,
+      "lng": 126.95929807,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/337341911"
+    }
+  },
+  "name|용인|할머니의부뚜막": null,
+  "name|수원|평장원": null,
+  "name|화성|대지식당": null,
+  "name|용인|빈투바로스터리카페": {
+    "address": "경기 용인시 처인구 포곡읍 부곡로 140",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "빈투바 로스터리카페",
+    "location": {
+      "lat": 37.28100859,
+      "lng": 127.207751,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/364173848"
+    }
+  },
+  "name|수원|길림성\n인계점": {
+    "address": "경기 수원시 팔달구 권광로 277",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "길림성 인계점",
+    "location": {
+      "lat": 37.27212832,
+      "lng": 127.03548853,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/419442451"
+    }
+  },
+  "name|화성|카페 오드리": {
+    "address": "경기 화성시 만세구 남양읍 남양로 609-3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "카페오드리",
+    "location": {
+      "lat": 37.19424386,
+      "lng": 126.82185121,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/37358414"
+    }
+  },
+  "name|용인|이화수": null,
+  "name|수원|이레프룻": null,
+  "name|화성|토종한우화로구이": {
+    "address": "경기 화성시 효행구 봉담읍 최루백로 278",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "토종한우화로구이",
+    "location": {
+      "lat": 37.20072153,
+      "lng": 126.96529174,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1973230449"
+    }
+  },
+  "name|용인|김가네동태탕": {
+    "address": "경기 용인시 처인구 중부대로1388번길 3",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "김가네동태탕",
+    "location": {
+      "lat": 37.23287557,
+      "lng": 127.19845722,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1484723026"
+    }
+  },
+  "name|수원|소미담\n수원시청점": {
+    "address": "경기 수원시 팔달구 경수대로428번길 15",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "소미담 수원시청점",
+    "location": {
+      "lat": 37.26427713,
+      "lng": 127.02678161,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/203996693"
+    }
+  },
+  "name|화성|전주감자탕해장국": null,
+  "name|용인|샤브 하로유": {
+    "address": "경기 용인시 처인구 이동읍 백자로156번길 19",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "샤브하로유",
+    "location": {
+      "lat": 37.20919532,
+      "lng": 127.16869283,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1014002982"
+    }
+  },
+  "name|수원|정담순두부": {
+    "address": "경기 수원시 팔달구 인계로124번길 34",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "정담순두부",
+    "location": {
+      "lat": 37.26606392,
+      "lng": 127.03043498,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/760628128"
+    }
+  },
+  "name|화성|호앙비엣": null,
+  "name|용인|진주옥": {
+    "address": "경기 용인시 처인구 명지로 106",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "진주옥",
+    "location": {
+      "lat": 37.22659074,
+      "lng": 127.1874139,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1218859152"
+    }
+  },
+  "name|수원|백호동태찌개": null,
+  "name|화성|제담칼국수": null,
+  "name|용인|코리스시": {
+    "address": "경기 용인시 수지구 문정로7번길 12",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "코리스시",
+    "location": {
+      "lat": 37.32130627,
+      "lng": 127.0953498,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1741796090"
+    }
+  },
+  "name|수원|행화촌\n수원시청점": {
+    "address": "경기 수원시 팔달구 경수대로446번길 42",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "행화촌 수원시청점",
+    "location": {
+      "lat": 37.26526512,
+      "lng": 127.02874472,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1728251044"
+    }
+  },
+  "name|화성|등촌샤브칼국수 남양점": {
+    "address": "경기 화성시 만세구 남양읍 시청로 119",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "등촌샤브칼국수 남양점",
+    "location": {
+      "lat": 37.20056883,
+      "lng": 126.82643098,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/311871481"
+    }
+  },
+  "name|용인|홍과당": null,
+  "name|수원|북수동\n(연포갈비)": null,
+  "address|화성|푸른들판로|171": {
+    "address": "경기 화성시 만세구 향남읍 푸른들판로 171",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1345798993382,
+      "lng": 126.917389156495,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%ED%96%A5%EB%82%A8%EC%9D%8D+%ED%91%B8%EB%A5%B8%EB%93%A4%ED%8C%90%EB%A1%9C+171"
+    }
+  },
+  "address|용인|원양로|352": {
+    "address": "경기 용인시 처인구 원삼면 원양로 352",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.190000478261,
+      "lng": 127.304269126669,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9B%90%EC%82%BC%EB%A9%B4+%EC%9B%90%EC%96%91%EB%A1%9C+352"
+    }
+  },
+  "address|수원|호매실로|15": {
+    "address": "경기 수원시 권선구 호매실로 15",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2560515749002,
+      "lng": 126.971927909546,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%EA%B6%8C%EC%84%A0%EA%B5%AC+%ED%98%B8%EB%A7%A4%EC%8B%A4%EB%A1%9C+15"
+    }
+  },
+  "address|화성|삼천병마로|537": {
+    "address": "경기 화성시 만세구 팔탄면 삼천병마로 537",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1574395525641,
+      "lng": 126.92793507598,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%ED%8C%94%ED%83%84%EB%A9%B4+%EC%82%BC%EC%B2%9C%EB%B3%91%EB%A7%88%EB%A1%9C+537"
+    }
+  },
+  "address|용인|평촌2로1번길|16-5": {
+    "address": "경기 용인시 기흥구 평촌2로1번길 16-5",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.280545195464,
+      "lng": 127.154168400124,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EA%B8%B0%ED%9D%A5%EA%B5%AC+%ED%8F%89%EC%B4%8C2%EB%A1%9C1%EB%B2%88%EA%B8%B8+16-5"
+    }
+  },
+  "address|수원|경수대로|438": {
+    "address": "경기 수원시 팔달구 경수대로 438",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2652582597034,
+      "lng": 127.026458511448,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%EA%B2%BD%EC%88%98%EB%8C%80%EB%A1%9C+438"
+    }
+  },
+  "address|화성|시청로201번길|11-6": {
+    "address": "경기 화성시 만세구 남양읍 시청로201번길 11-6",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1965398769071,
+      "lng": 126.833787741804,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C201%EB%B2%88%EA%B8%B8+11-6"
+    }
+  },
+  "address|용인|중부대로|1201-4": {
+    "address": "경기 용인시 처인구 중부대로 1201-4",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2386681377002,
+      "lng": 127.179054000277,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1201-4"
+    }
+  },
+  "address|수원|효원로249번길|18-5": {
+    "address": "경기 수원시 팔달구 효원로249번길 18-5",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.263471998622,
+      "lng": 127.030007009288,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%ED%9A%A8%EC%9B%90%EB%A1%9C249%EB%B2%88%EA%B8%B8+18-5"
+    }
+  },
+  "address|화성|신남안길|189-10": {
+    "address": "경기 화성시 만세구 남양읍 신남안길 189-10",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1857870950713,
+      "lng": 126.813574526957,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%A0%EB%82%A8%EC%95%88%EA%B8%B8+189-10"
+    }
+  },
+  "address|용인|금령로|31": {
+    "address": "경기 용인시 처인구 금령로 31",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.235012619726,
+      "lng": 127.199718555505,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EA%B8%88%EB%A0%B9%EB%A1%9C+31"
+    }
+  },
+  "address|수원|경수대로|424": {
+    "address": "경기 수원시 팔달구 경수대로 424",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2639181675453,
+      "lng": 127.025926043103,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%EA%B2%BD%EC%88%98%EB%8C%80%EB%A1%9C+424"
+    }
+  },
+  "address|화성|시청로202번길|8-38": {
+    "address": "경기 화성시 만세구 남양읍 시청로202번길 8-38",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1964316468516,
+      "lng": 126.829842822311,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C202%EB%B2%88%EA%B8%B8+8-38"
+    }
+  },
+  "address|용인|명지로|39": {
+    "address": "경기 용인시 처인구 명지로 39",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2321854895973,
+      "lng": 127.189244729748,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EB%AA%85%EC%A7%80%EB%A1%9C+39"
+    }
+  },
+  "address|수원|효원로235번길|53": {
+    "address": "경기 수원시 팔달구 효원로235번길 53",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2653434254984,
+      "lng": 127.028330664702,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%ED%9A%A8%EC%9B%90%EB%A1%9C235%EB%B2%88%EA%B8%B8+53"
+    }
+  },
+  "address|화성|역골로|30-19": {
+    "address": "경기 화성시 만세구 남양읍 역골로 30-19",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2030177348159,
+      "lng": 126.828680412618,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%A1%9C+30-19"
+    }
+  },
+  "address|용인|삼가로|20": {
+    "address": "경기 용인시 처인구 삼가로 20",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2455926050968,
+      "lng": 127.166367602706,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%82%BC%EA%B0%80%EB%A1%9C+20"
+    }
+  },
+  "address|수원|장다리로|264": {
+    "address": "경기 수원시 팔달구 장다리로 264",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2730775164578,
+      "lng": 127.027556381561,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%EC%9E%A5%EB%8B%A4%EB%A6%AC%EB%A1%9C+264"
+    }
+  },
+  "address|화성|역골동로|91": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 91",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.208053133968,
+      "lng": 126.831044417885,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%8F%99%EB%A1%9C+91"
+    }
+  },
+  "address|용인|중부대로|1947": {
+    "address": "경기 용인시 처인구 양지읍 중부대로 1947",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2258903018404,
+      "lng": 127.258973561193,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%96%91%EC%A7%80%EC%9D%8D+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1947"
+    }
+  },
+  "address|수원|경수대로466번길|20": {
+    "address": "경기 수원시 팔달구 경수대로466번길 20",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2672081796345,
+      "lng": 127.028128768514,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%88%98%EC%9B%90%EC%8B%9C+%ED%8C%94%EB%8B%AC%EA%B5%AC+%EA%B2%BD%EC%88%98%EB%8C%80%EB%A1%9C466%EB%B2%88%EA%B8%B8+20"
+    }
+  },
+  "address|화성|역골중앙로|115": {
+    "address": "경기 화성시 만세구 남양읍 역골중앙로 115",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2079439318033,
+      "lng": 126.827360821856,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EC%A4%91%EC%95%99%EB%A1%9C+115"
+    }
+  },
+  "address|용인|보개원삼로|2033": {
+    "address": "경기 용인시 처인구 원삼면 보개원삼로 2033",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1689675383721,
+      "lng": 127.327347727234,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9B%90%EC%82%BC%EB%A9%B4+%EB%B3%B4%EA%B0%9C%EC%9B%90%EC%82%BC%EB%A1%9C+2033"
+    }
+  },
+  "name|수원|오징어\n풍경": null,
+  "address|화성|역골중앙로|92-1": {
+    "address": "경기 화성시 만세구 남양읍 역골중앙로 92-1",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2071026185633,
+      "lng": 126.829286027917,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EC%A4%91%EC%95%99%EB%A1%9C+92-1"
+    }
+  },
+  "address|용인|죽전로15번길|11-3": {
+    "address": "경기 용인시 기흥구 죽전로15번길 11-3",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.3215127719832,
+      "lng": 127.110007835409,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EA%B8%B0%ED%9D%A5%EA%B5%AC+%EC%A3%BD%EC%A0%84%EB%A1%9C15%EB%B2%88%EA%B8%B8+11-3"
+    }
+  },
+  "name|수원|부영숯불돼지갈비": null,
+  "address|화성|역골동로|89": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 89",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2078681500415,
+      "lng": 126.831108704022,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%8F%99%EB%A1%9C+89"
+    }
+  },
+  "address|용인|유림로|148-2": {
+    "address": "경기 용인시 처인구 유림로 148-2",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2620048325991,
+      "lng": 127.196959654232,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9C%A0%EB%A6%BC%EB%A1%9C+148-2"
+    }
+  },
+  "name|수원|민어도": null,
+  "address|화성|고향의봄길|215-6": {
+    "address": "경기 화성시 만세구 남양읍 고향의봄길 215-6",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1789658732104,
+      "lng": 126.829691019032,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EA%B3%A0%ED%96%A5%EC%9D%98%EB%B4%84%EA%B8%B8+215-6"
+    }
+  },
+  "address|용인|금령로12번길|27": {
+    "address": "경기 용인시 처인구 금령로12번길 27",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2339518584298,
+      "lng": 127.200228951416,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EA%B8%88%EB%A0%B9%EB%A1%9C12%EB%B2%88%EA%B8%B8+27"
+    }
+  },
+  "name|수원|파파존스\n수원중앙점": {
+    "address": "경기 수원시 팔달구 수원천로 292",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "파파존스 수원중앙점",
+    "location": {
+      "lat": 37.27956031,
+      "lng": 127.01887585,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1605870395"
+    }
+  },
+  "address|화성|시청로201번길|11-17": {
+    "address": "경기 화성시 만세구 남양읍 시청로201번길 11-17",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1971991893657,
+      "lng": 126.83411857327,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C201%EB%B2%88%EA%B8%B8+11-17"
+    }
+  },
+  "address|용인|마성로|356": {
+    "address": "경기 용인시 처인구 포곡읍 마성로 356",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2843646609241,
+      "lng": 127.209096837562,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%ED%8F%AC%EA%B3%A1%EC%9D%8D+%EB%A7%88%EC%84%B1%EB%A1%9C+356"
+    }
+  },
+  "name|수원|두강곱창&정육식당 인계직영점": {
+    "address": "경기 수원시 팔달구 효원로265번길 54",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "두강곱창정육식당 인계직영점",
+    "location": {
+      "lat": 37.26435245,
+      "lng": 127.03191226,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/992687731"
+    }
+  },
+  "address|화성|역골로|15-3": {
+    "address": "경기 화성시 만세구 남양읍 역골로 15-3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2012572216008,
+      "lng": 126.827844305592,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%A1%9C+15-3"
+    }
+  },
+  "address|용인|명지로16번길|9-24": {
+    "address": "경기 용인시 처인구 명지로16번길 9-24",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2332224680111,
+      "lng": 127.187567567897,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EB%AA%85%EC%A7%80%EB%A1%9C16%EB%B2%88%EA%B8%B8+9-24"
+    }
+  },
+  "address|화성|세자로|449": {
+    "address": "경기 화성시 병점구 세자로 449",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2050102049638,
+      "lng": 126.983927725359,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%EC%84%B8%EC%9E%90%EB%A1%9C+449"
+    }
+  },
+  "address|용인|성산로|336-1": {
+    "address": "경기 용인시 처인구 성산로 336-1",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2655623545417,
+      "lng": 127.193055785531,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%84%B1%EC%82%B0%EB%A1%9C+336-1"
+    }
+  },
+  "address|화성|시청로|341-7": {
+    "address": "경기 화성시 만세구 남양읍 시청로 341-7",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1888837621705,
+      "lng": 126.843539844958,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C+341-7"
+    }
+  },
+  "address|용인|명지로60번길|33-11": {
+    "address": "경기 용인시 처인구 명지로60번길 33-11",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2294971533335,
+      "lng": 127.186560183267,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EB%AA%85%EC%A7%80%EB%A1%9C60%EB%B2%88%EA%B8%B8+33-11"
+    }
+  },
+  "address|화성|안녕길|6": {
+    "address": "경기 화성시 병점구 안녕길 6",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2056418155121,
+      "lng": 126.987437956747,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%EC%95%88%EB%85%95%EA%B8%B8+6"
+    }
+  },
+  "address|용인|농촌파크로|75": {
+    "address": "경기 용인시 처인구 원삼면 농촌파크로 75",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1741601439984,
+      "lng": 127.300611010379,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9B%90%EC%82%BC%EB%A9%B4+%EB%86%8D%EC%B4%8C%ED%8C%8C%ED%81%AC%EB%A1%9C+75"
+    }
+  },
+  "address|화성|역골동로|6-15": {
+    "address": "경기 화성시 만세구 남양읍 역골동로 6-15",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2010018267167,
+      "lng": 126.829563462749,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EB%8F%99%EB%A1%9C+6-15"
+    }
+  },
+  "address|용인|학산로|36": {
+    "address": "경기 용인시 처인구 학산로 36",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2388578935081,
+      "lng": 127.202492396327,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%ED%95%99%EC%82%B0%EB%A1%9C+36"
+    }
+  },
+  "address|화성|남양로|74": {
+    "address": "경기 화성시 만세구 남양읍 남양로 74",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1538113477867,
+      "lng": 126.79491672245,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EB%82%A8%EC%96%91%EB%A1%9C+74"
+    }
+  },
+  "address|용인|성산로|128": {
+    "address": "경기 용인시 처인구 성산로 128",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2470483645479,
+      "lng": 127.191062263293,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%84%B1%EC%82%B0%EB%A1%9C+128"
+    }
+  },
+  "address|화성|시청로|270": {
+    "address": "경기 화성시 만세구 남양읍 시청로 270",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.192329483442,
+      "lng": 126.838574581079,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C+270"
+    }
+  },
+  "address|용인|성산로|101": {
+    "address": "경기 용인시 처인구 성산로 101",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2452632153308,
+      "lng": 127.189493261091,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%84%B1%EC%82%B0%EB%A1%9C+101"
+    }
+  },
+  "address|화성|남양로|695": {
+    "address": "경기 화성시 만세구 남양읍 남양로 695",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1998633758677,
+      "lng": 126.828209609213,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EB%82%A8%EC%96%91%EB%A1%9C+695"
+    }
+  },
+  "address|용인|수지로342번길|7": {
+    "address": "경기 용인시 수지구 수지로342번길 7",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.3280678952736,
+      "lng": 127.096231992472,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%88%98%EC%A7%80%EA%B5%AC+%EC%88%98%EC%A7%80%EB%A1%9C342%EB%B2%88%EA%B8%B8+7"
+    }
+  },
+  "address|화성|시청로201번길|11-15": {
+    "address": "경기 화성시 만세구 남양읍 시청로201번길 11-15",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1971569746003,
+      "lng": 126.833764650141,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C201%EB%B2%88%EA%B8%B8+11-15"
+    }
+  },
+  "address|용인|동백중앙로|358-19": {
+    "address": "경기 용인시 기흥구 동백중앙로 358-19",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2815766954666,
+      "lng": 127.160878595002,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EA%B8%B0%ED%9D%A5%EA%B5%AC+%EB%8F%99%EB%B0%B1%EC%A4%91%EC%95%99%EB%A1%9C+358-19"
+    }
+  },
+  "address|화성|영통로50번길|4": {
+    "address": "경기 화성시 병점구 영통로50번길 4",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2349516387506,
+      "lng": 127.063303546478,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%EC%98%81%ED%86%B5%EB%A1%9C50%EB%B2%88%EA%B8%B8+4"
+    }
+  },
+  "address|용인|원양로|426": {
+    "address": "경기 용인시 처인구 원삼면 원양로 426",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1923970442833,
+      "lng": 127.310090613885,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9B%90%EC%82%BC%EB%A9%B4+%EC%9B%90%EC%96%91%EB%A1%9C+426"
+    }
+  },
+  "address|화성|시청로32번길|5-18": {
+    "address": "경기 화성시 만세구 남양읍 시청로32번길 5-18",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2050157750218,
+      "lng": 126.819847234907,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C32%EB%B2%88%EA%B8%B8+5-18"
+    }
+  },
+  "address|용인|고림로|192": {
+    "address": "경기 용인시 처인구 고림로 192",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2485819258869,
+      "lng": 127.222013859872,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EA%B3%A0%EB%A6%BC%EB%A1%9C+192"
+    }
+  },
+  "address|화성|시청로202번길|8-81": {
+    "address": "경기 화성시 만세구 남양읍 시청로202번길 8-81",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1966592675711,
+      "lng": 126.828977271373,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C202%EB%B2%88%EA%B8%B8+8-81"
+    }
+  },
+  "address|용인|석성로|910": {
+    "address": "경기 용인시 처인구 포곡읍 석성로 910",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2766317372273,
+      "lng": 127.196710909793,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%ED%8F%AC%EA%B3%A1%EC%9D%8D+%EC%84%9D%EC%84%B1%EB%A1%9C+910"
+    }
+  },
+  "address|화성|남양성지로|227": {
+    "address": "경기 화성시 만세구 남양읍 남양성지로 227",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2136156233426,
+      "lng": 126.82664613683,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EB%82%A8%EC%96%91%EC%84%B1%EC%A7%80%EB%A1%9C+227"
+    }
+  },
+  "address|용인|중부대로|1127": {
+    "address": "경기 용인시 처인구 중부대로 1127",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2410679884653,
+      "lng": 127.171001183859,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%A4%91%EB%B6%80%EB%8C%80%EB%A1%9C+1127"
+    }
+  },
+  "address|화성|사랑길|175": {
+    "address": "경기 화성시 만세구 장안면 사랑길 175",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.0852185039416,
+      "lng": 126.827714336321,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EC%9E%A5%EC%95%88%EB%A9%B4+%EC%82%AC%EB%9E%91%EA%B8%B8+175"
+    }
+  },
+  "address|용인|백자로156번길|8-7": {
+    "address": "경기 용인시 처인구 이동읍 백자로156번길 8-7",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2095828078153,
+      "lng": 127.168855800874,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EC%9D%B4%EB%8F%99%EC%9D%8D+%EB%B0%B1%EC%9E%90%EB%A1%9C156%EB%B2%88%EA%B8%B8+8-7"
+    }
+  },
+  "address|화성|남양천로|94-6": {
+    "address": "경기 화성시 만세구 남양읍 남양천로 94-6",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2130389326237,
+      "lng": 126.827806499924,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EB%82%A8%EC%96%91%EC%B2%9C%EB%A1%9C+94-6"
+    }
+  },
+  "address|용인|금령로90번길|3-6": {
+    "address": "경기 용인시 처인구 금령로90번길 3-6",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2350483676831,
+      "lng": 127.206561110464,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EC%B2%98%EC%9D%B8%EA%B5%AC+%EA%B8%88%EB%A0%B9%EB%A1%9C90%EB%B2%88%EA%B8%B8+3-6"
+    }
+  },
+  "address|화성|시청로202번길|8-63": {
+    "address": "경기 화성시 만세구 남양읍 시청로202번길 8-63",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1965101646185,
+      "lng": 126.829179224729,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C202%EB%B2%88%EA%B8%B8+8-63"
+    }
+  },
+  "address|용인|lot||하갈동||156-2": {
+    "address": "경기 용인시 기흥구 하갈동 156-2번지",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2515611327346,
+      "lng": 127.09874378171,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%EC%9A%A9%EC%9D%B8%EC%8B%9C+%EA%B8%B0%ED%9D%A5%EA%B5%AC+%ED%95%98%EA%B0%88%EB%8F%99+156-2"
+    }
+  },
+  "address|화성|시청로202번길|8-46": {
+    "address": "경기 화성시 만세구 남양읍 시청로202번길 8-46",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1968101598553,
+      "lng": 126.829266179347,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%8B%9C%EC%B2%AD%EB%A1%9C202%EB%B2%88%EA%B8%B8+8-46"
+    }
+  },
+  "name|용인|순두부마을": null,
+  "address|화성|역골중앙로100번길|17": {
+    "address": "경기 화성시 만세구 남양읍 역골중앙로100번길 17",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.208267603997,
+      "lng": 126.829987933518,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EC%A4%91%EC%95%99%EB%A1%9C100%EB%B2%88%EA%B8%B8+17"
+    }
+  },
+  "name|용인|진삼미": null,
+  "address|화성|남양시장로25번길|59": {
+    "address": "경기 화성시 만세구 남양읍 남양시장로25번길 59",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2125534449069,
+      "lng": 126.815940776148,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EB%82%A8%EC%96%91%EC%8B%9C%EC%9E%A5%EB%A1%9C25%EB%B2%88%EA%B8%B8+59"
+    }
+  },
+  "name|용인|둔전아구탕": {
+    "address": "경기 용인시 처인구 금령로12번길 24-4",
+    "spending_city": "용인",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "둔전아구탕",
+    "location": {
+      "lat": 37.23369642,
+      "lng": 127.19952993,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/8955491"
+    }
+  },
+  "address|화성|동탄역로|102": {
+    "address": "경기 화성시 동탄구 동탄역로 102",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1958618114532,
+      "lng": 127.098154314807,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EC%97%AD%EB%A1%9C+102"
+    }
+  },
+  "name|용인|북극해고등어": null,
+  "address|화성|효행로1040번길|21-3": {
+    "address": "경기 화성시 병점구 효행로1040번길 21-3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2123916285319,
+      "lng": 127.042574264752,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%ED%9A%A8%ED%96%89%EB%A1%9C1040%EB%B2%88%EA%B8%B8+21-3"
+    }
+  },
+  "name|용인|시월오일": null,
+  "address|화성|푸른들판로|161": {
+    "address": "경기 화성시 만세구 향남읍 푸른들판로 161",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1344541772973,
+      "lng": 126.918395317371,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%ED%96%A5%EB%82%A8%EC%9D%8D+%ED%91%B8%EB%A5%B8%EB%93%A4%ED%8C%90%EB%A1%9C+161"
+    }
+  },
+  "name|용인|맛진불백": null,
+  "address|화성|역골중앙로100번길|23-1": {
+    "address": "경기 화성시 만세구 남양읍 역골중앙로100번길 23-1",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2085637024442,
+      "lng": 126.830500404215,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EB%82%A8%EC%96%91%EC%9D%8D+%EC%97%AD%EA%B3%A8%EC%A4%91%EC%95%99%EB%A1%9C100%EB%B2%88%EA%B8%B8+23-1"
+    }
+  },
+  "address|화성|동화역말길|100": {
+    "address": "경기 화성시 효행구 봉담읍 동화역말길 100",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2173402267734,
+      "lng": 126.971317976215,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%ED%9A%A8%ED%96%89%EA%B5%AC+%EB%B4%89%EB%8B%B4%EC%9D%8D+%EB%8F%99%ED%99%94%EC%97%AD%EB%A7%90%EA%B8%B8+100"
+    }
+  },
+  "address|화성|lot||진안동||453-7": {
+    "address": "화성시 진안동 453-7",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2136108475002,
+      "lng": 127.032936484601,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%EC%A7%84%EC%95%88%EB%8F%99+453-7"
+    }
+  },
+  "address|화성|동탄대로|181": {
+    "address": "경기 화성시 동탄구 동탄대로 181",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1720680647347,
+      "lng": 127.104140595235,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EB%8C%80%EB%A1%9C+181"
+    }
+  },
+  "address|화성|낭내기길|58": {
+    "address": "경기 화성시 효행구 봉담읍 낭내기길 58",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2213483445205,
+      "lng": 126.965505724837,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%ED%9A%A8%ED%96%89%EA%B5%AC+%EB%B4%89%EB%8B%B4%EC%9D%8D+%EB%82%AD%EB%82%B4%EA%B8%B0%EA%B8%B8+58"
+    }
+  },
+  "address|화성|사강로|175": {
+    "address": "경기 화성시 만세구 송산면 사강로 175",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2132747703549,
+      "lng": 126.735368745341,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%EC%86%A1%EC%82%B0%EB%A9%B4+%EC%82%AC%EA%B0%95%EB%A1%9C+175"
+    }
+  },
+  "address|화성|병점2로|3": {
+    "address": "경기 화성시 병점구 병점2로 3",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2052930902667,
+      "lng": 127.037421457296,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%EB%B3%91%EC%A0%902%EB%A1%9C+3"
+    }
+  },
+  "address|화성|동탄공원로3길|20": {
+    "address": "경기 화성시 동탄구 동탄공원로3길 20",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.207949604142,
+      "lng": 127.061330860216,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%8F%99%ED%83%84%EA%B5%AC+%EB%8F%99%ED%83%84%EA%B3%B5%EC%9B%90%EB%A1%9C3%EA%B8%B8+20"
+    }
+  },
+  "address|화성|경기대로|1025-4": {
+    "address": "경기 화성시 병점구 경기대로 1025-4",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.2071495596542,
+      "lng": 127.035253952041,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%B3%91%EC%A0%90%EA%B5%AC+%EA%B2%BD%EA%B8%B0%EB%8C%80%EB%A1%9C+1025-4"
+    }
+  },
+  "address|화성|은행나무로|820": {
+    "address": "경기 화성시 만세구 향남읍 은행나무로 820",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1221466532252,
+      "lng": 126.917613653717,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%EB%A7%8C%EC%84%B8%EA%B5%AC+%ED%96%A5%EB%82%A8%EC%9D%8D+%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4%EB%A1%9C+820"
+    }
+  },
+  "address|화성|세자로303번길|11-8": {
+    "address": "경기 화성시 효행구 정남면 세자로303번길 11-8",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "source_address",
+    "location": {
+      "lat": 37.1931106850307,
+      "lng": 126.978519714089,
+      "precision": "address",
+      "match_method": "source_address",
+      "evidence_url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0+%ED%99%94%EC%84%B1%EC%8B%9C+%ED%9A%A8%ED%96%89%EA%B5%AC+%EC%A0%95%EB%82%A8%EB%A9%B4+%EC%84%B8%EC%9E%90%EB%A1%9C303%EB%B2%88%EA%B8%B8+11-8"
+    }
+  },
+  "name|화성|이디야 동탄체육공원점": {
+    "address": "경기 화성시 동탄구 왕배산2길 4-20",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "이디야커피 동탄체육공원점",
+    "location": {
+      "lat": 37.18008928,
+      "lng": 127.12447675,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/262233462"
+    }
+  },
+  "name|화성|이디야 화성봉담동화점": {
+    "address": "경기 화성시 효행구 봉담읍 동화길 93-12",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "이디야커피 화성봉담동화점",
+    "location": {
+      "lat": 37.21679542,
+      "lng": 126.95975138,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1123251881"
+    }
+  }
 }

@@ -19,3 +19,22 @@ class VenueTests(unittest.TestCase):
  def test_imprecise_coordinates_rejected(self):
   p={**self.place(),'lat':37,'lon':127}
   self.assertIsNone(choose({'place':[p]},'수원','예시식당 수원점'))
+ def test_wrapped_single_merchant_name_can_match_but_multiple_merchants_cannot(self):
+  from resolve_venues import multiple
+  p={**self.place(),'name':'한스케익 인계점'}
+  self.assertIsNotNone(choose({'place':[p],'place_totalcount':1},'수원','한스케익\n인계점'))
+  self.assertTrue(multiple('한스케익, 다른카페'))
+  self.assertIsNone(choose({'place':[p],'place_totalcount':1},'수원','한스케익 외 2개소'))
+ def test_known_chain_brand_alias_still_requires_identical_branch(self):
+  p={**self.place(),'name':'이디야커피 수원인계점'}
+  self.assertIsNotNone(choose({'place':[p],'place_totalcount':1},'수원','이디야 수원인계점'))
+  self.assertIsNone(choose({'place':[p],'place_totalcount':1},'수원','이디야 수원역점'))
+  self.assertIsNone(choose({'place':[p],'place_totalcount':1},'수원','이디야'))
+ def test_lot_address_and_compact_road_address_keep_municipal_context(self):
+  from resolve_venues import address_parts
+  self.assertEqual(address_parts('용인시수지구풍덕천동123-4'),('용인','lot','','풍덕천동','','123-4'))
+  self.assertNotEqual(address_parts('화성시 팔탄면 구장리 12'),address_parts('화성시 다른면 구장리 12'))
+  self.assertEqual(address_parts('용인시처인구용인대학로74'),('용인','용인대학로','74'))
+  p=dict(addr='경기 용인시 수지구 풍덕천동 123-4',lat=37.32,lon=127.09)
+  self.assertIsNotNone(choose({'address':[p]},'용인','식당','용인시 수지구 풍덕천동 123-4'))
+  self.assertIsNone(choose({'address':[p]},'용인','식당','용인시 수지구 풍덕천동 123-5'))
