@@ -338,5 +338,37 @@
     "spending_city": "용인",
     "matched_address": "경기도 용인시 보개원삼로 2033",
     "evidence_url": "https://www.openstreetmap.org/node/13891563576"
+  },
+  "경기|용인|풍덕천로140번길|21": {
+    "lat": 37.3222981,
+    "lng": 127.0984776,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 풍덕천로140번길 21",
+    "evidence_url": "https://www.openstreetmap.org/way/1319996785"
+  },
+  "경기|용인|포은대로|441": {
+    "lat": 37.3221623,
+    "lng": 127.0985815,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 포은대로 441",
+    "evidence_url": "https://www.openstreetmap.org/way/389705473"
+  },
+  "경기|화성|남양로|675": {
+    "lat": 37.198676,
+    "lng": 126.8263251,
+    "precision": "address",
+    "spending_city": "화성",
+    "matched_address": "경기도 화성시 남양로 675",
+    "evidence_url": "https://www.openstreetmap.org/node/13891565124"
+  },
+  "경기|화성|역골동로|9-7": {
+    "lat": 37.202025,
+    "lng": 126.828752,
+    "precision": "address",
+    "spending_city": "화성",
+    "matched_address": "경기도 화성시 역골동로 9-7",
+    "evidence_url": "https://www.openstreetmap.org/node/9093021006"
   }
 }
