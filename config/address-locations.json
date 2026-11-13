@@ -370,5 +370,21 @@
     "spending_city": "화성",
     "matched_address": "경기도 화성시 역골동로 9-7",
     "evidence_url": "https://www.openstreetmap.org/node/9093021006"
+  },
+  "경기|용인|수지로|217": {
+    "lat": 37.3205767,
+    "lng": 127.0841098,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 수지로 217",
+    "evidence_url": "https://www.openstreetmap.org/way/366614748"
+  },
+  "경기|용인|용구대로|2701": {
+    "lat": 37.3267158,
+    "lng": 127.1079224,
+    "precision": "address",
+    "spending_city": "용인",
+    "matched_address": "경기도 용인시 용구대로 2701",
+    "evidence_url": "https://www.openstreetmap.org/way/665300129"
   }
 }
