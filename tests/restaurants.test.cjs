@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict'),R=require('../dist/restaurants.js');
+const a={id:'a',merchant:'샘플식당 본점',address:'경기 수원시 팔달구 효원로 12',location:{lat:37.2,lng:127,evidence_url:'https://place.map.kakao.com/1'}};
+const b={...a,id:'b',date:'2026-11-12',institution:'다른 기관'},neighbor={...a,id:'c',merchant:'다른 식당'},branch={...a,id:'d',merchant:'샘플식당 지점'},elsewhere={...a,id:'e',location:{lat:37.3,lng:127}};
+assert.equal(R.selectVenues([a],[a,b,neighbor,branch,elsewhere])[0].rows.length,2,'a selected restaurant includes other transactions, without another branch or merchant at the same coordinate');
+assert.equal(R.selectVenues([a,neighbor],[a,b,neighbor]).length,2,'same building must offer separate restaurant choices');
+assert.equal(R.selectVenues([a],[a]).length,1,'active filters define the detail ledger');
+assert.notEqual(R.venueKey({...a,location:null}),R.venueKey({...b,location:null}),'unknown branches must not merge by name alone');
+const profile={name:'샘플식당 본점',address:a.address,location:{lat:37.2,lng:127},source_url:'https://place.map.kakao.com/1'};
+assert.equal(R.profileFor(a,{'1':profile}),profile);
+assert.equal(R.profileFor(a,{'1':{...profile,name:'이전과 다른 업체'}}),null,'changed business must not inherit an old menu');
+assert.equal(R.profileFor(a,{'1':{...profile,location:{lat:37.3,lng:127}}}),null,'relocated branches require revalidation');
+assert.equal(R.profileFor({...a,location:{lat:37.2,lng:127}},{'1':profile}),profile,'a matching exact name, road number and coordinate can share source information');
+assert.equal(R.profileFor({...a,address:'효원로 13',location:{lat:37.2,lng:127}},{'1':profile}),null);
+assert.equal(R.profileFor({...a,location:{lat:37.2,lng:127}},{'1':profile,'2':profile}),null,'ambiguous profiles must not match');
+assert(R.staleMenu({source_updated_at:'2023-08-01'},profile,Date.parse('2026-11-14')));
+assert(!R.staleMenu({source_updated_at:'2026-11-13'},profile,Date.parse('2026-11-14')));
+console.log('Restaurant grouping, branch isolation, source matching and menu dates passed.');

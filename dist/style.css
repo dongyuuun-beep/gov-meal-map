@@ -11,3 +11,20 @@
 #quick-hwaseong-council{grid-column:1/-1}
 
 .leaflet-tooltip.price-label{font-size:12px;font-weight:700;padding:4px 7px;color:#154f3f}.leaflet-tooltip.price-label.inferred{color:#996019;border-color:#d8b57f}
+
+.detail{width:430px;max-height:calc(100% - 130px)}
+.detail h3{font-size:14px;margin:0 0 10px;color:var(--ink)}
+.restaurant-info,.spending-section{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.restaurant-category{display:inline-block;padding:6px 9px;border-radius:6px;background:#edf4ed;font-size:11px;color:#205b46}
+.restaurant-info h3:not(:first-child){margin-top:22px}.detail .restaurant-info p{color:#53665c}
+.menu-list{padding:0;margin:9px 0;list-style:none}.menu-list li{display:flex;justify-content:space-between;align-items:start;gap:12px;padding:11px 0;border-bottom:1px solid #edf0eb;font-size:12px}
+.menu-list li b{white-space:nowrap;font-size:12px}.menu-list small,.profile-source small{display:block;font-size:10px;color:#7b877f;line-height:1.6;margin-top:4px}
+.detail .menu-note{font-size:10px;color:#7b7869;background:#f8f6ed;padding:10px;border-radius:6px}.profile-source{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.registered-menus summary,.institution-summary summary{cursor:pointer;font-size:11px;color:#205b46;padding:9px 0}
+.institution-summary>div{display:flex;justify-content:space-between;gap:12px;font-size:11px;padding:8px 0}.institution-summary>div b{white-space:nowrap}
+.venue-choices{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.venue-choices button{font-size:11px;border:1px solid #cad9ce;padding:7px 9px;border-radius:6px}.venue-choices .active{background:#205b46;color:white}
+.expense-facts{margin:10px 0}.expense-facts>div{display:grid;grid-template-columns:58px 1fr;gap:8px;font-size:11px;line-height:1.8;margin:4px 0}.expense-facts dt{color:#7b877f}.expense-facts dd{margin:0;overflow-wrap:anywhere}.expense-facts dd b{font-size:13px}
+.detail article>a+a{margin-left:13px}.more-expenses{width:100%;padding:12px;margin-top:15px;border:1px solid #cad9ce;border-radius:7px;background:#f1f6ef;font-size:12px}.detail .profile-warning{color:#996019}
+@media(max-width:800px){.detail{width:auto;max-height:85%;bottom:12px}.profile-source{align-items:start}}
+.registered-menus .menu-list{max-height:250px;overflow-y:auto;padding-right:6px}
+.leaflet-tooltip.price-label{padding:0;pointer-events:auto;cursor:pointer}.price-marker-button{display:block;padding:5px 8px;text-align:center;font-size:12px;font-weight:700;line-height:1.4;border-radius:3px}.venue-label-name{display:block;max-width:115px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:500;margin-bottom:2px}.price-marker-button:focus-visible{outline:3px solid #6aa98a;outline-offset:1px}

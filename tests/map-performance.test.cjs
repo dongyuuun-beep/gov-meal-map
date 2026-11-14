@@ -1,13 +1,13 @@
 // Exercise the actual map controller with deterministic Leaflet/DOM doubles.
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const original=require('../dist/core.js');let filters=0,groups=0,adds=0;const frames=[];const elements=new Map();
-const element=id=>{if(!elements.has(id))elements.set(id,{value:['period','institution','region','city','category'].includes(id)?'all':'',hidden:false,classList:{toggle(){}},replaceChildren(){},append(){},addEventListener(){},querySelector(){return element('child');}});return elements.get(id);};
+const element=id=>{if(!elements.has(id))elements.set(id,{value:['period','institution','region','city','category'].includes(id)?'all':'',hidden:false,classList:{toggle(){}},replaceChildren(){},append(){},addEventListener(){},querySelector(){return element('child');},querySelectorAll(){return [];}});return elements.get(id);};
 const layer={members:new Set(),clearLayers(){this.members.clear();},removeLayer(m){this.members.delete(m);},addTo(){return this;}};
-let zoom=10,bounds={south:37.50,north:37.51,west:126.95,east:126.96};const handlers={};
-const map={getZoom:()=>zoom,getBounds:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east,pad:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east})}),setView(){return this;},on(events,fn){events.split(' ').forEach(e=>handlers[e]=fn);return this;},fitBounds(){}};
-function marker(){return {radius:0,tooltip:null,addTo(l){adds++;l.members.add(this);return this;},on(){return this;},setRadius(r){this.radius=r;},unbindTooltip(){this.tooltip=null;return this;},bindTooltip(content,options){this.tooltip=options;return this;}};}
-const L={map:()=>map,tileLayer:()=>({addTo(){}}),control:{zoom:()=>({addTo(){}})},layerGroup:()=>layer,divIcon:x=>x,circleMarker:()=>marker(),marker,latLngBounds:()=>({pad(){return this;}})};
-const ctx=vm.createContext({document:{getElementById:element,createElement:()=>element('generated')},MealCore:{...original,filter(...a){filters++;return original.filter(...a);},group(...a){groups++;return original.group(...a);}},L,requestAnimationFrame:fn=>{frames.push(fn);return frames.length;},fetch:()=>new Promise(()=>{}),location:{search:''},URLSearchParams,Option:function(label,value){this.label=label;this.value=value;},setTimeout,console});
+let mapMoves=0;let zoom=10,bounds={south:37.50,north:37.51,west:126.95,east:126.96};const handlers={};
+const map={getZoom:()=>zoom,getBounds:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east,pad:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east})}),setView(){mapMoves++;return this;},on(events,fn){events.split(' ').forEach(e=>handlers[e]=fn);return this;},fitBounds(){}};
+function marker(){return {radius:0,tooltip:null,tooltipEvents:{},getTooltip(){return {on:(event,fn)=>{this.tooltipEvents[event]=fn;return this;},getElement:()=>null};},addTo(l){adds++;l.members.add(this);return this;},on(){return this;},setRadius(r){this.radius=r;},unbindTooltip(){this.tooltip=null;return this;},bindTooltip(content,options){this.tooltip=options;return this;}};}
+const L={canvas:()=>({}),map:()=>map,tileLayer:()=>({addTo(){}}),control:{zoom:()=>({addTo(){}})},layerGroup:()=>layer,divIcon:x=>x,circleMarker:()=>marker(),marker,latLngBounds:()=>({pad(){return this;}})};
+const ctx=vm.createContext({document:{getElementById:element,createElement:()=>element('generated')},MealRestaurants:require('../dist/restaurants.js'),MealCore:{...original,filter(...a){filters++;return original.filter(...a);},group(...a){groups++;return original.group(...a);}},L,requestAnimationFrame:fn=>{frames.push(fn);return frames.length;},fetch:()=>new Promise(()=>{}),location:{search:''},URLSearchParams,Option:function(label,value){this.label=label;this.value=value;},setTimeout,console});
 vm.runInContext(fs.readFileSync('dist/app.js','utf8'),ctx);
 const records=Array.from({length:5000},(_,i)=>({id:String(i),date:'2026-10-01',merchant:'식당 '+i,institution:'기관',department:'부서',amount_krw:10000,participants:2,spending_region:'서울',location:{lat:37.5+i*.0001,lng:126.95+i*.0001}}));
 ctx.records=records;vm.runInContext('allRows=records;filteredKey=null;render()',ctx);const flush=()=>{while(frames.length)frames.shift()();};flush();
@@ -16,9 +16,14 @@ zoom=16;handlers.zoomend();handlers.moveend();assert.equal(frames.length,1,'coal
 assert.equal(filters,initialFilters,'zoom must not scan the raw ledger');assert.equal(groups,initialGroups,'zoom must not regroup transactions');assert.equal(adds,initialAdds,'reuse markers in the same viewport');assert.equal([...layer.members].filter(m=>m.tooltip?.permanent).length,30,'dense zoom must cap permanent price labels at 30');
 bounds={south:37.5,north:37.5002,west:126.95,east:126.9502};handlers.moveend();flush();assert(layer.members.size<=3);assert([...layer.members].every(m=>m.tooltip.permanent));
 zoom=10;bounds={south:37.5,north:37.50295,west:126.95,east:126.95295};handlers.moveend();flush();assert.equal(layer.members.size,30);assert.equal([...layer.members].filter(m=>m.tooltip?.permanent).length,30,'all 30 visible places must show prices without deep zoom');
+assert([...layer.members].every(m=>m.tooltip.interactive),'price labels must accept clicks');
 const beforePan=adds;handlers.moveend();flush();assert.equal(adds,beforePan);
 vm.runInContext("setMetric('person')",ctx);flush();assert.equal(groups,initialGroups);
 assert.equal(vm.runInContext('rows().length',ctx),5000,'culling must not truncate totals or exports');
+const movesBeforeDetail=mapMoves;[...layer.members][0].tooltipEvents.click();
+assert.equal(mapMoves,movesBeforeDetail,'opening restaurant details must preserve the map view');
+assert.equal(element('detail').hidden,false,'clicking a price tooltip must open the detail panel');
+assert.match(element('detail').innerHTML,/어디서 · 언제 · 얼마나 썼나요/);
 console.log('Map zoom/pan: cached aggregation, viewport culling, marker reuse and bounded labels passed.');
 const hwaseong={id:'hs',date:'2026-10-01',merchant:'주소 미확인 식당',institution:'화성시',department:'정책과',amount_krw:80000,participants:4,spending_region:null,location:null};
 ctx.hwaseong=hwaseong;vm.runInContext("allRows=[...records,hwaseong];$('search').value='다른 검색';$('period').value='2025-01';$('city').value='수원';chooseInstitution('화성시')",ctx);flush();
@@ -27,4 +32,4 @@ assert.equal(element('city').value,'all');assert.equal(element('region').value,'
 assert.equal(element('count').textContent,'1건');assert.match(element('results-title').textContent,/화성시/);
 ctx.provenance={...hwaseong,address_match:'name_city',location:{lat:37.5,lng:126.95,precision:'address'}};
 assert.equal(vm.runInContext('mapView([provenance]).points[0].inferred',ctx),true,'refreshing coordinate evidence must preserve inferred payment-place provenance');
-vm.runInContext('show([provenance])',ctx);assert.match(element('detail').innerHTML,/원문에 주소가 없어/);
+vm.runInContext('allRows=[provenance];filteredKey=null;show([provenance])',ctx);assert.match(element('detail').innerHTML,/원문에 주소가 없어/);
