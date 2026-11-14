@@ -28,3 +28,5 @@
 @media(max-width:800px){.detail{width:auto;max-height:85%;bottom:12px}.profile-source{align-items:start}}
 .registered-menus .menu-list{max-height:250px;overflow-y:auto;padding-right:6px}
 .leaflet-tooltip.price-label{padding:0;pointer-events:auto;cursor:pointer}.price-marker-button{display:block;padding:5px 8px;text-align:center;font-size:12px;font-weight:700;line-height:1.4;border-radius:3px}.venue-label-name{display:block;max-width:115px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:500;margin-bottom:2px}.price-marker-button:focus-visible{outline:3px solid #6aa98a;outline-offset:1px}
+.type-note{font-size:10px;line-height:1.6;color:#7b877f;margin:7px 0 12px}.badge.restaurant-type{background:#e7f0ed;color:#205b46}.type-provisional{font-size:9px;color:#927841;margin:0 5px}.restaurant-type-tags{margin:4px 0 9px}.app-version{font-size:9px;color:#7b877f;border:1px solid #e4e9e3;border-radius:4px;padding:2px 5px}.map-panel{min-height:0}.detail{overscroll-behavior:contain}
+@media(max-width:800px){.search input,.filters select{font-size:16px}.type-note{font-size:9px}}

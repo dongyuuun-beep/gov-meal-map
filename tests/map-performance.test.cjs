@@ -1,12 +1,12 @@
 // Exercise the actual map controller with deterministic Leaflet/DOM doubles.
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const original=require('../dist/core.js');let filters=0,groups=0,adds=0;const frames=[];const elements=new Map();
-const element=id=>{if(!elements.has(id))elements.set(id,{value:['period','institution','region','city','category'].includes(id)?'all':'',hidden:false,classList:{toggle(){}},replaceChildren(){},append(){},addEventListener(){},querySelector(){return element('child');},querySelectorAll(){return [];}});return elements.get(id);};
+const element=id=>{if(!elements.has(id))elements.set(id,{value:['period','institution','region','city','category','restaurant-type'].includes(id)?'all':'',hidden:false,classList:{toggle(){}},replaceChildren(){},append(){},addEventListener(){},querySelector(){return element('child');},querySelectorAll(){return [];}});return elements.get(id);};
 const layer={members:new Set(),clearLayers(){this.members.clear();},removeLayer(m){this.members.delete(m);},addTo(){return this;}};
 let mapMoves=0;let zoom=10,bounds={south:37.50,north:37.51,west:126.95,east:126.96};const handlers={};
 const map={getZoom:()=>zoom,getBounds:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east,pad:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east})}),setView(){mapMoves++;return this;},on(events,fn){events.split(' ').forEach(e=>handlers[e]=fn);return this;},fitBounds(){}};
 function marker(){return {radius:0,tooltip:null,tooltipEvents:{},getTooltip(){return {on:(event,fn)=>{this.tooltipEvents[event]=fn;return this;},getElement:()=>null};},addTo(l){adds++;l.members.add(this);return this;},on(){return this;},setRadius(r){this.radius=r;},unbindTooltip(){this.tooltip=null;return this;},bindTooltip(content,options){this.tooltip=options;return this;}};}
-const L={canvas:()=>({}),map:()=>map,tileLayer:()=>({addTo(){}}),control:{zoom:()=>({addTo(){}})},layerGroup:()=>layer,divIcon:x=>x,circleMarker:()=>marker(),marker,latLngBounds:()=>({pad(){return this;}})};
+const L={canvas:()=>({}),map:()=>map,tileLayer:()=>({addTo(){}}),control:{zoom:()=>({addTo(){}})},layerGroup:()=>layer,divIcon:x=>x,circleMarker:(position,options)=>{const m=marker();m.pathOptions=options;return m;},marker,latLngBounds:()=>({pad(){return this;}})};
 const ctx=vm.createContext({document:{getElementById:element,createElement:()=>element('generated')},MealRestaurants:require('../dist/restaurants.js'),MealCore:{...original,filter(...a){filters++;return original.filter(...a);},group(...a){groups++;return original.group(...a);}},L,requestAnimationFrame:fn=>{frames.push(fn);return frames.length;},fetch:()=>new Promise(()=>{}),location:{search:''},URLSearchParams,Option:function(label,value){this.label=label;this.value=value;},setTimeout,console});
 vm.runInContext(fs.readFileSync('dist/app.js','utf8'),ctx);
 const records=Array.from({length:5000},(_,i)=>({id:String(i),date:'2026-10-01',merchant:'식당 '+i,institution:'기관',department:'부서',amount_krw:10000,participants:2,spending_region:'서울',location:{lat:37.5+i*.0001,lng:126.95+i*.0001}}));
@@ -17,6 +17,7 @@ assert.equal(filters,initialFilters,'zoom must not scan the raw ledger');assert.
 bounds={south:37.5,north:37.5002,west:126.95,east:126.9502};handlers.moveend();flush();assert(layer.members.size<=3);assert([...layer.members].every(m=>m.tooltip.permanent));
 zoom=10;bounds={south:37.5,north:37.50295,west:126.95,east:126.95295};handlers.moveend();flush();assert.equal(layer.members.size,30);assert.equal([...layer.members].filter(m=>m.tooltip?.permanent).length,30,'all 30 visible places must show prices without deep zoom');
 assert([...layer.members].every(m=>m.tooltip.interactive),'price labels must accept clicks');
+assert([...layer.members].every(m=>m.pathOptions.bubblingMouseEvents===false&&m.tooltip.bubblingMouseEvents===false),'restaurant double clicks must not bubble into map zoom');
 const beforePan=adds;handlers.moveend();flush();assert.equal(adds,beforePan);
 vm.runInContext("setMetric('person')",ctx);flush();assert.equal(groups,initialGroups);
 assert.equal(vm.runInContext('rows().length',ctx),5000,'culling must not truncate totals or exports');

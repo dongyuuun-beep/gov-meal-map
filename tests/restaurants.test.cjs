@@ -15,3 +15,13 @@ assert.equal(R.profileFor({...a,location:{lat:37.2,lng:127}},{'1':profile,'2':pr
 assert(R.staleMenu({source_updated_at:'2023-08-01'},profile,Date.parse('2026-11-14')));
 assert(!R.staleMenu({source_updated_at:'2026-11-13'},profile,Date.parse('2026-11-14')));
 console.log('Restaurant grouping, branch isolation, source matching and menu dates passed.');
+const profileType=(path,menus=[])=>({name:'확인된 식당',category_path:['음식점',...path],menus:menus.map(name=>({name}))});
+assert.deepEqual(R.classify({merchant:'식당'},profileType(['한식','육류,고기'],['한우등심','돼지갈비'])).tags,['소고기','돼지고기','고기구이','한식']);
+assert.deepEqual(R.classify({merchant:'식당'},profileType(['카페','커피전문점'],['한우 샌드위치'])).tags,['카페'],'cafe sandwich ingredients must not turn the venue into a beef restaurant');
+assert.deepEqual(R.classify({merchant:'동네돼지국밥'},null).tags,['돼지고기','한식']);
+assert(R.classify({merchant:'동네돼지국밥'},null).provisional);
+assert.deepEqual(R.classify({merchant:'왕갈비'},profileType(['한식','육류,고기','갈비'])).tags,['고기구이','한식'],'generic galbi does not prove beef or pork');
+assert.deepEqual(R.classify({merchant:'알 수 없는 사용처'},null).tags,['미분류']);
+assert.deepEqual(R.classify({merchant:'식당'},profileType(['한식','해물,생선','회'])).tags,['회·해산물','한식']);
+assert.equal(R.profileFor({...a,location:{lat:37.2,lng:127}},{'1':profile},R.profileIndex({'1':profile})),profile);
+console.log('Restaurant types: source categories, menu evidence, name inference and unknowns passed.');
