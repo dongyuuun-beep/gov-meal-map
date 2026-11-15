@@ -1,0 +1,277 @@
+{
+  "백리향": null,
+  "설화생갈비": null,
+  "포도나무": null,
+  "능라도 광화문점": {
+    "address": "서울 종로구 새문안로3길 15",
+    "address_match": "name_city",
+    "matched_merchant": "능라도 광화문점",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.57176035,
+      "lng": 126.97235704,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/502145879"
+    }
+  },
+  "설농가옥": {
+    "address": "인천 남동구 인주대로623번길 11",
+    "address_match": "name_city",
+    "matched_merchant": "설농가옥",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45034818,
+      "lng": 126.70608267,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/847241388"
+    }
+  },
+  "타이반쩜": null,
+  "경복궁구월점": {
+    "address": "인천 남동구 인주대로 593",
+    "address_match": "name_city",
+    "matched_merchant": "경복궁 구월점",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45037263,
+      "lng": 126.70288878,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/26645163"
+    }
+  },
+  "강구미주구리": null,
+  "해초가": null,
+  "대선칼국수": null,
+  "일품당프리미엄": {
+    "address": "서울 종로구 새문안로5가길 7",
+    "address_match": "name_city",
+    "matched_merchant": "일품당프리미엄",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.57276084,
+      "lng": 126.97404561,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2018077793"
+    }
+  },
+  "유키돈까스": null,
+  "본도시락": null,
+  "젊은농부해피타운": null,
+  "스시와": null,
+  "광교해우리": null,
+  "동해한정식": null,
+  "또고기": null,
+  "길림성": null,
+  "전복촌": null,
+  "북경오리구이": null,
+  "남도본가": null,
+  "툇마루": null,
+  "신안촌": null,
+  "일품당샤브샤브": null,
+  "서순금류복요리전문점": null,
+  "티시스 신문로지점": null,
+  "우아라": null,
+  "고봉삼계탕 광화문점": {
+    "address": "서울 종로구 새문안로 89",
+    "address_match": "name_city",
+    "matched_merchant": "고봉삼계탕 광화문점",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.57047241,
+      "lng": 126.97450824,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/731443103"
+    }
+  },
+  "풍년옥": null,
+  "테이스팅뮤지엄": null,
+  "정남옥순대국": null,
+  "혜준당": null,
+  "사도시": null,
+  "남도예찬": {
+    "address": "경기 수원시 영통구 센트럴타운로 85",
+    "address_match": "name_city",
+    "matched_merchant": "남도예찬",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.29090107,
+      "lng": 127.05134574,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1998349174"
+    }
+  },
+  "평가옥": null,
+  "동원참치": null,
+  "형제복집": null,
+  "겐키라멘": {
+    "address": "인천 남동구 남동대로765번길 25",
+    "address_match": "name_city",
+    "matched_merchant": "겐키라멘",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.4505969,
+      "lng": 126.70610204,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1905606524"
+    }
+  },
+  "제주은희네해장국": null,
+  "미향한정식": null,
+  "삼만시순두부집": null,
+  "스타벅스 코리아": null,
+  "쿠팡(인터넷 구입)": null,
+  "한박궁": null,
+  "행화촌": null,
+  "테이엔": null,
+  "산하복집": null,
+  "황제삼계탕": null,
+  "투썸플레이스": null,
+  "이유장어": {
+    "address": "경기 수원시 장안구 수성로261번길 52-1",
+    "address_match": "name_city",
+    "matched_merchant": "이유장어",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.29200336,
+      "lng": 126.99978008,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/404742381"
+    }
+  },
+  "따뜻한스푼": null,
+  "구내식당-장미홀": null,
+  "부대옥": null,
+  "거궁일산점": {
+    "address": "경기 고양시 일산서구 한류월드로 300",
+    "address_match": "name_city",
+    "matched_merchant": "거궁 일산점",
+    "spending_region": "경기",
+    "spending_city": null,
+    "location": {
+      "lat": 37.6645532,
+      "lng": 126.75452647,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1925709634"
+    }
+  },
+  "태진복집": {
+    "address": "서울 종로구 자하문로10길 10-24",
+    "address_match": "name_city",
+    "matched_merchant": "태진복집",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.57904212,
+      "lng": 126.97207812,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/10813889"
+    }
+  },
+  "(주)한일관": null,
+  "풀무원푸드앤컬처 정부서울청사": null,
+  "브이아이피 참치 광화문점": null,
+  "정가네손두부집": null,
+  "충남집순대국소머리전문": null,
+  "숯불 장어구이 전문점 도담도담": {
+    "address": "세종특별자치시 한누리대로 583",
+    "address_match": "name_city",
+    "matched_merchant": "숯불장어구이전문점 도담도담",
+    "spending_region": "세종",
+    "spending_city": null,
+    "location": {
+      "lat": 36.51528311,
+      "lng": 127.25851149,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2037324270"
+    }
+  },
+  "사랑방": null,
+  "노천골": null,
+  "도단가": null,
+  "옥이네": null,
+  "긱키 브라더스": {
+    "address": "인천 연수구 샘말로44번길 12",
+    "address_match": "name_city",
+    "matched_merchant": "긱키브라더스",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.41289092,
+      "lng": 126.67960034,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1899273066"
+    }
+  },
+  "양학진스시": {
+    "address": "서울 송파구 가락로 240",
+    "address_match": "name_city",
+    "matched_merchant": "양학진스시",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.50947255,
+      "lng": 127.11803522,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1830134494"
+    }
+  },
+  "명품삼계탕": null,
+  "동춘사골순대국": null,
+  "효자동솥뚜껑": null,
+  "낙원약과": null,
+  "보거스": null,
+  "용운각": {
+    "address": "인천 남동구 독점로29번길 38",
+    "address_match": "name_city",
+    "matched_merchant": "용운각",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45254623,
+      "lng": 126.70882944,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/964275404"
+    }
+  },
+  "비스트로J": null,
+  "경복궁": null,
+  "산장횟집": null,
+  "오요피자": {
+    "address": "인천 남동구 남동대로 809",
+    "address_match": "name_city",
+    "matched_merchant": "오요피자",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.4544503,
+      "lng": 126.70782974,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1726578212"
+    }
+  },
+  "이도참치": null,
+  "우제리": null
+}

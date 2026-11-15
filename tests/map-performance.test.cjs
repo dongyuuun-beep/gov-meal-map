@@ -1,7 +1,7 @@
 // Exercise the actual map controller with deterministic Leaflet/DOM doubles.
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const original=require('../dist/core.js');let filters=0,groups=0,adds=0;const frames=[];const elements=new Map();
-const element=id=>{if(!elements.has(id))elements.set(id,{value:['period','institution','region','city','category','restaurant-type'].includes(id)?'all':'',hidden:false,classList:{toggle(){}},replaceChildren(){},append(){},addEventListener(){},querySelector(){return element('child');},querySelectorAll(){return [];}});return elements.get(id);};
+const element=id=>{if(!elements.has(id))elements.set(id,{value:['period','institution','region','city','category','restaurant-type','department','leader-role','leader'].includes(id)?'all':'',hidden:false,classList:{toggle(){}},replaceChildren(){},append(){},addEventListener(){},querySelector(){return element('child');},querySelectorAll(){return [];}});return elements.get(id);};
 const layer={members:new Set(),clearLayers(){this.members.clear();},removeLayer(m){this.members.delete(m);},addTo(){return this;}};
 let mapMoves=0;let zoom=10,bounds={south:37.50,north:37.51,west:126.95,east:126.96};const handlers={};
 const map={getZoom:()=>zoom,getBounds:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east,pad:()=>({getSouth:()=>bounds.south,getNorth:()=>bounds.north,getWest:()=>bounds.west,getEast:()=>bounds.east})}),setView(){mapMoves++;return this;},on(events,fn){events.split(' ').forEach(e=>handlers[e]=fn);return this;},fitBounds(){}};

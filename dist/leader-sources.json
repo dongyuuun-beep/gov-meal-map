@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-15T02:47:04.803303+00:00",
+  "sources": [
+    {
+      "source": "통일부 고위직 공개",
+      "url": "https://www.unikorea.go.kr/web/unikorea/bbs/bbs_0000000000000125",
+      "status": "success",
+      "rows": 88,
+      "failed_files": []
+    },
+    {
+      "source": "농림축산식품부 고위직 공개",
+      "url": "https://www.mafra.go.kr/home/5004/subview.do",
+      "status": "success",
+      "rows": 8,
+      "failed_files": []
+    },
+    {
+      "source": "수원시 고위직 공개",
+      "url": "https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1037",
+      "status": "success",
+      "rows": 112,
+      "failed_files": []
+    },
+    {
+      "source": "인천광역시 고위직 공개",
+      "url": "https://www.incheon.go.kr/open/OPEN010301",
+      "status": "partial",
+      "rows": 163,
+      "failed_files": [
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3087885&fileTy=ATTACH&fileNo=1",
+          "error": "Incheon detail table not recognized"
+        }
+      ]
+    }
+  ]
+}

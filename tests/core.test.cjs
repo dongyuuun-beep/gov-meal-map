@@ -15,3 +15,8 @@ assert.equal(C.filter(cities,{city:'수원'}).length,1);
 assert.equal(C.filter(cities,{city:'수원'})[0].institution,'서울특별시');
 assert.equal(C.filter(cities,{institution:'수원시'})[0].spending_city,null);
 assert.deepEqual(Object.keys(C.cities).sort(),['수원','용인','평택','화성'].sort());
+const offices=[{id:'a',department:'원문 월별 제목',department_name:'정책과',department_key:'기관 · 정책과',leader_role:null},{id:'b',department_name:'행정1부시장실',leader_role:'부시장',leader_label:'서울특별시 · 행정1부시장실'},{id:'c',department_name:'시장실',leader_role:'시장',leader_label:'수원시 · 수원시장 공개내역'}];
+assert.deepEqual(C.filter(offices,{view:'department',department:'기관 · 정책과'}).map(r=>r.id),['a']);
+assert.deepEqual(C.filter(offices,{view:'leaders',role:'부시장'}).map(r=>r.id),['b']);
+assert.deepEqual(C.filter(offices,{view:'leaders',leader:'수원시 · 수원시장 공개내역'}).map(r=>r.id),['c']);
+assert.deepEqual(C.filter(offices,{view:'leaders'}).map(r=>r.id),['b','c']);
