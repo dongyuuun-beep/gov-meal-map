@@ -273,5 +273,162 @@
     }
   },
   "이도참치": null,
-  "우제리": null
+  "우제리": null,
+  "새우물식당": null,
+  "달구운바람스타": null,
+  "옥수동화덕피자": null,
+  "한결손두부": null,
+  "고을순대국밥": null,
+  "경원재": null,
+  "굴찌굴국밥": null,
+  "시즌파이브 프리미엄본점": {
+    "address": "세종특별자치시 아름서1길 13-5",
+    "address_match": "name_city",
+    "matched_merchant": "시즌파이브프리미엄 본점",
+    "spending_region": "세종",
+    "spending_city": null,
+    "location": {
+      "lat": 36.51133427,
+      "lng": 127.24258602,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1912840226"
+    }
+  },
+  "서브웨이": null,
+  "황제갈비살": null,
+  "금문도(내수동점)": {
+    "address": "서울 종로구 사직로8길 42",
+    "address_match": "name_city",
+    "matched_merchant": "금문도 내수동점",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.5738625,
+      "lng": 126.97291095,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/210047354"
+    }
+  },
+  "금화왕돈까스": null,
+  "샤브샤브신선채": null,
+  "행궁정찬": {
+    "address": "경기 수원시 영통구 광교중앙로 140",
+    "address_match": "name_city",
+    "matched_merchant": "행궁정찬",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.28582893,
+      "lng": 127.05944695,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1200119330"
+    }
+  },
+  "순남시래기": null,
+  "밍구미세": {
+    "address": "인천 남동구 예술로174번길 46",
+    "address_match": "name_city",
+    "matched_merchant": "밍구미세",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.44945216,
+      "lng": 126.70375471,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/669205210"
+    }
+  },
+  "스시이안앤 인천구월점": {
+    "address": "인천 남동구 구월남로 150",
+    "address_match": "name_city",
+    "matched_merchant": "스시이안앤 인천구월점",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45280179,
+      "lng": 126.70614653,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/688221021"
+    }
+  },
+  "설농가": null,
+  "백세곰탕": null,
+  "신운현궁한방삼계탕": null,
+  "럭키족발": null,
+  "윗트 구월점": {
+    "address": "인천 남동구 성말로35번길 4",
+    "address_match": "name_city",
+    "matched_merchant": "윗트 구월점",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.44529606,
+      "lng": 126.70493959,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1611813032"
+    }
+  },
+  "예향한정식": null,
+  "써브웨이": null,
+  "송프로참치": {
+    "address": "인천 미추홀구 독배로 446",
+    "address_match": "name_city",
+    "matched_merchant": "송프로참치",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45936435,
+      "lng": 126.64888351,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1649723062"
+    }
+  },
+  "콩두부(KONG TOFU)": null,
+  "키친온유": null,
+  "상무초밥": null,
+  "함박미소": null,
+  "화담족발": {
+    "address": "인천 남동구 선수촌공원로23번길 6-21",
+    "address_match": "name_city",
+    "matched_merchant": "화담족발",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.44213543,
+      "lng": 126.70934891,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1600109978"
+    }
+  },
+  "팔진향": null,
+  "경원재 바이워커힐": null,
+  "자선농원": {
+    "address": "경기 수원시 장안구 광교산로 363",
+    "address_match": "name_city",
+    "matched_merchant": "자선농원",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.31532426,
+      "lng": 127.01897504,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/12660235"
+    }
+  },
+  "빠네비노": null,
+  "향미정": null,
+  "오롯이": null,
+  "주식회사 어부신광호": null,
+  "광화문아띠": null,
+  "기와집담": null,
+  "가야금": null
 }
