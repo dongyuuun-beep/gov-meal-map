@@ -430,5 +430,136 @@
   "주식회사 어부신광호": null,
   "광화문아띠": null,
   "기와집담": null,
-  "가야금": null
+  "가야금": null,
+  "우루루": null,
+  "열구자": null,
+  "AK plaza": null,
+  "김경자소문난대구왕뽈찜": null,
+  "신화아이푸드": null,
+  "셈프레베네": {
+    "address": "경기 수원시 팔달구 효원로235번길 53",
+    "address_match": "name_city",
+    "matched_merchant": "셈프레베네",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.26534721,
+      "lng": 127.02831973,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/743890057"
+    }
+  },
+  "청산시골쌈밥": {
+    "address": "경기 수원시 팔달구 신풍로 74",
+    "address_match": "name_city",
+    "matched_merchant": "청산시골쌈밥",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.28752623,
+      "lng": 127.01355506,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/12552859"
+    }
+  },
+  "영화루": null,
+  "(주)신화케이푸드": null,
+  "가보정": null,
+  "일월수목원 카페 데이지원": {
+    "address": "경기 수원시 장안구 일월로 61",
+    "address_match": "name_city",
+    "matched_merchant": "일월수목원 카페 데이지원",
+    "spending_region": "경기",
+    "spending_city": "수원",
+    "location": {
+      "lat": 37.2878734,
+      "lng": 126.97662249,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/671875512"
+    }
+  },
+  "초원소곱창": null,
+  "최네집": null,
+  "경복궁삼계탕": null,
+  "마장동김씨": null,
+  "주원일식": null,
+  "빠스타스 by 파인드파인": null,
+  "안성또순이": null,
+  "대우송도호텔": null,
+  "연포갈비": null,
+  "광화문 더덕순대": {
+    "address": "서울 종로구 새문안로5길 10",
+    "address_match": "name_city",
+    "matched_merchant": "광화문더덕순대",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.57106899,
+      "lng": 126.97506949,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/21340702"
+    }
+  },
+  "딸부자집": null,
+  "서초삼계탕": null,
+  "도화상점": null,
+  "경복궁사당점": {
+    "address": "서울 서초구 방배천로 11",
+    "address_match": "name_city",
+    "matched_merchant": "경복궁 사당점",
+    "spending_region": "서울",
+    "spending_city": null,
+    "location": {
+      "lat": 37.47781834,
+      "lng": 126.98224113,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/11496473"
+    }
+  },
+  "신승반점": null,
+  "조선갈비실록": null,
+  "호랑이주택": null,
+  "우설화": null,
+  "대한순두부": null,
+  "까치식당": null,
+  "바울라돈까스": null,
+  "곤드레밥(bob-gondre)": null,
+  "영포화로": null,
+  "화로구이구월점": null,
+  "준카이센동": {
+    "address": "인천 남동구 남동대로799번길 34",
+    "address_match": "name_city",
+    "matched_merchant": "준카이센동",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45439465,
+      "lng": 126.707188,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1732512369"
+    }
+  },
+  "용암해물누룽지": null,
+  "만다린": null,
+  "부라더목장": {
+    "address": "인천 남동구 미래로 18",
+    "address_match": "name_city",
+    "matched_merchant": "부라더목장",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.45157095,
+      "lng": 126.70503813,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2139324020"
+    }
+  },
+  "강릉해변막국수": null
 }

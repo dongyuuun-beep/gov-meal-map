@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-15T07:46:43.171288+00:00",
+  "checked_at": "2026-11-16T07:50:26.119671+00:00",
   "sources": [
     {
       "source": "통일부 고위직 공개",
@@ -19,15 +19,27 @@
       "source": "수원시 고위직 공개",
       "url": "https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1037",
       "status": "success",
-      "rows": 112,
+      "rows": 97,
       "failed_files": []
     },
     {
       "source": "인천광역시 고위직 공개",
       "url": "https://www.incheon.go.kr/open/OPEN010301",
       "status": "partial",
-      "rows": 163,
+      "rows": 104,
       "failed_files": [
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3094861&fileTy=ATTACH&fileNo=1",
+          "error": "Incheon detail table not recognized"
+        },
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3094861&fileTy=ATTACH&fileNo=2",
+          "error": "Incheon detail table not recognized"
+        },
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3094861&fileTy=ATTACH&fileNo=3",
+          "error": "Incheon detail table not recognized"
+        },
         {
           "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3087885&fileTy=ATTACH&fileNo=1",
           "error": "Incheon detail table not recognized"

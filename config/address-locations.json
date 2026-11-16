@@ -386,5 +386,13 @@
     "spending_city": "용인",
     "matched_address": "경기도 용인시 용구대로 2701",
     "evidence_url": "https://www.openstreetmap.org/way/665300129"
+  },
+  "경기|화성|동탄감배산로|143": {
+    "lat": 37.1987078,
+    "lng": 127.0893028,
+    "precision": "address",
+    "spending_city": "화성",
+    "matched_address": "경기도 화성시 동탄감배산로 143",
+    "evidence_url": "https://www.openstreetmap.org/node/13891565295"
   }
 }
