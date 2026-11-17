@@ -394,5 +394,13 @@
     "spending_city": "화성",
     "matched_address": "경기도 화성시 동탄감배산로 143",
     "evidence_url": "https://www.openstreetmap.org/node/13891565295"
+  },
+  "경기|화성|동탄솔빛로|68": {
+    "lat": 37.1944142,
+    "lng": 127.0749023,
+    "precision": "address",
+    "spending_city": "화성",
+    "matched_address": "경기도 화성시 동탄솔빛로 68",
+    "evidence_url": "https://www.openstreetmap.org/way/569995755"
   }
 }

@@ -561,5 +561,90 @@
       "evidence_url": "https://place.map.kakao.com/2139324020"
     }
   },
-  "강릉해변막국수": null
+  "강릉해변막국수": null,
+  "원조엄마네": null,
+  "전주콩나루콩나물국밥": null,
+  "인현통닭삼계탕": null,
+  "별미삼청수제비": null,
+  "경원재바이워커힐": null,
+  "우미가든": null,
+  "거제지심도": null,
+  "본강남면옥": null,
+  "아트랑": null,
+  "추오정남원추어탕": null,
+  "흰고래연어육회": null,
+  "용인정": {
+    "address": "인천 미추홀구 경인로305번길 5",
+    "address_match": "name_city",
+    "matched_merchant": "용인정",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.46042918,
+      "lng": 126.67464134,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/10702537"
+    }
+  },
+  "춘보네돼지국밥엔수제돈가스": null,
+  "오봉집": null,
+  "본초카페 가빈": null,
+  "우동키노야": null,
+  "24시청도반점&중식포차": {
+    "address": "인천 서해구 중봉대로586번길 19",
+    "address_match": "name_city",
+    "matched_merchant": "24시청도반점&중식포차",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.53225048,
+      "lng": 126.65238313,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/154071776"
+    }
+  },
+  "청도수산": null,
+  "우한판 선학직영점": {
+    "address": "인천 연수구 학나래로118번길 9",
+    "address_match": "name_city",
+    "matched_merchant": "우한판 선학직영점",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.42824773,
+      "lng": 126.69840728,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/887386555"
+    }
+  },
+  "명문가": null,
+  "풍경생선구이": null,
+  "인천광역시청 구내식당": null,
+  "화성옥": null,
+  "홈마트": null,
+  "쿠팡(인터넷 결제)": null,
+  "춘보네돼지국밥엔수제돈": null,
+  "삼학도": null,
+  "곰설채": null,
+  "보통날의파스타": {
+    "address": "인천 남동구 예술로 230",
+    "address_match": "name_city",
+    "matched_merchant": "보통날의파스타",
+    "spending_region": "인천",
+    "spending_city": null,
+    "location": {
+      "lat": 37.4543746,
+      "lng": 126.70205016,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/24267202"
+    }
+  },
+  "소래포구해남수산": null,
+  "옛날주막집설렁탕(인천 강화군 소재)": null,
+  "쭈꾸미일당백": null,
+  "GS25인천시청점": null
 }
