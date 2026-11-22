@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T08:11:07.453132+00:00",
+  "checked_at": "2026-11-22T07:57:52.353156+00:00",
   "sources": [
     {
       "source": "통일부 고위직 공개",
@@ -25,8 +25,30 @@
     {
       "source": "인천광역시 고위직 공개",
       "url": "https://www.incheon.go.kr/open/OPEN010301",
-      "status": "failed",
-      "error": "curl: (35) Recv failure: Connection reset by peer"
+      "status": "partial",
+      "rows": 87,
+      "failed_files": [
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3094861&fileTy=ATTACH&fileNo=1",
+          "error": "Incheon detail table not recognized"
+        },
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3094861&fileTy=ATTACH&fileNo=2",
+          "error": "Incheon detail table not recognized"
+        },
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3094861&fileTy=ATTACH&fileNo=3",
+          "error": "Incheon detail table not recognized"
+        },
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3087885&fileTy=ATTACH&fileNo=1",
+          "error": "Incheon detail table not recognized"
+        },
+        {
+          "url": "https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3087885&fileTy=ATTACH&fileNo=3",
+          "error": "Command '['curl', '-4', '-fsSL', '--connect-timeout', '5', '--max-time', '25', 'https://www.incheon.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=3087885&fileTy=ATTACH&fileNo=3']' returned non-zero exit status 28."
+        }
+      ]
     }
   ]
 }
