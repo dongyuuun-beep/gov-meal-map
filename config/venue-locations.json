@@ -12927,5 +12927,161 @@
       "evidence_url": "https://place.map.kakao.com/436597843"
     }
   },
-  "name|화성|핏쩨리아아도르": null
+  "name|화성|핏쩨리아아도르": null,
+  "name|화성|고금기객잔": {
+    "address": "경기 화성시 병점구 동탄지성로 221",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "고금기객잔",
+    "location": {
+      "lat": 37.21332335,
+      "lng": 127.05258984,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/13028168"
+    }
+  },
+  "name|화성|포레스트 호수공원점": {
+    "address": "경기 화성시 동탄구 동탄순환대로3길 28-14",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "포레스트 호수공원점",
+    "location": {
+      "lat": 37.16729346,
+      "lng": 127.09525392,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1793940260"
+    }
+  },
+  "name|화성|도니오네": null,
+  "name|화성|시루향기": null,
+  "name|화성|TAERI LATTE": null,
+  "name|화성|㈜한일마트": null,
+  "name|화성|제줏간 화성봉담점": {
+    "address": "경기 화성시 효행구 봉담읍 동화길 51",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "제줏간 화성봉담점",
+    "location": {
+      "lat": 37.21875268,
+      "lng": 126.95523684,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/752689758"
+    }
+  },
+  "name|화성|흑산도홍어": null,
+  "name|화성|들밥차밥(신동탄반월점)": null,
+  "name|화성|커스텀커피 세종어진점": null,
+  "name|화성|메밀청담": null,
+  "name|화성|버낭마음": {
+    "address": "경기 화성시 병점구 병점2로 145",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "버낭마음",
+    "location": {
+      "lat": 37.21211238,
+      "lng": 127.05042032,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1487475938"
+    }
+  },
+  "name|화성|주식회사 화성살살녹소": null,
+  "name|화성|보용만두": null,
+  "name|화성|파파존스": null,
+  "name|화성|돈카츠한식당": null,
+  "name|화성|G마켓": null,
+  "name|화성|하노이쌀국수그리고카레": null,
+  "name|화성|두껍집 병점복합타운점": null,
+  "name|화성|선빈식당": {
+    "address": "경기 화성시 병점구 화산중앙로 28",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "선빈식당",
+    "location": {
+      "lat": 37.20686015,
+      "lng": 127.01400023,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1582786532"
+    }
+  },
+  "name|화성|카페로제": null,
+  "name|화성|투썸플레이스(병점점)": null,
+  "name|화성|하늘그린숲 카페": {
+    "address": "경기 화성시 효행구 매송면 서해로 2448-32",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "하늘그린숲카페",
+    "location": {
+      "lat": 37.27013184,
+      "lng": 126.9103678,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/232768518"
+    }
+  },
+  "name|화성|봉담축산식당": null,
+  "name|화성|소나무가든": null,
+  "name|화성|백합칼국수": null,
+  "name|화성|송동푸드": null,
+  "name|화성|멜로피자": null,
+  "name|화성|카페 미.네(CAFE MI.N": null,
+  "name|화성|남도고기밥상": null,
+  "name|화성|어식백세 화덕 생선구이": {
+    "address": "경기 화성시 만세구 팔탄면 3.1만세로 739",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "어식백세화덕생선구이",
+    "location": {
+      "lat": 37.11279354,
+      "lng": 126.87801985,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/896936697"
+    }
+  },
+  "name|화성|병점순대국": null,
+  "name|화성|동탄역 이디야커피": null,
+  "name|화성|전주회관": null,
+  "name|화성|투파인드피터 화성남양점": {
+    "address": "경기 화성시 만세구 남양읍 남양로 589",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "투파인드피터 화성남양점",
+    "location": {
+      "lat": 37.19208998,
+      "lng": 126.82101043,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/39707422"
+    }
+  },
+  "name|화성|미도인 동탄레이크꼬모점": null,
+  "name|화성|칠보산토종닭": {
+    "address": "경기 화성시 효행구 매송면 매송고색로395번길 104",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "칠보산토종닭",
+    "location": {
+      "lat": 37.25202405,
+      "lng": 126.94508383,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/20670082"
+    }
+  },
+  "name|화성|전주명가": null,
+  "name|화성|이가원": null
 }
