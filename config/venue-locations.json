@@ -13083,5 +13083,141 @@
     }
   },
   "name|화성|전주명가": null,
-  "name|화성|이가원": null
+  "name|화성|이가원": null,
+  "name|화성|예당꽃돼지": {
+    "address": "경기 화성시 병점구 태안로 68-1",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "예당꽃돼지",
+    "location": {
+      "lat": 37.19990002,
+      "lng": 127.03964716,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/325509808"
+    }
+  },
+  "name|수원|여기있소먹고가소": null,
+  "name|화성|향미정": {
+    "address": "경기 화성시 만세구 향남읍 향남로 521",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "향미정",
+    "location": {
+      "lat": 37.14011101,
+      "lng": 126.91770335,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1970881343"
+    }
+  },
+  "name|수원|국보회관": null,
+  "name|화성|김가네토종순대국": {
+    "address": "경기 화성시 병점구 병점서로 33",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "김가네토종순대국",
+    "location": {
+      "lat": 37.20547118,
+      "lng": 127.0397875,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/175898279"
+    }
+  },
+  "name|수원|서오릉피자": null,
+  "name|화성|카페A+커피이야기": null,
+  "name|수원|하삼동커피 수원당수점": {
+    "address": "경기 수원시 권선구 당수로 112",
+    "spending_city": "수원",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "하삼동커피 수원당수점",
+    "location": {
+      "lat": 37.28413172,
+      "lng": 126.94307583,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1101244432"
+    }
+  },
+  "name|화성|남양집": null,
+  "name|수원|알볼로피자": null,
+  "name|화성|３１８로스터리": null,
+  "name|수원|더몰트하우스\n광교": null,
+  "name|화성|동서 C&T": null,
+  "name|화성|어도수산": null,
+  "name|화성|고봉민김밥인 화성북광장점": {
+    "address": "경기 화성시 동탄구 동탄반석로 196",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "고봉민김밥인 화성북광장점",
+    "location": {
+      "lat": 37.20601624,
+      "lng": 127.07230856,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/21605539"
+    }
+  },
+  "name|화성|고메브릿지": null,
+  "name|화성|민속칼국수": null,
+  "name|화성|주식회사 소장농": null,
+  "name|화성|마장동김씨 수원인계점": null,
+  "name|화성|파리바게뜨 동탄하나로마트": null,
+  "name|화성|노걸대감자탕": null,
+  "name|화성|'향남읍(신동재찌개사랑)": null,
+  "name|화성|양천뼈다귀": null,
+  "name|화성|'향남읍(빈티지카페)": null,
+  "name|화성|백년손님 서서갈비 향": null,
+  "name|화성|발안농업협동조합 하": null,
+  "name|화성|코다리명가": null,
+  "name|화성|달맞이꽃게탕": null,
+  "name|화성|킹콩부대찌개": null,
+  "name|화성|신이첩밥상": null,
+  "name|화성|허니닭강정 봉담점": {
+    "address": "경기 화성시 효행구 봉담읍 오래3길 15",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "허니닭강정 봉담점",
+    "location": {
+      "lat": 37.21995819,
+      "lng": 126.954986,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1583788742"
+    }
+  },
+  "name|화성|오누이손칼국수수제비": {
+    "address": "경기 화성시 효행구 봉담읍 상봉길 31",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "오누이손칼국수수제비",
+    "location": {
+      "lat": 37.21745677,
+      "lng": 126.95239842,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/13141726"
+    }
+  },
+  "name|화성|파리바게트(시화병원": null,
+  "name|화성|옛날경성순대국": null,
+  "name|화성|구들짱황소곱창": null,
+  "name|화성|미담 돌솥비빔밥 전문": null,
+  "name|화성|명장시대 봉담": null,
+  "name|화성|마삼계탕": null,
+  "name|화성|춘동탄점": null,
+  "name|화성|삼도 화성시청점": null,
+  "name|화성|화성푸드통합지원": null,
+  "name|화성|김밥천국": null,
+  "name|화성|트레이더스 홀세일클럽 동탄점": null,
+  "name|화성|산골추어탕": null,
+  "name|화성|송산감자탕뼈해장국": null
 }
