@@ -13219,5 +13219,226 @@
   "name|화성|김밥천국": null,
   "name|화성|트레이더스 홀세일클럽 동탄점": null,
   "name|화성|산골추어탕": null,
-  "name|화성|송산감자탕뼈해장국": null
+  "name|화성|송산감자탕뼈해장국": null,
+  "name|화성|읍천리382 화성봉담점": {
+    "address": "경기 화성시 효행구 봉담읍 장등2길 6-22",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "읍천리382 화성봉담점",
+    "location": {
+      "lat": 37.21907177,
+      "lng": 126.94680452,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/455153078"
+    }
+  },
+  "name|수원|오성팔복반점\n광화문점": null,
+  "name|화성|동해복집": null,
+  "name|화성|딥솔티": {
+    "address": "경기 화성시 만세구 남양읍 남양천로 85",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "딥솔티",
+    "location": {
+      "lat": 37.21263418,
+      "lng": 126.82662979,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1397325181"
+    }
+  },
+  "name|화성|중앙식당": null,
+  "name|화성|펄스맥화성남양점": {
+    "address": "경기 화성시 만세구 남양읍 남양천로 94-4",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "펄스맥 화성남양점",
+    "location": {
+      "lat": 37.21296092,
+      "lng": 126.82763059,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/412719199"
+    }
+  },
+  "name|화성|청담추어정 화성시청점": {
+    "address": "경기 화성시 만세구 남양읍 남양성지로 39",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "청담추어정 화성시청점",
+    "location": {
+      "lat": 37.20637888,
+      "lng": 126.80780229,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1073366484"
+    }
+  },
+  "name|화성|자가제빵 선명희피자": null,
+  "name|화성|옛날경성순대국동탄역점": {
+    "address": "경기 화성시 동탄구 동탄역로 128",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "옛날경성순대국 동탄역점",
+    "location": {
+      "lat": 37.19785704,
+      "lng": 127.09658426,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/604807940"
+    }
+  },
+  "name|화성|노노카페(화성시청민원동점)": null,
+  "name|화성|한국의맛 장수촌": null,
+  "name|화성|월미당 동탄영천점": {
+    "address": "경기 화성시 동탄구 동탄영천로 150",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "월미당 동탄영천점",
+    "location": {
+      "lat": 37.21620567,
+      "lng": 127.10238395,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/198867353"
+    }
+  },
+  "name|화성|양산도 동탄레이크꼬모점": {
+    "address": "경기 화성시 동탄구 동탄대로 181",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "양산도 동탄레이크꼬모점",
+    "location": {
+      "lat": 37.17172633,
+      "lng": 127.10623446,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/44844226"
+    }
+  },
+  "name|화성|창억떡 동탄점": {
+    "address": "경기 화성시 동탄구 노작로 203",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "창억떡 동탄점",
+    "location": {
+      "lat": 37.20621293,
+      "lng": 127.07479943,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1098354633"
+    }
+  },
+  "name|화성|나들목": null,
+  "name|화성|대박낙지마을": null,
+  "name|화성|이삭토스트": null,
+  "name|화성|샐러리아 향남점": {
+    "address": "경기 화성시 만세구 향남읍 상신하길로 320",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "샐러리아 향남점",
+    "location": {
+      "lat": 37.11673256,
+      "lng": 126.91093488,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/834528121"
+    }
+  },
+  "name|화성|스시노칸도 동탄북광장점": null,
+  "name|화성|팔팔미담 여의도점": null,
+  "name|화성|도미노피자": null,
+  "name|화성|메가후르츠 화성동탄센트럴파크점": {
+    "address": "경기 화성시 동탄구 동탄공원로3길 14-5",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "메가후르츠 화성동탄센트럴파크점",
+    "location": {
+      "lat": 37.20755689,
+      "lng": 127.06139971,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/773872826"
+    }
+  },
+  "name|화성|김경자대구왕뽈찜": null,
+  "name|화성|이삭토스트 화성병점": null,
+  "name|화성|나무가든": null,
+  "name|화성|린13": {
+    "address": "경기 화성시 동탄구 동탄순환대로3길 30",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "린13",
+    "location": {
+      "lat": 37.16687764,
+      "lng": 127.09578821,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/498127242"
+    }
+  },
+  "name|화성|정담은보쌈(주)": null,
+  "name|화성|발안만세협동조합": null,
+  "name|화성|노작골부대찌개": null,
+  "name|화성|강다짐 화성봉담2지구점": null,
+  "name|화성|대동생막창": null,
+  "name|화성|청화대": null,
+  "name|화성|시장아지매 해장국": null,
+  "name|화성|크리스피크림도넛 화성병점역점": {
+    "address": "경기 화성시 병점구 정조로 5",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "크리스피크림도넛 화성병점역점",
+    "location": {
+      "lat": 37.21205687,
+      "lng": 127.0310374,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1148774876"
+    }
+  },
+  "name|화성|파리바게뜨 동탄영천": null,
+  "name|화성|엠스빈": null,
+  "name|화성|한보네전주돌솥비빔밥": {
+    "address": "경기 화성시 만세구 송산면 사강로 171",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "한보네 전주돌솥비빔밥",
+    "location": {
+      "lat": 37.21323835,
+      "lng": 126.734877,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1831322277"
+    }
+  },
+  "name|화성|더반테이블": {
+    "address": "경기 화성시 효행구 봉담읍 장등1길 9-20",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "더반테이블",
+    "location": {
+      "lat": 37.22316825,
+      "lng": 126.94551715,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/89916407"
+    }
+  },
+  "name|화성|향남읍(동백정)": null
 }
