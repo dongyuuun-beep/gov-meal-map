@@ -13440,5 +13440,212 @@
       "evidence_url": "https://place.map.kakao.com/89916407"
     }
   },
-  "name|화성|향남읍(동백정)": null
+  "name|화성|향남읍(동백정)": null,
+  "name|화성|속초오징어어시장 봉": null,
+  "name|화성|북창동순두부": null,
+  "name|화성|포텐 병점점": {
+    "address": "경기 화성시 병점구 병점중앙로 195",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "포텐 병점점",
+    "location": {
+      "lat": 37.21463434,
+      "lng": 127.03576802,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1812451559"
+    }
+  },
+  "name|화성|디저트39화성시청남": null,
+  "name|화성|유키산도": {
+    "address": "경기 화성시 동탄구 동탄공원로3길 18-8",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "유키산도",
+    "location": {
+      "lat": 37.20768928,
+      "lng": 127.06151923,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/2087275391"
+    }
+  },
+  "name|화성|노모어피자 동탄북광": null,
+  "name|화성|용인백암순대국": null,
+  "name|화성|춘천 미식 닭갈비": {
+    "address": "경기 화성시 동탄구 동탄오산로 29",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "춘천미식닭갈비",
+    "location": {
+      "lat": 37.19943458,
+      "lng": 127.09114802,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1433344001"
+    }
+  },
+  "name|화성|활초관광농원": {
+    "address": "경기 화성시 만세구 남양읍 고향의봄길 310-11",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "활초관광농원",
+    "location": {
+      "lat": 37.17636145,
+      "lng": 126.8361344,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/14693148"
+    }
+  },
+  "name|화성|고향옥얼큰순대국": null,
+  "name|화성|비룡짬뽕": {
+    "address": "경기 화성시 효행구 비봉면 비봉로 93",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "비룡짬뽕",
+    "location": {
+      "lat": 37.23489096,
+      "lng": 126.87112386,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1115133525"
+    }
+  },
+  "name|화성|향남읍(나능이능이버섯백숙향남점)": null,
+  "name|화성|코지하우스 화성향남": null,
+  "name|화성|광교동태전문점": null,
+  "name|화성|가든한우농장": {
+    "address": "경기 화성시 효행구 봉담읍 삼봉길 74-2",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "가든한우농장",
+    "location": {
+      "lat": 37.21924253,
+      "lng": 126.93508456,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/12572329"
+    }
+  },
+  "name|화성|파파존스 동탄3호점": {
+    "address": "경기 화성시 동탄구 동탄대로 182",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "파파존스 동탄3호점",
+    "location": {
+      "lat": 37.17072084,
+      "lng": 127.10713383,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1018263094"
+    }
+  },
+  "name|화성|하누담": null,
+  "name|화성|페이브베이커리 화성남양점": {
+    "address": "경기 화성시 만세구 남양읍 남양성지로 245-1",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "페이브베이커리 화성남양점",
+    "location": {
+      "lat": 37.21414882,
+      "lng": 126.82785096,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1198238267"
+    }
+  },
+  "name|화성|화성시첨 매점(화성시청구내식당위원회)": null,
+  "name|화성|컴포즈커피 화성조암": null,
+  "name|화성|주식회사 이지피쥐": null,
+  "name|화성|더포레": null,
+  "name|화성|뚜레쥬르 봉담와우점": {
+    "address": "경기 화성시 효행구 봉담읍 와우로 20",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "뚜레쥬르 봉담와우점",
+    "location": {
+      "lat": 37.21511687,
+      "lng": 126.96911682,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1730188557"
+    }
+  },
+  "name|화성|ufo304": {
+    "address": "경기 화성시 효행구 비봉면 남이로 221",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "UFO304",
+    "location": {
+      "lat": 37.24700912,
+      "lng": 126.84009773,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1549244592"
+    }
+  },
+  "name|화성|봉담한식부페": null,
+  "name|화성|까몬 봉담점": {
+    "address": "경기 화성시 효행구 봉담읍 장등2길 5-14",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "까몬 봉담점",
+    "location": {
+      "lat": 37.22093852,
+      "lng": 126.94631759,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/735833712"
+    }
+  },
+  "name|화성|역북집화성봉담점": null,
+  "name|화성|우지커피(화성반월점)": {
+    "address": "경기 화성시 병점구 영통로 66",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "우지커피 화성반월점",
+    "location": {
+      "lat": 37.23624603,
+      "lng": 127.06187262,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/145311474"
+    }
+  },
+  "name|화성|배스킨라빈스 동탄다원점": {
+    "address": "경기 화성시 동탄구 동탄영천로 81-5",
+    "spending_city": "화성",
+    "spending_region": "경기",
+    "address_match": "name_city",
+    "matched_merchant": "배스킨라빈스 동탄다원점",
+    "location": {
+      "lat": 37.20961123,
+      "lng": 127.10302619,
+      "precision": "place",
+      "match_method": "name_city",
+      "evidence_url": "https://place.map.kakao.com/1695948810"
+    }
+  },
+  "name|화성|1988평화숯불구이 수원인계점": null,
+  "name|화성|(주)어반리": null,
+  "name|화성|이마트 동탄점": null,
+  "name|화성|(주)마트킹수원대": null,
+  "name|화성|장수천만 숯불장어닭": null,
+  "name|화성|빵마담살롱": null,
+  "name|화성|CU화성동탄고점": null,
+  "name|화성|한가네 집밥": null,
+  "name|화성|꿈꾸는시루": null
 }
